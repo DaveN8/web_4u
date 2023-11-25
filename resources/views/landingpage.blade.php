@@ -1,11 +1,5 @@
 @extends('layouts.base')
 @section('main_content')
-    <!--
-      Heads up! 👋
-
-      This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-    -->
-
     <section
         class="relative bg-cover bg-center bg-no-repeat" style="background-image: url({{ asset('/img/banner4u.png') }})">
         <div
