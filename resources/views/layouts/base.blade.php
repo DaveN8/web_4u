@@ -8,11 +8,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>4U Invitation</title>
-    @vite(['resources/css/app.css','resources/js/app.js'])
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
+    @vite(['resources/css/app.css','resources/js/app.js'])
 </head>
 
 <body class="font-sans antialiased">
@@ -30,6 +30,8 @@
 
 
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
 </body>
 
 </html>
