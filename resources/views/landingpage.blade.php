@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="mt-16 flex justify-center">
-                        <div class="max-w-max space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                        <div class="max-w-full space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
                             <div class="relative">
                                 <dt>
                                     <div
