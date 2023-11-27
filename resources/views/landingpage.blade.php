@@ -22,7 +22,7 @@
                             <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}">
                             <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
                         </div>
-                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-96 lg:px-8">                            
+                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-96 lg:px-8">
                             <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                                 <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                                     {{-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started </a>
@@ -237,10 +237,10 @@
                                                 <div>
                                                     <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
                                                         id="tier-growth">Paket 2</h3>
-                                                        <!-- Add space for the package photo -->
-                                                <div class="mt-4">
-                                                    <img src="{{asset("img/logo4U.jpg")}}">
-                                                </div>
+                                                    <!-- Add space for the package photo -->
+                                                    <div class="mt-4">
+                                                        <img src="{{ asset('img/logo4U.jpg') }}">
+                                                    </div>
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
@@ -348,10 +348,10 @@
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900"
                                                             id="tier-scale">Paket 3</h3>
-                                                            <!-- Add space for the package photo -->
-                                                <div class="mt-4">
-                                                    <img src="{{asset("img/logo4U.jpg")}}">
-                                                </div>
+                                                        <!-- Add space for the package photo -->
+                                                        <div class="mt-4">
+                                                            <img src="{{ asset('img/logo4U.jpg') }}">
+                                                        </div>
                                                         <div class="mt-4 flex items-center justify-center">
                                                             <span
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
@@ -427,7 +427,71 @@
                     </div>
                 </div>
 
-                
+                {{-- Image Carousel --}}
+
+                <div id="gallery" class="relative w-full" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+                                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+                                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+                                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+                                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+                                class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
 
 
 
