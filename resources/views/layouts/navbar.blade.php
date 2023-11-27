@@ -36,8 +36,7 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="block h-auto w-auto" src="public/img/logodei.jpg" alt="">
-                    <img class="hidden lg:block h-8 w-auto" src="/public/img/logodei.jpg" alt="">
+                    <img class="block h-8 w-auto" src="{{asset("img/logo4U.jpg")}}">
                 </div>
                 <div class="hidden sm:block sm:ml-6">
                     <div class="flex space-x-4">
