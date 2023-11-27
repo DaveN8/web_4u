@@ -1,38 +1,46 @@
 @extends('layouts.base')
 @section('main_content')
     <!-- This example requires Tailwind CSS v2.0+ -->
-    <header>
-        <div class="relative bg-white">
-            <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 
-                </div>
-            </div>
-        </div>
-    </header>
 
     <main>
         <div>
-            <!-- Hero card -->
-            <div class="relative">
-                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative">
-                    <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-                        <div class="absolute inset-0">
-                            <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}">
+            <div class="bg-lime-50">
+                <!-- BANNER -->
+                <div class="relative flex flex-col md:flex-row">
+
+                    <!-- Image Column with Shadow Container -->
+                    <div class="md:w-1/2 relative p-10 order-1 md:order-1">
+                        <div class="shadow-2xl sm:rounded-2xl sm:overflow-hidden">
+                            <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}" alt="Banner Image">
                             <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
                         </div>
-                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-96 lg:px-8">
-                            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                                <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                                    {{-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started </a>
-                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Live demo </a> --}}
-                                </div>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="md:w-1/2 order-2 md:order-2">
+                        <div class="max-w-3xl mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
+                            <div class="max-w-5xl">
+                                <p class="font-sans text-4xl font-bold lg:text-7xl lg:pr-24 md:text-6xl">
+                                    Make Your Own Invitation Card
+                                </p>
+                                <div class="h-10"></div>
+                                <p class="max-w-2xl font-serif text-xl md:text-2xl">
+                                    Imagine being able to spend less time and less money to create your own invitation card
+                                </p>
+                                <br>
+                                <a href="#"
+                                    class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                                    Get started
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
 
             <!-- About section -->
             <div class="py-16 bg-white overflow-hidden">
@@ -116,143 +124,54 @@
                         </dl>
                     </div>
                 </div>
-                </template>
+            </div>
 
 
-                {{-- Price Packages --}}
-                <!-- This example requires Tailwind CSS v2.0+ -->
-                <div class="bg-gray-900 mt-10">
-                    <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
-                        <div class="text-center">
-                            <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Packages</h2>
-                            <p class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Paket yang kami
-                                sediakan</p>
-                            <p class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">Selamat datang di
-                                layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan bangga
-                                menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
-                                paling sesuai dengan gaya dan anggaran Anda.</p>
-                        </div>
+            {{-- Price Packages --}}
+            <!-- This example requires Tailwind CSS v2.0+ -->
+            <div class="bg-gray-900 mt-10">
+                <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
+                    <div class="text-center">
+                        <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Packages</h2>
+                        <p class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Paket yang kami
+                            sediakan</p>
+                        <p class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">Selamat datang di
+                            layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan bangga
+                            menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
+                            paling sesuai dengan gaya dan anggaran Anda.</p>
                     </div>
+                </div>
 
-                    <div class="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
-                        <div class="relative z-0">
-                            <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
-                            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                                <div class="relative lg:grid lg:grid-cols-7">
+                <div class="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
+                    <div class="relative z-0">
+                        <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="relative lg:grid lg:grid-cols-7">
+                                <div
+                                    class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
                                     <div
-                                        class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
-                                        <div
-                                            class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
-                                            <div class="flex-1 flex flex-col">
-                                                <div class="bg-white px-6 py-10">
-                                                    <div>
-                                                        <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                            id="tier-hobby">Paket 1</h3>
-                                                        <!-- Add space for the package photo -->
-                                                        <div class="mt-4">
-                                                            <img src="{{ asset('img/logo4U.jpg') }}">
-                                                        </div>
-                                                        <div class="mt-4 flex items-center justify-center">
-                                                            <span
-                                                                class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                                <span class="font-extrabold"> 79 </span>
-                                                            </span>
-                                                            <span class="text-xl font-medium text-gray-500"> /month </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-                                                    <ul role="list" class="space-y-4">
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Pariatur
-                                                                quod similique</p>
-                                                        </li>
-
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Sapiente
-                                                                libero doloribus</p>
-                                                        </li>
-
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Vel ipsa
-                                                                esse repudiandae</p>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="mt-8">
-                                                        <div class="rounded-lg shadow-md">
-                                                            <a href="https://formfacade.com/sm/HMYxoxFEr"
-                                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
-                                                                aria-describedby="tier-hobby"> Choose Packages </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
-                                        <div class="relative z-10 rounded-lg shadow-xl">
-                                            <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600"
-                                                aria-hidden="true"></div>
-                                            <div class="absolute inset-x-0 top-0 transform translate-y-px">
-                                                <div class="flex justify-center transform -translate-y-1/2">
-                                                    <span
-                                                        class="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
-                                                        Most popular </span>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                                        class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
+                                        <div class="flex-1 flex flex-col">
+                                            <div class="bg-white px-6 py-10">
                                                 <div>
-                                                    <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
-                                                        id="tier-growth">Paket 2</h3>
+                                                    <h3 class="text-center text-2xl font-medium text-gray-900"
+                                                        id="tier-hobby">Paket 1</h3>
                                                     <!-- Add space for the package photo -->
                                                     <div class="mt-4">
                                                         <img src="{{ asset('img/logo4U.jpg') }}">
                                                     </div>
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
-                                                            class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
+                                                            class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                                                             <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                            <span class="font-extrabold"> 149 </span>
+                                                            <span class="font-extrabold"> 79 </span>
                                                         </span>
-                                                        <span class="text-2xl font-medium text-gray-500"> /month </span>
+                                                        <span class="text-xl font-medium text-gray-500"> /month </span>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                                                class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                                 <ul role="list" class="space-y-4">
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
@@ -265,8 +184,8 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Quia rem est
-                                                            sed impedit magnam</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Pariatur
+                                                            quod similique</p>
                                                     </li>
 
                                                     <li class="flex items-start">
@@ -280,8 +199,8 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Dolorem vero
-                                                            ratione voluptates</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Sapiente
+                                                            libero doloribus</p>
                                                     </li>
 
                                                     <li class="flex items-start">
@@ -295,127 +214,210 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Qui sed ab
-                                                            doloribus voluptatem dolore</p>
-                                                    </li>
-
-                                                    <li class="flex items-start">
-                                                        <div class="flex-shrink-0">
-                                                            <!-- Heroicon name: outline/check -->
-                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                viewBox="0 0 24 24" stroke="currentColor"
-                                                                aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
-                                                            </svg>
-                                                        </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Laborum commodi
-                                                            molestiae id et fugiat</p>
-                                                    </li>
-
-                                                    <li class="flex items-start">
-                                                        <div class="flex-shrink-0">
-                                                            <!-- Heroicon name: outline/check -->
-                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                viewBox="0 0 24 24" stroke="currentColor"
-                                                                aria-hidden="true">
-                                                                <path stroke-linecap="round" stroke-linejoin="round"
-                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
-                                                            </svg>
-                                                        </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Nam ut ipsa
-                                                            nesciunt culpa modi dolor</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Vel ipsa
+                                                            esse repudiandae</p>
                                                     </li>
                                                 </ul>
-                                                <div class="mt-10">
+                                                <div class="mt-8">
                                                     <div class="rounded-lg shadow-md">
                                                         <a href="https://formfacade.com/sm/HMYxoxFEr"
-                                                            class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
-                                                            aria-describedby="tier-growth"> Choose Packages </a>
+                                                            class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                            aria-describedby="tier-hobby"> Choose Packages </a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div
-                                        class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                                </div>
+                                <div
+                                    class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
+                                    <div class="relative z-10 rounded-lg shadow-xl">
+                                        <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600"
+                                            aria-hidden="true"></div>
+                                        <div class="absolute inset-x-0 top-0 transform translate-y-px">
+                                            <div class="flex justify-center transform -translate-y-1/2">
+                                                <span
+                                                    class="inline-flex rounded-full bg-indigo-600 px-4 py-1 text-sm font-semibold tracking-wider uppercase text-white">
+                                                    Most popular </span>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                                            <div>
+                                                <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
+                                                    id="tier-growth">Paket 2</h3>
+                                                <!-- Add space for the package photo -->
+                                                <div class="mt-4">
+                                                    <img src="{{ asset('img/logo4U.jpg') }}">
+                                                </div>
+                                                <div class="mt-4 flex items-center justify-center">
+                                                    <span
+                                                        class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
+                                                        <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
+                                                        <span class="font-extrabold"> 149 </span>
+                                                    </span>
+                                                    <span class="text-2xl font-medium text-gray-500"> /month </span>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div
-                                            class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
-                                            <div class="flex-1 flex flex-col">
-                                                <div class="bg-white px-6 py-10">
-                                                    <div>
-                                                        <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                            id="tier-scale">Paket 3</h3>
-                                                        <!-- Add space for the package photo -->
-                                                        <div class="mt-4">
-                                                            <img src="{{ asset('img/logo4U.jpg') }}">
-                                                        </div>
-                                                        <div class="mt-4 flex items-center justify-center">
-                                                            <span
-                                                                class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                                <span class="font-extrabold"> 349 </span>
-                                                            </span>
-                                                            <span class="text-xl font-medium text-gray-500"> /month </span>
-                                                        </div>
+                                            class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                                            <ul role="list" class="space-y-4">
+                                                <li class="flex items-start">
+                                                    <div class="flex-shrink-0">
+                                                        <!-- Heroicon name: outline/check -->
+                                                        <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="ml-3 text-base font-medium text-gray-500">Quia rem est
+                                                        sed impedit magnam</p>
+                                                </li>
+
+                                                <li class="flex items-start">
+                                                    <div class="flex-shrink-0">
+                                                        <!-- Heroicon name: outline/check -->
+                                                        <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="ml-3 text-base font-medium text-gray-500">Dolorem vero
+                                                        ratione voluptates</p>
+                                                </li>
+
+                                                <li class="flex items-start">
+                                                    <div class="flex-shrink-0">
+                                                        <!-- Heroicon name: outline/check -->
+                                                        <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="ml-3 text-base font-medium text-gray-500">Qui sed ab
+                                                        doloribus voluptatem dolore</p>
+                                                </li>
+
+                                                <li class="flex items-start">
+                                                    <div class="flex-shrink-0">
+                                                        <!-- Heroicon name: outline/check -->
+                                                        <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="ml-3 text-base font-medium text-gray-500">Laborum commodi
+                                                        molestiae id et fugiat</p>
+                                                </li>
+
+                                                <li class="flex items-start">
+                                                    <div class="flex-shrink-0">
+                                                        <!-- Heroicon name: outline/check -->
+                                                        <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                stroke-width="2" d="M5 13l4 4L19 7" />
+                                                        </svg>
+                                                    </div>
+                                                    <p class="ml-3 text-base font-medium text-gray-500">Nam ut ipsa
+                                                        nesciunt culpa modi dolor</p>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-10">
+                                                <div class="rounded-lg shadow-md">
+                                                    <a href="https://formfacade.com/sm/HMYxoxFEr"
+                                                        class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
+                                                        aria-describedby="tier-growth"> Choose Packages </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                                    <div
+                                        class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
+                                        <div class="flex-1 flex flex-col">
+                                            <div class="bg-white px-6 py-10">
+                                                <div>
+                                                    <h3 class="text-center text-2xl font-medium text-gray-900"
+                                                        id="tier-scale">Paket 3</h3>
+                                                    <!-- Add space for the package photo -->
+                                                    <div class="mt-4">
+                                                        <img src="{{ asset('img/logo4U.jpg') }}">
+                                                    </div>
+                                                    <div class="mt-4 flex items-center justify-center">
+                                                        <span
+                                                            class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
+                                                            <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
+                                                            <span class="font-extrabold"> 349 </span>
+                                                        </span>
+                                                        <span class="text-xl font-medium text-gray-500"> /month </span>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
-                                                    <ul role="list" class="space-y-4">
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Pariatur
-                                                                quod similique</p>
-                                                        </li>
-
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Sapiente
-                                                                libero doloribus</p>
-                                                        </li>
-
-                                                        <li class="flex items-start">
-                                                            <div class="flex-shrink-0">
-                                                                <!-- Heroicon name: outline/check -->
-                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
-                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                                    viewBox="0 0 24 24" stroke="currentColor"
-                                                                    aria-hidden="true">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
-                                                                </svg>
-                                                            </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Vel ipsa
-                                                                esse repudiandae</p>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="mt-8">
-                                                        <div class="rounded-lg shadow-md">
-                                                            <a href="https://formfacade.com/sm/HMYxoxFEr"
-                                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
-                                                                aria-describedby="tier-scale"> Choose Packages </a>
+                                            </div>
+                                            <div
+                                                class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                                                <ul role="list" class="space-y-4">
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
                                                         </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Pariatur
+                                                            quod similique</p>
+                                                    </li>
+
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Sapiente
+                                                            libero doloribus</p>
+                                                    </li>
+
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">Vel ipsa
+                                                            esse repudiandae</p>
+                                                    </li>
+                                                </ul>
+                                                <div class="mt-8">
+                                                    <div class="rounded-lg shadow-md">
+                                                        <a href="https://formfacade.com/sm/HMYxoxFEr"
+                                                            class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                            aria-describedby="tier-scale"> Choose Packages </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -426,9 +428,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
-                {{-- Image Carousel --}}
-                <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+            {{-- Image Carousel --}}
+            <div class="bg-yellow-100 rounded-t-lg mx-10">
+                <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-14">
                     <div class="w-full relative flex items-center justify-center">
                         <button aria-label="slide backward"
                             class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
@@ -623,18 +627,48 @@
                         </button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </main>
 
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+            <div class="flex justify-center space-x-6 md:order-2">
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Tiktok</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
 
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
 
-
-
-
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Twitter</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                    </svg>
+                </a>
 
             </div>
+            <div class="mt-8 md:mt-0 md:order-1">
+                <p class="text-center text-base text-gray-400">&copy; 2023 4U Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 
-            <!-- More main page content here... -->
-    </main>
 
     <script>
         let defaultTransform = 0;
