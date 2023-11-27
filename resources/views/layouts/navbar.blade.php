@@ -36,11 +36,8 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="block lg:hidden h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
-                    <img class="hidden lg:block h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                        alt="Workflow">
+                    <img class="block h-auto w-auto" src="public/img/logodei.jpg" alt="">
+                    <img class="hidden lg:block h-8 w-auto" src="/public/img/logodei.jpg" alt="">
                 </div>
                 <div class="hidden sm:block sm:ml-6">
                     <div class="flex space-x-4">
@@ -49,13 +46,13 @@
                             aria-current="page">Home</a>
 
                         <a href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
                         <a href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Team</a>
 
                         <a href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Calendar</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
                     </div>
                 </div>
             </div>
@@ -79,31 +76,12 @@
                             id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                             <span class="sr-only">Open user menu</span>
                             <img class="h-8 w-8 rounded-full"
-                                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                                src="https://www.graphicpie.com/wp-content/uploads/2020/11/red-among-us-png-768x934.png"
                                 alt="">
                         </button>
                     </div>
 
-                    <!--
-    Dropdown menu, show/hide based on menu state.
-   
-    Entering: "transition ease-out duration-100"
-    From: "transform opacity-0 scale-95"
-    To: "transform opacity-100 scale-100"
-    Leaving: "transition ease-in duration-75"
-    From: "transform opacity-100 scale-100"
-    To: "transform opacity-0 scale-95"
-    -->
-                    <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                        role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                        <!-- Active: "bg-gray-100", Not Active: "" -->
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                            id="user-menu-item-0">Your Profile</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                            id="user-menu-item-1">Settings</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
-                            id="user-menu-item-2">Sign out</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
