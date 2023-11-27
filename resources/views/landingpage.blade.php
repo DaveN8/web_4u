@@ -1,136 +1,122 @@
 @extends('layouts.base')
 @section('main_content')
     <!-- This example requires Tailwind CSS v2.0+ -->
-        <header>
-            <div class="relative bg-white">
-                <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-                    <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
-                        <div class="pt-5 pb-6 px-5">
-                            <div class="mt-6">
-                                <nav class="grid grid-cols-1 gap-7">
-                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                                        <div
-                                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                                            <!-- Heroicon name: outline/inbox -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                                            </svg>
-                                        </div>
-                                        <div class="ml-4 text-base font-medium text-gray-900">Inbox</div>
-                                    </a>
+    <header>
+        <div class="relative bg-white">
+            <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
 
-                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                                        <div
-                                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                                            <!-- Heroicon name: outline/annotation -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                                            </svg>
-                                        </div>
-                                        <div class="ml-4 text-base font-medium text-gray-900">Messaging</div>
-                                    </a>
-
-                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                                        <div
-                                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                                            <!-- Heroicon name: outline/chat-alt-2 -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                                            </svg>
-                                        </div>
-                                        <div class="ml-4 text-base font-medium text-gray-900">Live Chat</div>
-                                    </a>
-
-                                    <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                                        <div
-                                            class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                                            <!-- Heroicon name: outline/question-mark-circle -->
-                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            </svg>
-                                        </div>
-                                        <div class="ml-4 text-base font-medium text-gray-900">Knowledge Base</div>
-                                    </a>
-                                </nav>
-                            </div>
-                        </div>
-                        
-                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <div>
-                <!-- Hero card -->
-                <div class="relative">
-                    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative">
-                        <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-                            <div class="absolute inset-0">
-                                <img class="h-full w-full object-cover" src="{{asset("img/banner4u.png")}}">
-                                <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
-                            </div>
-                            <!-- Smaller overlapping rounded rectangle -->
-                            <div class="absolute inset-0 bg-indigo-500 opacity-60 rounded-xl mx-8 my-8"></div>
-                            <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-                                <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                                    <span class="block text-white">Take control of your</span>
-                                    <span class="block text-indigo-200">customer support</span>
-                                </h1>
-                                <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-                                <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                                    <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started </a>
-                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Live demo </a>
-                                    </div>
+    <main>
+        <div>
+            <!-- Hero card -->
+            <div class="relative mt-4">
+                <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+                <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative">
+                    <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
+                        <div class="absolute inset-0">
+                            <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}">
+                            <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
+                        </div>
+                        <!-- Smaller overlapping rounded rectangle -->
+                        <div class="absolute inset-0 bg-amber-100 opacity-60 rounded-xl mx-4 my-4"></div>
+                        <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
+                            <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                                <span class="block text-black">Welcome to 4U</span>
+                                <span class="block text-slate-950">E-Invitation</span>
+                            </h1>
+                            <p class="mt-6 max-w-lg mx-auto text-center text-xl text-sky-950 sm:max-w-3xl">Anim aute id
+                                magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
+                                fugiat veniam occaecat fugiat aliqua.</p>
+                            <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
+                                <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+                                    {{-- <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started </a>
+                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Live demo </a> --}}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                
-
-                <!-- Logo cloud -->
-                <div class="bg-gray-100">
-                    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
-                        <p class="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">Trusted by over
-                            5 very average small businesses</p>
-                        <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                                    alt="Tuple">
-                            </div>
-                            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                                    alt="Mirage">
-                            </div>
-                            <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                                <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                                    alt="StaticKit">
-                            </div>
-                            <div class="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                                <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                                    alt="Transistor">
-                            </div>
-                            <div class="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                                <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                                    alt="Workcation">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
 
+            <!-- About section -->
+            <div class="py-16 bg-white overflow-hidden">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center">
+                        <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Introducing
+                            Banner4U</p>
+                        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">For you adalah bisnis undangan digital yang menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik. Bisnis ini memiliki platform online yang mudah digunakan dengan berbagai pilihan template dan desain yang dapat disesuaikan dengan kebutuhan dan selera pelanggan. Foryou juga menyediakan fitur interaktif seperti RSVP online dan tampilan galeri foto, sehingga undangan digital menjadi modern dan ramah lingkungan. Dengan layanan yang efisien dan berkualitas, Foryou merupakan pilihan yang sempurna bagi mereka yang ingin membuat undangan digital yang elegan dan mudah dibagikan kepada tamu undangan mereka.</p>
+                    </div>
+
+                    <div class="mt-16">
+                        <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                            <div class="relative">
+                                <dt>
+                                    <div
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        <!-- Heroicon name: outline/inbox -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414a1 1 0 00-.707-.293H4.293a1 1 0 01-.707.293l-2.414 2.414c-.411.061-.82-.176-1.171-.518a1 1 0 00-1.414-1.414l2.414-2.414a1 1 0 00-.518-1.171c.061-.411.176-.82.518-1.171l2.414-2.414a1 1 0 011.414 1.414c.411.061.82.176 1.171.518l2.414 2.414a1 1 0 01.518 1.171c-.061.411-.176.82-.518 1.171l-2.414 2.414a1 1 0 001.414 1.414c.411.061.82.176 1.171.518l2.414-2.414a1 1 0 01.707.293H19.707a1 1 0 01.707-.293l2.414-2.414a1 1 0 00-.518-1.171c-.061-.411-.176-.82-.518-1.171l-2.414-2.414zM12 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" />
+                                        </svg>
+                                    </div>
+                                    {{-- AFFORDABLE SERVICES --}}
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Affordable
+                                    </p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-500">Hadirkan keindahan ke dalam undangan Anda tanpa mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan dengan harga yang terjangkau. Jadilah bagian dari perayaan kami dan nikmati keindahan tanpa batasan.</dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <div
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        <!-- Heroicon name: outline/reply -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                        </svg>
+                                    </div>
+                                    {{-- CUSTOMIZEABLE SERVICES --}}
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Customizable</p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-500">Kami memahami bahwa setiap acara adalah cerita unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai dengan keinginan Anda. Pilih warna, gaya, dan detail lainnya untuk menciptakan undangan yang benar-benar mencerminkan Anda.</dd>
+                            </div>
+
+                            <div class="relative">
+                                <dt>
+                                    <div
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        <!-- Heroicon name: outline/lightning-bolt -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
+                                    {{-- REUSEABLE SERVICES --}}
+                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Reusable</p>
+                                </dt>
+                                <dd class="mt-2 ml-16 text-base text-gray-500">Kami merayakan momen istimewa dengan memberikan cinta pada lingkungan. 4U E-Invitation tidak hanya indah, tetapi juga ramah lingkungan. Pilih opsi undangan digital untuk mengurangi jejak karbon dan menciptakan perubahan yang berkelanjutan.
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                </template>
+
+                
+
+
+            </div>
+
+
             <!-- More main page content here... -->
-        </main>
+    </main>
 @endsection
