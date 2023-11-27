@@ -6,25 +6,6 @@
                 <div class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
                     <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
                         <div class="pt-5 pb-6 px-5">
-                            <div class="flex items-center justify-between">
-                                <div>
-                                    <img class="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                                        alt="Workflow">
-                                </div>
-                                <div class="-mr-2">
-                                    <button type="button"
-                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                                        <span class="sr-only">Close menu</span>
-                                        <!-- Heroicon name: outline/x -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M6 18L18 6M6 6l12 12" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
                             <div class="mt-6">
                                 <nav class="grid grid-cols-1 gap-7">
                                     <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
@@ -81,27 +62,7 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="py-6 px-5">
-                            <div class="grid grid-cols-2 gap-4">
-                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Pricing
-                                </a>
-
-                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                                    Partners </a>
-
-                                <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700"> Company
-                                </a>
-                            </div>
-                            <div class="mt-6">
-                                <a href="#"
-                                    class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
-                                    Sign up </a>
-                                <p class="mt-6 text-center text-base font-medium text-gray-500">
-                                    Existing customer?
-                                    <a href="#" class="text-gray-900"> Sign in </a>
-                                </p>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -112,36 +73,32 @@
                 <!-- Hero card -->
                 <div class="relative">
                     <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
-                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 relative">
                         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
                             <div class="absolute inset-0">
-                                <img class="h-full w-full object-cover"
-                                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                                    alt="People working on laptops">
-                                <div class="absolute inset-0 bg-indigo-700 mix-blend-multiply"></div>
+                                <img class="h-full w-full object-cover" src="{{asset("img/banner4u.png")}}">
+                                <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
                             </div>
+                            <!-- Smaller overlapping rounded rectangle -->
+                            <div class="absolute inset-0 bg-indigo-500 opacity-60 rounded-xl mx-8 my-8"></div>
                             <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
                                 <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
                                     <span class="block text-white">Take control of your</span>
                                     <span class="block text-indigo-200">customer support</span>
                                 </h1>
-                                <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">Anim aute
-                                    id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit
-                                    sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                                <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
                                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                                     <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                                        <a href="#"
-                                            class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
-                                            Get started </a>
-                                        <a href="#"
-                                            class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
-                                            Live demo </a>
+                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">Get started </a>
+                                        <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">Live demo </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                
 
                 <!-- Logo cloud -->
                 <div class="bg-gray-100">
