@@ -443,11 +443,15 @@
                                     stroke-linejoin="round" />
                             </svg>
                         </button>
+
+                        {{-- Start IMG --}}
+
+                        {{-- Produk 1 --}}
                         <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
                             <div id="slider"
                                 class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                                    <img src="{{asset("img/logo4U.jpg")}}" alt="black chair and white table"
                                         class="object-cover object-center w-full" />
                                     <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
                                         <h2
@@ -460,6 +464,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 2 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -474,6 +479,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 3 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -488,6 +494,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 4 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -502,6 +509,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 5 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
                                         class="object-cover object-center w-full" />
@@ -516,6 +524,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 6 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -530,6 +539,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 7 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -544,6 +554,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 8 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -558,6 +569,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 9 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
                                         class="object-cover object-center w-full" />
@@ -572,6 +584,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 10 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -586,6 +599,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 11 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
@@ -600,6 +614,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {{-- Produk 12 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
                                         class="object-cover object-center w-full" />
