@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('landingpage');
+    return view('landingPage');
+});
+
+Route::get('/formPackages', function (){
+    return view('formPackages');
 });

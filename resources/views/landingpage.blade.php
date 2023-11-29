@@ -19,7 +19,7 @@
 
                     <!-- Text Column -->
                     <div class="md:w-1/2 order-2 md:order-2">
-                        <div class="max-w-3xl mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
+                          <div class="max-w-3xl mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
                             <div class="max-w-5xl">
                                 <p class="font-sans text-4xl font-bold lg:text-7xl lg:pr-24 md:text-6xl">
                                     Make Your Own Invitation Card
@@ -334,7 +334,7 @@
                                             </ul>
                                             <div class="mt-10">
                                                 <div class="rounded-lg shadow-md">
-                                                    <a href="https://formfacade.com/sm/HMYxoxFEr"
+                                                    <a href="{{ url('/formPackages') }}"
                                                         class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
                                                         aria-describedby="tier-growth"> Choose Packages </a>
                                                 </div>
