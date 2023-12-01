@@ -9,6 +9,9 @@
         $color6 = '15, 44, 89'; // navy
         $color7 = '255, 255, 255'; // white
         $color8 = '100, 100, 100'; // gray
+
+        // command utk pakai rgb color
+        // style="background-color: rgb({{ $color6 }});"
     @endphp
 
 
@@ -76,7 +79,8 @@
                             <div class="relative" id="affordable">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                        style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/inbox -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -98,7 +102,8 @@
                             <div class="relative" id="customizable">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                        style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/reply -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -121,7 +126,8 @@
                             <div class="relative" id="reusable">
                                 <dt>
                                     <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                        style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/lightning-bolt -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
                                             viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
