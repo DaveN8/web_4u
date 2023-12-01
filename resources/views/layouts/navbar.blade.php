@@ -1,4 +1,14 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+@php
+    $color1 = '248, 240, 229'; // light cream
+    $color2 = '234, 219, 200'; // mid cream
+    $color3 = '218, 192, 163'; // dark cream
+    $color4 = '205, 170, 131'; // darker cream
+    $color5 = '189, 158, 122'; // very dark cream
+    $color6 = '15, 44, 89'; // navy
+    $color7 = '255, 255, 255'; // white
+    $color8 = '100, 100, 100'; // gray
+@endphp
+
 <nav class="bg-gray-800">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
@@ -36,7 +46,7 @@
             </div>
             <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="flex-shrink-0 flex items-center">
-                    <img class="block h-8 w-auto" src="{{asset("img/logo4U.jpg")}}">
+                    <img class="block h-8 w-auto" src="{{ asset('img/logo4U.jpg') }}">
                 </div>
                 <div class="hidden sm:block sm:ml-6">
                     <div class="flex space-x-4">
@@ -48,7 +58,8 @@
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
                         <a href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Team</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our
+                            Team</a>
 
                         <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
@@ -80,7 +91,7 @@
                         </button>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
