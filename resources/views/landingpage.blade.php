@@ -14,8 +14,7 @@
 
     <main style="background-color: rgb({{ $color1 }});">
         <div>
-            <div class="bg-lime-50"
-            style="background-color: rgb({{ $color2 }});">
+            <div style="background-color: rgb({{ $color2 }});">
                 <!-- BANNER -->
                 <div class="relative flex flex-col md:flex-row">
 
@@ -53,11 +52,11 @@
 
 
             <!-- About section -->
-            <div class="py-16 bg-white overflow-hidden">
+            <div class="py-16 bg-white overflow-hidden" style="background-color: rgb({{ $color1 }});">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
                         <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Introducing
-                            Banner4U</p>
+                            4U</p>
                         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">For you adalah bisnis undangan digital
                             yang
                             menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik. Bisnis ini
