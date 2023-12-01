@@ -153,7 +153,8 @@
 
 
             {{-- Price Packages --}}
-            <div class="bg-gray-900 mt-10">
+            <div class=" mt-10"
+            style="background-color: rgb({{ $color6 }});">
                 <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
                     <div class="text-center">
                         <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Packages</h2>
@@ -166,9 +167,11 @@
                     </div>
                 </div>
 
+                {{-- BG putih paket --}}
                 <div class="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
                     <div class="relative z-0">
-                        <div class="absolute inset-0 h-5/6 bg-gray-900 lg:h-2/3"></div>
+                        <div class="absolute inset-0 h-5/6 lg:h-2/3"
+                        style="background-color: rgb({{ $color6 }});"></div>
                         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div class="relative lg:grid lg:grid-cols-7">
                                 <div
