@@ -3,7 +3,7 @@
     <!-- This example requires Tailwind CSS v2.0+ -->
 
 
-    <main>
+    <main class="bg-lime-50">
         <div>
             <div class="bg-lime-50">
                 <!-- BANNER -->
@@ -655,37 +655,41 @@
         </div>
 
         {{-- CONTACT FORM --}}
-        <div
-            class="flex flex-col min-w-0 max-w-2xl mx-auto break-words bg-gradient-to-r from-red-200 to-amber-100 w-full mb-6 shadow-xl rounded-lg mt-16 transition-all duration-300 ease-in-out transform hover:scale-105">
-            <div class="rounded-t mb-0 px-4 py-3 border-0">
-                <div class="flex flex-wrap items-center">
-                    <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                        <h3 class="font-semibold text-base text-white"> Contact Us </h3>
+        <div class="bg-lime-50">
+            <div
+                class="flex flex-col min-w-0 max-w-2xl mx-auto break-words bg-gradient-to-r from-red-200 to-amber-100 w-full mb-6 shadow-xl rounded-lg mt-16 transition-all duration-300 ease-in-out transform hover:scale-105">
+                <div class="rounded-t mb-0 px-4 py-3 border-0">
+                    <div class="flex flex-wrap items-center">
+                        <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                            <h3 class="font-semibold text-base text-white"> Contact Us </h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="p-4 flex-auto">
-                <form class="mb-6">
-                    <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="name"> Name
-                        </label> <input
-                            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                            id="name" type="text" placeholder="Your name"> </div>
-                    <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="email"> Email
-                        </label> <input
-                            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                            id="email" type="email" placeholder="Your email"> </div>
-                    <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="message">
-                            Message </label>
-                        <textarea
-                            class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                            id="message" type="text" placeholder="Your message"></textarea>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <button
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out transform hover:scale-105"
-                            type="submit"> Send </button>
-                    </div>
-                </form>
+                <div class="p-4 flex-auto">
+                    <form class="mb-6">
+                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="name">
+                                Name
+                            </label> <input
+                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="name" type="text" placeholder="Your name"> </div>
+                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="email">
+                                Email
+                            </label> <input
+                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="email" type="email" placeholder="Your email"> </div>
+                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="message">
+                                Message </label>
+                            <textarea
+                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                                id="message" type="text" placeholder="Your message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <button
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out transform hover:scale-105"
+                                type="submit"> Send </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- FOOTER -->
