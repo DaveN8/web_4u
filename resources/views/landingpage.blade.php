@@ -656,42 +656,47 @@
 
         {{-- CONTACT FORM --}}
         <div class="bg-lime-50">
-            <div
-                class="flex flex-col min-w-0 max-w-2xl mx-auto break-words bg-gradient-to-r from-red-200 to-amber-100 w-full mb-6 shadow-xl rounded-lg mt-16 transition-all duration-300 ease-in-out transform hover:scale-105">
+            <div class="flex flex-col min-w-0 max-w-2xl mx-auto break-words bg-gradient-to-r from-red-200 to-amber-100 w-full mb-6 shadow-xl rounded-lg mt-16 transition-all duration-300 ease-in-out transform hover:scale-105">
                 <div class="rounded-t mb-0 px-4 py-3 border-0">
                     <div class="flex flex-wrap items-center">
                         <div class="relative w-full px-4 max-w-full flex-grow flex-1">
-                            <h3 class="font-semibold text-base text-white"> Contact Us </h3>
+                            <h3 class="font-semibold text-base text-white">Contact Us</h3>
                         </div>
                     </div>
                 </div>
                 <div class="p-4 flex-auto">
                     <form class="mb-6">
-                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="name">
-                                Name
-                            </label> <input
-                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="name" type="text" placeholder="Your name"> </div>
-                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="email">
-                                Email
-                            </label> <input
-                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="email" type="email" placeholder="Your email"> </div>
-                        <div class="mb-4"> <label class="block mb-1 text-sm font-bold text-gray-700" for="message">
-                                Message </label>
-                            <textarea
-                                class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                                id="message" type="text" placeholder="Your message"></textarea>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <button
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition-all duration-300 ease-in-out transform hover:scale-105"
-                                type="submit"> Send </button>
+                        <div class="flex flex-wrap mb-6">
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                                    Name
+                                </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-password" type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                                    Email
+                                </label>
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-password" type="email" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="w-full px-3">
+                                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                                    Message
+                                </label>
+                                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-password" type="text" name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="flex flex-wrap justify-center items-center w-full">
+                                <button class="bg-gradient-to-r from-red-500 to-amber-400 hover:from-pink-500 hover:to-yellow-400 text-white font-bold py-2 px-4 rounded">
+                                    Submit
+                                </button>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+
+
         <!-- FOOTER -->
         <div>
             <footer class="bg-gray-800">
@@ -730,6 +735,8 @@
                 </div>
             </footer>
         </div>
+
+        
 
     </main>
 
