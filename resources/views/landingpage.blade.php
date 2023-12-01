@@ -123,7 +123,6 @@
 
 
             {{-- Price Packages --}}
-            <!-- This example requires Tailwind CSS v2.0+ -->
             <div class="bg-gray-900 mt-10">
                 <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
                     <div class="text-center">
@@ -641,7 +640,7 @@
         </div>
     </main>
 
-    <!-- This example requires Tailwind CSS v2.0+ -->
+    <!-- FOOTER -->
     <footer class="bg-gray-800">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
             <div class="flex justify-center space-x-6 md:order-2">
@@ -682,9 +681,9 @@
 
     <script>
         // Use gsap for animations
-        gsap.from("#affordable", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
-        gsap.from("#customizable", { opacity: 0, y: 50, duration: 1, delay: 1 });
-        gsap.from("#reusable", { opacity: 0, y: 50, duration: 1, delay: 1.5 });
+        gsap.from("#affordable", { opacity: 0, y: 50, duration: 1, delay: 1.5 });
+        gsap.from("#customizable", { opacity: 0, y: 50, duration: 1, delay: 2 });
+        gsap.from("#reusable", { opacity: 0, y: 50, duration: 1, delay: 2.5 });
     </script>
 
 
