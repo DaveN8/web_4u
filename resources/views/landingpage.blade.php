@@ -506,182 +506,195 @@
                         <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
                             <div id="slider"
                                 class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                                {{-- START GRID PER IMAGE --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 1</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 1</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 2 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 2</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 3 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 3</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 4 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 4</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 5 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 5</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 6 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 6</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 7 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 7</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 8 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 8</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 9 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 9</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 10 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 10</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 11 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 11</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 12 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                                    <img src="{{ asset('img/produk1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
-                                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                                    <div class="absolute w-full h-full p-6">
                                         <h2
                                             class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
-                                            Catalog 2</h2>
+                                            {{-- nama produk --}}
+                                        </h2>
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Minimal Interior</h3>
+                                                Produk 12</h3>
                                         </div>
                                     </div>
                                 </div>
