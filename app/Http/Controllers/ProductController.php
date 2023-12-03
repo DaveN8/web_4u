@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function index(){
-        return view('productsPage');
+        $product = Products::all();
+        return view('productsPage', compact('product'));
     }
 
     public function create(){
@@ -16,12 +17,24 @@ class ProductController extends Controller
     }
 
     public function store(Request $request){
-        $data = $request->validate([
+        $this->validate( $request,[
             'nama_product' => 'required|string|max:155',
-            'foto_product' => 'required|image',
+            'foto_product' => 'required|image|mimes:jpg,png,jpeg|max:2048',
         ]);
 
-        $newProduct = Products::create($data);
+        Products::create([
+            'nama_product' => $request->nama_product ,
+            'foto_product' => $request->file('foto_product')->store('img', 'public'),
+        ]);
+
+        // $newName = '';
+        // if ($request->file('foto_product')) {
+        //     $extension = $request->file('foto_product')->getClientOriginalExtension();
+        //     $newName = $request->nama_product . '-' . now()->timestamp . '.' . $extension;
+        //     $request->file('foto_product')->storeAs('img', $newName);
+        // }
+        // $validatedData = $data;
+        // $validatedData['foto_product'] = $newName;
 
         return redirect(route('productsPage'));
  

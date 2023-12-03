@@ -4,6 +4,7 @@ use App\Http\Controllers\PackageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Models\Products;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,9 +38,11 @@ Route::post('/loginPage', [UserController::class, 'loginPost'])->name('login.pos
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 //Product
+Route::resource('product', ProductController::class)->middleware('admin');
 Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
 Route::get('/createProducts', [ProductController::class, 'create'])->name('createProducts');
 Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');
+
 
 
 //Package
