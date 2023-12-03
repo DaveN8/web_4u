@@ -12,6 +12,7 @@
 
         // command utk pakai rgb color
         // style="background-color: rgb({{ $color6 }});"
+
     @endphp
 
 
@@ -78,8 +79,7 @@
                         <div class="max-w-full space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
                             <div class="relative" id="affordable">
                                 <dt>
-                                    <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
                                         style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/inbox -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -101,8 +101,7 @@
 
                             <div class="relative" id="customizable">
                                 <dt>
-                                    <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
                                         style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/reply -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -125,8 +124,7 @@
 
                             <div class="relative" id="reusable">
                                 <dt>
-                                    <div
-                                        class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
+                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
                                         style="background-color: rgb({{ $color6 }});">
                                         <!-- Heroicon name: outline/lightning-bolt -->
                                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -153,8 +151,7 @@
 
 
             {{-- Price Packages --}}
-            <div class=" mt-10"
-            style="background-color: rgb({{ $color6 }});">
+            <div class=" mt-10" style="background-color: rgb({{ $color6 }});">
                 <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
                     <div class="text-center">
                         <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Packages</h2>
@@ -170,8 +167,8 @@
                 {{-- BG putih paket --}}
                 <div class="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
                     <div class="relative z-0">
-                        <div class="absolute inset-0 h-5/6 lg:h-2/3"
-                        style="background-color: rgb({{ $color6 }});"></div>
+                        <div class="absolute inset-0 h-5/6 lg:h-2/3" style="background-color: rgb({{ $color6 }});">
+                        </div>
                         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div class="relative lg:grid lg:grid-cols-7">
                                 <div
@@ -179,11 +176,14 @@
                                     <div
                                         class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                         <div class="flex-1 flex flex-col">
+                                            {{-- PAKET 1 --}}
                                             <div class="bg-white px-6 py-10">
                                                 <div>
                                                     <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                        id="tier-hobby">Paket 1</h3>
-                                                    <!-- Add space for the package photo -->
+                                                        id="tier-hobby">
+                                                        <span class="text-green-500">★</span> Paket 1
+                                                        <!-- Add a star icon for emphasis -->
+                                                    </h3>
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
@@ -265,12 +265,14 @@
                                                     Most popular </span>
                                             </div>
                                         </div>
+                                        {{-- PAKET 2 --}}
                                         <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
                                             <div>
                                                 <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
-                                                    id="tier-growth">Paket 2</h3>
-                                                <!-- Add space for the package photo -->
-                                               
+                                                    id="tier-growth">
+                                                    <span class="text-indigo-600">🌟</span> Paket 2
+                                                    <!-- Add a star icon for emphasis -->
+                                                </h3>
                                                 <div class="mt-4 flex items-center justify-center">
                                                     <span
                                                         class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
@@ -369,12 +371,14 @@
                                     <div
                                         class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                                         <div class="flex-1 flex flex-col">
+                                            {{-- PAKET 3 --}}
                                             <div class="bg-white px-6 py-10">
                                                 <div>
                                                     <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                        id="tier-scale">Paket 3</h3>
-                                                    <!-- Add space for the package photo -->
-                                                    
+                                                        id="tier-scale">
+                                                        <span class="text-orange-500">✨</span> Paket 3
+                                                        <!-- Add a star icon for emphasis -->
+                                                    </h3>
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
@@ -760,6 +764,7 @@
             </div>
         </div>
     </main>
+
 
 
 
