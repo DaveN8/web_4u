@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\PackageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,8 +18,31 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landingPage');
-});
+})->name('landingPage');
 
-Route::get('/formPackages', function (){
-    return view('formPackages');
-});
+// Route::get('/formPackages', function (){
+//     return view('formPackages');
+// });
+
+// Route::get('/loginPage', function(){
+//     return view('loginPage');
+// });
+
+Route::get('/signinPage', [UserController::class, 'register'])->name('register');
+Route::post('/signinPage', [UserController::class, 'registerPost'])->name('register.post');
+
+Route::get('/loginPage', [UserController::class, 'login'])->name('login');
+Route::post('/loginPage', [UserController::class, 'loginPost'])->name('login.post');
+
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+
+//Product
+Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
+Route::get('/createProducts', [ProductController::class, 'create'])->name('createProducts');
+Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');
+
+
+//Package
+Route::get('/package', [PackageController::class, 'index'])->name('hasilPackage');
+Route::get('/formPackage', [PackageController::class, 'create'])->name('formPackage');
+Route::post('/dataPackage', [PackageController::class, 'store'])->name('storePackage');
