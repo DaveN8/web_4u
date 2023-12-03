@@ -171,8 +171,9 @@
                         </div>
                         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div class="relative lg:grid lg:grid-cols-7">
+                                {{-- Start Paket --}}
                                 <div
-                                    class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+                                    class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 hover:scale-110">
                                     <div
                                         class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                         <div class="flex-1 flex flex-col">
@@ -181,7 +182,7 @@
                                                 <div>
                                                     <h3 class="text-center text-2xl font-medium text-gray-900"
                                                         id="tier-hobby">
-                                                        <span class="text-green-500">★</span> Paket 1
+                                                        <span class="text-green-500">✨</span> Paket 1
                                                         <!-- Add a star icon for emphasis -->
                                                     </h3>
                                                     <div class="mt-4 flex items-center justify-center">
@@ -254,7 +255,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4">
+                                    class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 hover:scale-110">
                                     <div class="relative z-10 rounded-lg shadow-xl">
                                         <div class="pointer-events-none absolute inset-0 rounded-lg border-2 border-indigo-600"
                                             aria-hidden="true"></div>
@@ -367,7 +368,7 @@
                                     </div>
                                 </div>
                                 <div
-                                    class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+                                    class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3 hover:scale-110">
                                     <div
                                         class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                                         <div class="flex-1 flex flex-col">
