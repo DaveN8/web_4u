@@ -188,16 +188,15 @@
                                                 {{-- PAKET 1 --}}
                                                 <div class="bg-white px-6 py-10">
                                                     <div>
-                                                        <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                            id="tier-hobby">
+                                                        <h3 class="text-center text-2xl font-medium text-gray-900">
                                                             <span class="text-green-500">✨</span> Basic
                                                             <!-- Add a star icon for emphasis -->
                                                         </h3>
                                                         <div class="mt-4 flex items-center justify-center">
                                                             <span
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                                <span class="font-extrabold"> 79 </span>
+                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR. </span>
+                                                                <span class="font-extrabold"> 69.000 </span>
                                                             </span>
                                                             <span class="text-xl font-medium text-gray-500"> /month
                                                             </span>
@@ -207,6 +206,7 @@
                                                 <div
                                                     class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                                     <ul role="list" class="space-y-4">
+                                                        {{-- fitur 1 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -219,10 +219,10 @@
                                                                 </svg>
                                                             </div>
                                                             <p class="ml-3 text-base font-medium text-gray-500">
-                                                                Pariatur
-                                                                quod similique</p>
+                                                                Masa Aktif 3 Bulan
+                                                            </p>
                                                         </li>
-
+                                                        {{-- fitur 2 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -235,10 +235,10 @@
                                                                 </svg>
                                                             </div>
                                                             <p class="ml-3 text-base font-medium text-gray-500">
-                                                                Sapiente
-                                                                libero doloribus</p>
+                                                                Bahasa Indonesia / Inggris
+                                                            </p>
                                                         </li>
-
+                                                        {{-- fitur 3 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -250,9 +250,72 @@
                                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                                 </svg>
                                                             </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Vel
-                                                                ipsa
-                                                                esse repudiandae</p>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Jumlah Tamu Tidak Terbatas</p>
+                                                        </li>
+                                                        {{-- fitur 4 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Cover Undangan Pembuka
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 5 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Detail Info Acara
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 6 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Profil Pembuat Undangan
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 7 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Navigasi Lokasi
+                                                            </p>
                                                         </li>
                                                     </ul>
                                                     <div class="mt-8">
@@ -281,16 +344,15 @@
                                             {{-- PAKET 2 --}}
                                             <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
                                                 <div>
-                                                    <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6"
-                                                        id="tier-growth">
-                                                        <span class="text-indigo-600">🌟</span> Elite
+                                                    <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6">
+                                                        <span class="text-indigo-600">🌟</span> Ultra
                                                         <!-- Add a star icon for emphasis -->
                                                     </h3>
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
-                                                            <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                            <span class="font-extrabold"> 149 </span>
+                                                            <span class="mt-2 mr-2 text-4xl font-medium"> IDR. </span>
+                                                            <span class="font-extrabold"> 99.000 </span>
                                                         </span>
                                                         <span class="text-2xl font-medium text-gray-500"> /month
                                                         </span>
@@ -300,6 +362,7 @@
                                             <div
                                                 class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
                                                 <ul role="list" class="space-y-4">
+                                                    {{-- paket 1 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
@@ -311,11 +374,10 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Quia rem
-                                                            est
-                                                            sed impedit magnam</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Masa Aktif 12 Bulan</p>
                                                     </li>
-
+                                                    {{-- paket 2 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
@@ -327,11 +389,11 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Dolorem
-                                                            vero
-                                                            ratione voluptates</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Bahasa Indonesia / Inggris
+                                                        </p>
                                                     </li>
-
+                                                    {{-- paket 3 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
@@ -343,10 +405,10 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Qui sed ab
-                                                            doloribus voluptatem dolore</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Jumlah Tamu Tidak Terbatas</p>
                                                     </li>
-
+                                                    {{-- paket 4 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
@@ -358,11 +420,10 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Laborum
-                                                            commodi
-                                                            molestiae id et fugiat</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Cover Undangan Pembuka</p>
                                                     </li>
-
+                                                    {{-- paket 5 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
@@ -374,8 +435,98 @@
                                                                     stroke-width="2" d="M5 13l4 4L19 7" />
                                                             </svg>
                                                         </div>
-                                                        <p class="ml-3 text-base font-medium text-gray-500">Nam ut ipsa
-                                                            nesciunt culpa modi dolor</p>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Detail Info Acara</p>
+                                                    </li>
+                                                    {{-- paket 6 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Profil Pembuat Undangan</p>
+                                                    </li>
+                                                    {{-- paket 7 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Navigasi Lokasi</p>
+                                                    </li>
+                                                    {{-- paket 8 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Kolom Komentar / Konfirmasi Kehadiran</p>
+                                                    </li>
+                                                    {{-- paket 9 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Galeri Foto (Max 20)</p>
+                                                    </li>
+                                                    {{-- paket 10 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Video (1) "prewed / ultah / sunatan</p>
+                                                    </li>
+                                                    {{-- paket 11 --}}
+                                                    <li class="flex items-start">
+                                                        <div class="flex-shrink-0">
+                                                            <!-- Heroicon name: outline/check -->
+                                                            <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                viewBox="0 0 24 24" stroke="currentColor"
+                                                                aria-hidden="true">
+                                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-width="2" d="M5 13l4 4L19 7" />
+                                                            </svg>
+                                                        </div>
+                                                        <p class="ml-3 text-base font-medium text-gray-500">
+                                                            Link Gdrive Foto Acara</p>
                                                     </li>
                                                 </ul>
                                                 <div class="mt-10">
@@ -396,16 +547,15 @@
                                                 {{-- PAKET 3 --}}
                                                 <div class="bg-white px-6 py-10">
                                                     <div>
-                                                        <h3 class="text-center text-2xl font-medium text-gray-900"
-                                                            id="tier-scale">
-                                                            <span class="text-orange-500">✨</span> Ultra
+                                                        <h3 class="text-center text-2xl font-medium text-gray-900">
+                                                            <span class="text-orange-500">✨</span> Elite
                                                             <!-- Add a star icon for emphasis -->
                                                         </h3>
                                                         <div class="mt-4 flex items-center justify-center">
                                                             <span
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-4xl font-medium"> $ </span>
-                                                                <span class="font-extrabold"> 349 </span>
+                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR. </span>
+                                                                <span class="font-extrabold"> 85.000 </span>
                                                             </span>
                                                             <span class="text-xl font-medium text-gray-500"> /month
                                                             </span>
@@ -415,6 +565,7 @@
                                                 <div
                                                     class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
                                                     <ul role="list" class="space-y-4">
+                                                        {{-- fitur 1 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -427,10 +578,10 @@
                                                                 </svg>
                                                             </div>
                                                             <p class="ml-3 text-base font-medium text-gray-500">
-                                                                Pariatur
-                                                                quod similique</p>
+                                                                Masa Aktif 3 Bulan
+                                                            </p>
                                                         </li>
-
+                                                        {{-- fitur 2 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -443,10 +594,10 @@
                                                                 </svg>
                                                             </div>
                                                             <p class="ml-3 text-base font-medium text-gray-500">
-                                                                Sapiente
-                                                                libero doloribus</p>
+                                                                Bahasa Indonesia / Inggris
+                                                            </p>
                                                         </li>
-
+                                                        {{-- fitur 3 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -458,9 +609,104 @@
                                                                         stroke-width="2" d="M5 13l4 4L19 7" />
                                                                 </svg>
                                                             </div>
-                                                            <p class="ml-3 text-base font-medium text-gray-500">Vel
-                                                                ipsa
-                                                                esse repudiandae</p>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Jumlah Tamu Tidak Terbatas</p>
+                                                        </li>
+                                                        {{-- fitur 4 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Cover Undangan Pembuka
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 5 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Detail Info Acara
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 6 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Profil Pembuat Undangan
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 7 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Navigasi Lokasi
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 8 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Kolom Komentar / Konfirmasi Kehadiran
+                                                            </p>
+                                                        </li>
+                                                        {{-- fitur 9 --}}
+                                                        <li class="flex items-start">
+                                                            <div class="flex-shrink-0">
+                                                                <!-- Heroicon name: outline/check -->
+                                                                <svg class="flex-shrink-0 h-6 w-6 text-green-500"
+                                                                    xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                                    viewBox="0 0 24 24" stroke="currentColor"
+                                                                    aria-hidden="true">
+                                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                                        stroke-width="2" d="M5 13l4 4L19 7" />
+                                                                </svg>
+                                                            </div>
+                                                            <p class="ml-3 text-base font-medium text-gray-500">
+                                                                Galeri Foto (Max 10)
+                                                            </p>
                                                         </li>
                                                     </ul>
                                                     <div class="mt-8">
