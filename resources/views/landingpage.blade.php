@@ -10,6 +10,7 @@
         $color6 = '15, 44, 89'; // navy
         $color7 = '255, 255, 255'; // white
         $color8 = '100, 100, 100'; // gray
+        $color9 = '242, 242, 242'; // light gray
 
         // command utk pakai rgb color
         // style="background-color: rgb({{ $color6 }});"
@@ -43,7 +44,7 @@
                                     Imagine being able to spend less time and less money to create your own invitation card
                                 </p>
                                 <br>
-                                <a href="#"
+                                <a href="#introduction"
                                     class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
                                     Get started
                                 </a>
@@ -57,7 +58,8 @@
 
 
             <!-- About section -->
-            <div class="py-16 bg-white overflow-hidden" style="background-color: rgb({{ $color1 }});">
+            <div id="introduction" class="py-16 bg-white overflow-hidden"
+                style="background-color: rgb({{ $color0 }});">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div class="text-center">
                         <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Introducing
@@ -186,7 +188,8 @@
                                             class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                             <div class="flex-1 flex flex-col">
                                                 {{-- PAKET 1 --}}
-                                                <div class="bg-white px-6 py-10">
+                                                <div class="px-6 py-10"
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900">
                                                             <span class="text-green-500">✨</span> Basic
@@ -203,8 +206,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                                                <div class="flex-1 flex flex-col justify-between border-t-2 p-6 sm:p-10 lg:p-6 xl:p-10"
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
                                                     <ul role="list" class="space-y-4">
                                                         {{-- fitur 1 --}}
                                                         <li class="flex items-start">
@@ -342,7 +345,8 @@
                                                 </div>
                                             </div>
                                             {{-- PAKET 2 --}}
-                                            <div class="bg-white rounded-t-lg px-6 pt-12 pb-10">
+                                            <div class="rounded-t-lg px-6 pt-12 pb-10"
+                                                style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
                                                 <div>
                                                     <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6">
                                                         <span class="text-indigo-600">🌟</span> Ultra
@@ -359,8 +363,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 bg-gray-50 sm:px-10 sm:py-10">
+                                            <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 sm:px-10 sm:py-10"
+                                                style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
                                                 <ul role="list" class="space-y-4">
                                                     {{-- paket 1 --}}
                                                     <li class="flex items-start">
@@ -545,7 +549,8 @@
                                             class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
                                             <div class="flex-1 flex flex-col">
                                                 {{-- PAKET 3 --}}
-                                                <div class="bg-white px-6 py-10">
+                                                <div class="px-6 py-10"
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900">
                                                             <span class="text-orange-500">✨</span> Elite
@@ -562,8 +567,8 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div
-                                                    class="flex-1 flex flex-col justify-between border-t-2 border-gray-100 p-6 bg-gray-50 sm:p-10 lg:p-6 xl:p-10">
+                                                <div class="flex-1 flex flex-col justify-between border-t-2 p-6 sm:p-10 lg:p-6 xl:p-10"
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
                                                     <ul role="list" class="space-y-4">
                                                         {{-- fitur 1 --}}
                                                         <li class="flex items-start">
@@ -1102,6 +1107,26 @@
             slider.style.transform = "translateX(" + defaultTransform + "px)";
         }
         prev.addEventListener("click", goPrev);
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the "Get Started" button
+            const getStartedButton = document.querySelector('a[href="#introduction"]');
+
+            // Add a click event listener to the button
+            getStartedButton.addEventListener("click", function(event) {
+                event.preventDefault();
+
+                // Get the target element (Introduction section) based on the href attribute
+                const targetElement = document.getElementById("introduction");
+
+                // Use smooth scroll behavior to scroll to the target element
+                targetElement.scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
     </script>
 @endsection
 
