@@ -13,7 +13,7 @@
         $color9 = '242, 242, 242'; // light gray
 
         // command utk pakai rgb color
-        // style="color: rgb({{ $color1 }});
+        // style="color: rgb({{ $color1 }});"
         // style="background-color: rgb({{ $color6 }});"
         // style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));"
 
@@ -22,134 +22,150 @@
 
     <main style="background-color: rgb({{ $color1 }});">
         <div>
-            <div style="background-color: rgb({{ $color2 }});">
-                <!-- BANNER -->
-                <div class="relative flex flex-col md:flex-row">
+            {{-- Background Gradasi Banner -> About --}}
+            <div style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color6 }}));">
+            {{-- <div style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color1 }}));"> --}}
+                <div>
+                    <!-- BANNER -->
+                    <div class="relative flex flex-col md:flex-row">
 
-                    <!-- Image Column with Shadow Container -->
-                    <div class="md:w-1/2 relative p-10 order-1 md:order-1">
-                        <div class="shadow-2xl sm:rounded-2xl sm:overflow-hidden">
-                            <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}" alt="Banner Image">
-                            <div class="absolute inset-0 bg-white mix-blend-multiply"></div>
+                        <!-- Image Column with Shadow Container -->
+                        <div class="md:w-1/2 relative p-10 order-1 md:order-1">
+                            <div class="shadow-2xl sm:rounded-2xl sm:overflow-hidden">
+                                <img class="h-full w-full object-fill" src="{{ asset('img/banner4u.png') }}"
+                                    alt="Banner Image">
+                                <div class="absolute inset-0 mix-blend-multiply"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Text Column -->
-                    <div class="md:w-1/2 order-2 md:order-2">
-                        <div class="max-w-3xl mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
-                            <div class="max-w-5xl">
-                                <p class="font-sans text-4xl font-bold lg:text-7xl lg:pr-24 md:text-6xl">
-                                    Make Your Own Invitation Card
-                                </p>
-                                <div class="h-10"></div>
-                                <p class="max-w-2xl font-serif text-xl md:text-2xl">
-                                    Imagine being able to spend less time and less money to create your own invitation card
-                                </p>
-                                <br>
+                        <!-- Text Column -->
+                        <div class="md:w-1/2 order-2 md:order-2">
+                            <div class="max-w-3xl mx-auto px-4 py-32 sm:px-6 lg:flex lg:items-center lg:px-8">
+                                <div class="max-w-5xl">
+                                    <p class="font-sans text-4xl font-bold lg:text-7xl lg:pr-24 md:text-6xl">
+                                        Make Your Own Invitation Card
+                                    </p>
+                                    <div class="h-10"></div>
+                                    <p class="max-w-2xl font-serif text-xl md:text-2xl">
+                                        Imagine being able to spend less time and less money to create your own invitation
+                                        card
+                                    </p>
+                                    <br>
 
-                                <a href="#introduction"
-                                    class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl"
-                                    style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
-                                    Get Started
-                                </a>
+                                    <a href="#introduction"
+                                        class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl"
+                                        style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
+                                        Get Started
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
 
 
-            <!-- About section -->
-            <div id="introduction" class="py-16 bg-white overflow-hidden"
-                style="background-color: rgb({{ $color0 }});">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="text-center">
-                        <p class="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Introducing
-                            4U</p>
-                        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">For you adalah bisnis undangan digital
-                            yang
-                            menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik. Bisnis ini
-                            memiliki
-                            platform online yang mudah digunakan dengan berbagai pilihan template dan desain yang dapat
-                            disesuaikan dengan kebutuhan dan selera pelanggan. Foryou juga menyediakan fitur interaktif
-                            seperti
-                            RSVP online dan tampilan galeri foto, sehingga undangan digital menjadi modern dan ramah
-                            lingkungan. Dengan layanan yang efisien dan berkualitas, Foryou merupakan pilihan yang sempurna
-                            bagi
-                            mereka yang ingin membuat undangan digital yang elegan dan mudah dibagikan kepada tamu undangan
-                            mereka.</p>
-                    </div>
+                <!-- About section -->
+                <div id="introduction" class="py-16 overflow-hidden">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div class="text-center">
+                            <p class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl"
+                            style="color: rgb({{ $color3 }});">Introducing
+                                4U</p>
+                            <p class="mt-4 max-w-2xl text-xl lg:mx-auto" style="color: rgb({{ $color2 }});">For you
+                                adalah bisnis undangan
+                                digital
+                                yang
+                                menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik. Bisnis ini
+                                memiliki
+                                platform online yang mudah digunakan dengan berbagai pilihan template dan desain yang dapat
+                                disesuaikan dengan kebutuhan dan selera pelanggan. Foryou juga menyediakan fitur interaktif
+                                seperti
+                                RSVP online dan tampilan galeri foto, sehingga undangan digital menjadi modern dan ramah
+                                lingkungan. Dengan layanan yang efisien dan berkualitas, Foryou merupakan pilihan yang
+                                sempurna
+                                bagi
+                                mereka yang ingin membuat undangan digital yang elegan dan mudah dibagikan kepada tamu
+                                undangan
+                                mereka.</p>
+                        </div>
 
-                    <div class="mt-16 flex justify-center">
-                        <div class="max-w-full space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
-                            <div class="relative" id="affordable">
-                                <dt>
-                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
-                                        style="background-color: rgb({{ $color6 }});">
-                                        <!-- Heroicon name: outline/inbox -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414a1 1 0 00-.707-.293H4.293a1 1 0 01-.707.293l-2.414 2.414c-.411.061-.82-.176-1.171-.518a1 1 0 00-1.414-1.414l2.414-2.414a1 1 0 00-.518-1.171c.061-.411.176-.82.518-1.171l2.414-2.414a1 1 0 011.414 1.414c.411.061.82.176 1.171.518l2.414 2.414a1 1 0 01.518 1.171c-.061.411-.176.82-.518 1.171l-2.414 2.414a1 1 0 001.414 1.414c.411.061.82.176 1.171.518l2.414-2.414a1 1 0 01.707.293H19.707a1 1 0 01.707-.293l2.414-2.414a1 1 0 00-.518-1.171c-.061-.411-.176-.820-.518-1.171l-2.414-2.414zM12 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" />
-                                        </svg>
-                                    </div>
-                                    {{-- AFFORDABLE SERVICES --}}
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Affordable
-                                    </p>
-                                </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">Hadirkan keindahan ke dalam undangan Anda
-                                    tanpa
-                                    mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan dengan harga
-                                    yang
-                                    terjangkau. Jadilah bagian dari perayaan kami dan nikmati keindahan tanpa batasan.</dd>
-                            </div>
+                        <div class="mt-16 flex justify-center">
+                            <div class="max-w-full space-y-10 md:space-y-0 md:grid md:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                                <div class="relative" id="affordable">
+                                    <dt>
+                                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md"
+                                            style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
+                                            <!-- Heroicon name: outline/inbox -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414a1 1 0 00-.707-.293H4.293a1 1 0 01-.707.293l-2.414 2.414c-.411.061-.82-.176-1.171-.518a1 1 0 00-1.414-1.414l2.414-2.414a1 1 0 00-.518-1.171c.061-.411.176-.82.518-1.171l2.414-2.414a1 1 0 011.414 1.414c.411.061.82.176 1.171.518l2.414 2.414a1 1 0 01.518 1.171c-.061.411-.176.82-.518 1.171l-2.414 2.414a1 1 0 001.414 1.414c.411.061.82.176 1.171.518l2.414-2.414a1 1 0 01.707.293H19.707a1 1 0 01.707-.293l2.414-2.414a1 1 0 00-.518-1.171c-.061-.411-.176-.820-.518-1.171l-2.414-2.414zM12 13c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0-10c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4z" />
+                                            </svg>
+                                        </div>
+                                        {{-- AFFORDABLE SERVICES --}}
+                                        <p class="ml-16 text-lg leading-6 font-medium"
+                                        style="color: rgb({{ $color3 }});">Affordable
+                                        </p>
+                                    </dt>
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Hadirkan keindahan ke dalam undangan Anda
+                                        tanpa
+                                        mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan dengan harga
+                                        yang
+                                        terjangkau. Jadilah bagian dari perayaan kami dan nikmati keindahan tanpa batasan.
+                                    </dd>
+                                </div>
 
-                            <div class="relative" id="customizable">
-                                <dt>
-                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
-                                        style="background-color: rgb({{ $color6 }});">
-                                        <!-- Heroicon name: outline/reply -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                                        </svg>
-                                    </div>
-                                    {{-- CUSTOMIZEABLE SERVICES --}}
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Customizable</p>
-                                </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">Kami memahami bahwa setiap acara adalah
-                                    cerita
-                                    unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai dengan keinginan
-                                    Anda.
-                                    Pilih warna, gaya, dan detail lainnya untuk menciptakan undangan yang benar-benar
-                                    mencerminkan
-                                    Anda.</dd>
-                            </div>
+                                <div class="relative" id="customizable">
+                                    <dt>
+                                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md"
+                                            style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
+                                            <!-- Heroicon name: outline/reply -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                                            </svg>
+                                        </div>
+                                        {{-- CUSTOMIZEABLE SERVICES --}}
+                                        <p class="ml-16 text-lg leading-6 font-medium"
+                                        style="color: rgb({{ $color3 }});">Customizable</p>
+                                    </dt>
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami memahami bahwa setiap acara adalah
+                                        cerita
+                                        unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai dengan
+                                        keinginan
+                                        Anda.
+                                        Pilih warna, gaya, dan detail lainnya untuk menciptakan undangan yang benar-benar
+                                        mencerminkan
+                                        Anda.</dd>
+                                </div>
 
-                            <div class="relative" id="reusable">
-                                <dt>
-                                    <div class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white"
-                                        style="background-color: rgb({{ $color6 }});">
-                                        <!-- Heroicon name: outline/lightning-bolt -->
-                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                        </svg>
-                                    </div>
-                                    {{-- REUSEABLE SERVICES --}}
-                                    <p class="ml-16 text-lg leading-6 font-medium text-gray-900">Reusable</p>
-                                </dt>
-                                <dd class="mt-2 ml-16 text-base text-gray-500">Kami merayakan momen istimewa dengan
-                                    memberikan
-                                    cinta pada lingkungan. 4U E-Invitation tidak hanya indah, tetapi juga ramah lingkungan.
-                                    Pilih
-                                    opsi undangan digital untuk mengurangi jejak karbon dan menciptakan perubahan yang
-                                    berkelanjutan.
-                                </dd>
+                                <div class="relative" id="reusable">
+                                    <dt>
+                                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md"
+                                            style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
+                                            <!-- Heroicon name: outline/lightning-bolt -->
+                                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                            </svg>
+                                        </div>
+                                        {{-- REUSEABLE SERVICES --}}
+                                        <p class="ml-16 text-lg leading-6 font-medium"
+                                        style="color: rgb({{ $color3 }});">Reusable</p>
+                                    </dt>
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami merayakan momen istimewa dengan
+                                        memberikan
+                                        cinta pada lingkungan. 4U E-Invitation tidak hanya indah, tetapi juga ramah
+                                        lingkungan.
+                                        Pilih
+                                        opsi undangan digital untuk mengurangi jejak karbon dan menciptakan perubahan yang
+                                        berkelanjutan.
+                                    </dd>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -162,10 +178,13 @@
                 <div class=" mt-10" style="background-color: rgb({{ $color6 }});">
                     <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
                         <div class="text-center">
-                            <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Packages</h2>
-                            <p class="mt-2 text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">Paket yang kami
+                            <h2 class="text-lg leading-6 font-semibold uppercase tracking-wider"
+                            style="color: rgb({{ $color2 }});">Packages</h2>
+                            <p class="mt-2 text-3xl font-extrabold sm:text-4xl lg:text-5xl"
+                            style="color: rgb({{ $color2 }});">Paket yang kami
                                 sediakan</p>
-                            <p class="mt-3 max-w-4xl mx-auto text-xl text-gray-300 sm:mt-5 sm:text-2xl">Selamat datang di
+                            <p class="mt-3 max-w-4xl mx-auto text-xl sm:mt-5 sm:text-2xl"
+                            style="color: rgb({{ $color1 }});">Selamat datang di
                                 layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan bangga
                                 menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
                                 paling sesuai dengan gaya dan anggaran Anda.</p>
@@ -1138,24 +1157,21 @@
             getStartedButton.addEventListener("mouseover", function() {
                 getStartedButton.textContent = "Know Us More !";
                 getStartedButton.style.backgroundColor =
-                "rgb({{ $color1 }})"; // Change to the desired color variable
+                    "rgb({{ $color1 }})"; // Change to the desired color variable
                 getStartedButton.style.color =
-                "rgb({{ $color6 }})"; // Change to the desired color variable
+                    "rgb({{ $color6 }})"; // Change to the desired color variable
             });
 
             // warna button saat mouse tdk di hover
             getStartedButton.addEventListener("mouseout", function() {
                 getStartedButton.textContent = "Get Started";
                 getStartedButton.style.backgroundColor =
-                "rgb({{ $color6 }})"; 
+                    "rgb({{ $color6 }})";
                 getStartedButton.style.color =
-                "rgb({{ $color1 }})"; 
+                    "rgb({{ $color1 }})";
             });
         });
     </script>
-
-
-
 @endsection
 
 
