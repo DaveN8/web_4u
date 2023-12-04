@@ -7,42 +7,83 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function index(){
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
         $product = Products::all();
         return view('productsPage', compact('product'));
     }
 
-    public function create(){
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
         return view('createProducts');
     }
 
-    public function store(Request $request){
-        $this->validate( $request,[
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $this->validate($request, [
             'nama_product' => 'required|string|max:155',
             'foto_product' => 'required|image|mimes:jpg,png,jpeg|max:2048',
         ]);
 
         Products::create([
-            'nama_product' => $request->nama_product ,
+            'nama_product' => $request->nama_product,
             'foto_product' => $request->file('foto_product')->store('img', 'public'),
         ]);
 
-        // $newName = '';
-        // if ($request->file('foto_product')) {
-        //     $extension = $request->file('foto_product')->getClientOriginalExtension();
-        //     $newName = $request->nama_product . '-' . now()->timestamp . '.' . $extension;
-        //     $request->file('foto_product')->storeAs('img', $newName);
-        // }
-        // $validatedData = $data;
-        // $validatedData['foto_product'] = $newName;
 
         return redirect(route('productsPage'));
- 
     }
 
-    public function update($id){
-        $product = Products::findOrfail($id);
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        return view('editProduct', [
+            'product' => Products::findOrFail($id)
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        $product = Products::findOrFail($id);
+
+        if ($request->file('foto_product')) {
+            unlink('storage/' . $product->coverphoto);
+            $product->update([
+                'nama_product' => $request->nama_product,
+                'foto_product' => $request->file('foto_product')->store('img', 'public')
+            ]);
+        };
 
         
+        return redirect('productsPage');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
     }
 }

@@ -42,6 +42,7 @@ Route::resource('product', ProductController::class)->middleware('admin');
 Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
 Route::get('/createProducts', [ProductController::class, 'create'])->name('createProducts');
 Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');
+// Route::get('/productsPage/{productsPage}/edit', [ProductController::class, 'edit'])->name('editProducts');
 
 
 

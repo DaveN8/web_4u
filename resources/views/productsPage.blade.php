@@ -15,7 +15,7 @@
 
     @endphp
 
-    <main>
+    <main class="max-w-full max-h-full">
         @if (Auth::check() && Auth::user()->role == 'admin')
             <div class="flex items-center justify-center m-5">
                 <a href="{{ url('createProducts') }}"
@@ -26,28 +26,37 @@
 
 
         <div class="container flex flex-wrap justify-between items-center mx-auto my-10">
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-4 gap-y-4 mx-auto my-10">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-28 gap-y-4 mx-auto my-10">
                 @foreach ($product as $item)
-                    <div class="max-w-sm  border-gray-200 rounded-lg shadow-lg dark:border-gray-700 p-10">
-                        <div class="text-center m-5">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{{ $item['nama_product'] }}
-                            </h5>
-                        </div>
-                        <a href="#">
-                            <img class="rounded-t-lg" src="{{ asset('storage/' . $item['foto_product']) }}" alt="" />
-                        </a>
-                        <div class="">
-                            <div class="flex items-center justify-center ">
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm mx-5 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Pesan Sekarang
-                                </a>
-                                <a href="#"
-                                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    Lihat Tampilan
-                                </a>
+                    <div class="relative mb-6 rounded-xl" style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
+                        @if (Auth::check() && Auth::user()->role == 'admin')
+                            <a href="{{ route('product.edit',$item->id)}}"
+                                class="absolute top-0 right-0 px-11 py-2 text-sm font-medium text-white bg-yellow-500 rounded-bl-lg hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:focus:ring-yellow-600">
+                                Edit
+                            </a>
+                        @endif
+                        <div class="max-w-sm border-gray-200 rounded-lg shadow-2xl dark:border-gray-700 p-10">
+                            <div class="text-center m-5">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                                    {{ $item['nama_product'] }}
+                                </h5>
                             </div>
-
+                            <a href="#">
+                                <img class="rounded-t-lg" src="{{ asset('storage/' . $item['foto_product']) }}"
+                                    alt="" />
+                            </a>
+                            <div class="">
+                                <div class="flex items-center justify-center ">
+                                    <a href="#"
+                                        class="inline-flex items-center px-3 py-2 text-sm mx-5 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Pesan Sekarang
+                                    </a>
+                                    <a href="#"
+                                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                        Lihat Tampilan
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 @endforeach
