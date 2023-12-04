@@ -13,6 +13,7 @@
         $color9 = '242, 242, 242'; // light gray
 
         // command utk pakai rgb color
+        // style="color: rgb({{ $color1 }});
         // style="background-color: rgb({{ $color6 }});"
 
     @endphp

@@ -1,10 +1,27 @@
 @extends('layouts.base')
 @section('main_content')
+@php
+        $color0 = '249, 243, 235'; //lighter cream
+        $color1 = '248, 240, 229'; // light cream
+        $color2 = '234, 219, 200'; // mid cream
+        $color3 = '218, 192, 163'; // dark cream
+        $color4 = '205, 170, 131'; // darker cream
+        $color5 = '189, 158, 122'; // very dark cream
+        $color6 = '15, 44, 89'; // navy
+        $color7 = '255, 255, 255'; // white
+        $color8 = '100, 100, 100'; // gray
+        $color9 = '242, 242, 242'; // light gray
+
+        // command utk pakai rgb color
+        // style="color: rgb({{ $color1 }});
+        // style="background-color: rgb({{ $color6 }});"
+
+    @endphp
     <main>
         <div class="bg-yellow-400 dark:bg-gray-800 h-screen overflow-hidden flex items-center justify-center">
             <div class="bg-white lg:w-6/12 md:7/12 w-8/12 shadow-3xl rounded-xl">
                 <div
-                    class="bg-gray-800 shadow shadow-gray-200 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 md:p-8">
+                    class="bg-slate-200 shadow shadow-gray-200 absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full p-4 md:p-8">
                     <img height="32" width="32" src="{{ asset('img/logo4U.jpg') }}">
                 </div>
                 <form method="POST" action="{{ route('login.post') }}" class="p-12 md:p-24">
@@ -24,7 +41,8 @@
                             required>
                     </div>
                     <button
-                        class="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full rounded">Login</button>
+                    style="color: rgb({{ $color6 }}); background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));" 
+                    class="font-medium p-2 md:p-4 uppercase w-full rounded transition transform hover:scale-95">Login</button>
                 </form>
             </div>
         </div>
