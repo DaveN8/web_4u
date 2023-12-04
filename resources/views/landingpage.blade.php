@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('main_content')
     @php
-        $color0 = '249, 243, 235';
+        $color0 = '249, 243, 235'; //lighter cream
         $color1 = '248, 240, 229'; // light cream
         $color2 = '234, 219, 200'; // mid cream
         $color3 = '218, 192, 163'; // dark cream
@@ -44,8 +44,10 @@
                                     Imagine being able to spend less time and less money to create your own invitation card
                                 </p>
                                 <br>
+
                                 <a href="#introduction"
-                                    class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                                    class="flex items-center justify-center mx-28 py-3 border border-transparent text-base font-medium rounded-md shadow-xl"
+                                    style="color: rgb({{ $color1 }}); background-color: rgb({{ $color6 }});">
                                     Get Started
                                 </a>
                             </div>
@@ -1109,69 +1111,46 @@
         prev.addEventListener("click", goPrev);
     </script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "Get Started" button
-        const getStartedButton = document.querySelector('a[href="#introduction"]');
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const getStartedButton = document.querySelector('a[href="#introduction"]');
 
-        // Add a click event listener to the button
-        getStartedButton.addEventListener("click", function (event) {
-            event.preventDefault();
+            const originalText = getStartedButton.textContent;
+            const originalStyle = getComputedStyle(getStartedButton);
 
-            // Get the target element (Introduction section) based on the href attribute
-            const targetElement = document.getElementById("introduction");
+            getStartedButton.addEventListener("click", function(event) {
+                event.preventDefault();
 
-            // Use smooth scroll behavior to scroll to the target element
-            targetElement.scrollIntoView({
-                behavior: "smooth"
+                // target perpindahan
+                const targetElement = document.getElementById("introduction");
+
+                // Use smooth scroll behavior to scroll to the target element
+                targetElement.scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+
+
+            // event listener dari mouse hover
+            // warna button saat mouse di hover
+            getStartedButton.addEventListener("mouseover", function() {
+                getStartedButton.textContent = "Know Us More !";
+                getStartedButton.style.backgroundColor =
+                "rgb({{ $color1 }})"; // Change to the desired color variable
+                getStartedButton.style.color =
+                "rgb({{ $color6 }})"; // Change to the desired color variable
+            });
+
+            // warna button saat mouse tdk di hover
+            getStartedButton.addEventListener("mouseout", function() {
+                getStartedButton.textContent = "Get Started";
+                getStartedButton.style.backgroundColor =
+                "rgb({{ $color6 }})"; 
+                getStartedButton.style.color =
+                "rgb({{ $color1 }})"; 
             });
         });
-    });
-</script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get the "Get Started" button
-        const getStartedButton = document.querySelector('a[href="#introduction"]');
-
-        // Save the original text content and style
-        const originalText = getStartedButton.textContent;
-        const originalStyle = getComputedStyle(getStartedButton);
-
-        // Add a click event listener to the button
-        getStartedButton.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            // Get the target element (Introduction section) based on the href attribute
-            const targetElement = document.getElementById("introduction");
-
-            // Use smooth scroll behavior to scroll to the target element
-            targetElement.scrollIntoView({
-                behavior: "smooth"
-            });
-        });
-
-        // Add a hover event listener to change the text and style on hover
-        getStartedButton.addEventListener("mouseover", function () {
-            getStartedButton.textContent = "Know Us More";
-            getStartedButton.style.backgroundColor = "black";
-            getStartedButton.style.color = "white";
-        });
-
-        // Add a mouseout event listener to revert the text and style when not hovered
-        getStartedButton.addEventListener("mouseout", function () {
-            getStartedButton.textContent = "Get Started";
-            getStartedButton.style.backgroundColor = "white";
-            getStartedButton.style.color = "black";
-        });
-    });
-</script>
-
-
-
-    
-    
-    
+    </script>
 @endsection
 
 
