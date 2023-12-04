@@ -24,7 +24,7 @@
         <div>
             {{-- Background Gradasi Banner -> About --}}
             <div style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color6 }}));">
-            {{-- <div style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color1 }}));"> --}}
+                {{-- <div style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color1 }}));"> --}}
                 <div>
                     <!-- BANNER -->
                     <div class="relative flex flex-col md:flex-row">
@@ -71,7 +71,7 @@
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="text-center">
                             <p class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl"
-                            style="color: rgb({{ $color3 }});">Introducing
+                                style="color: rgb({{ $color3 }});">Introducing
                                 4U</p>
                             <p class="mt-4 max-w-2xl text-xl lg:mx-auto" style="color: rgb({{ $color2 }});">For you
                                 adalah bisnis undangan
@@ -106,10 +106,11 @@
                                         </div>
                                         {{-- AFFORDABLE SERVICES --}}
                                         <p class="ml-16 text-lg leading-6 font-medium"
-                                        style="color: rgb({{ $color3 }});">Affordable
+                                            style="color: rgb({{ $color3 }});">Affordable
                                         </p>
                                     </dt>
-                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Hadirkan keindahan ke dalam undangan Anda
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Hadirkan
+                                        keindahan ke dalam undangan Anda
                                         tanpa
                                         mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan dengan harga
                                         yang
@@ -130,9 +131,10 @@
                                         </div>
                                         {{-- CUSTOMIZEABLE SERVICES --}}
                                         <p class="ml-16 text-lg leading-6 font-medium"
-                                        style="color: rgb({{ $color3 }});">Customizable</p>
+                                            style="color: rgb({{ $color3 }});">Customizable</p>
                                     </dt>
-                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami memahami bahwa setiap acara adalah
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami memahami
+                                        bahwa setiap acara adalah
                                         cerita
                                         unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai dengan
                                         keinginan
@@ -155,9 +157,10 @@
                                         </div>
                                         {{-- REUSEABLE SERVICES --}}
                                         <p class="ml-16 text-lg leading-6 font-medium"
-                                        style="color: rgb({{ $color3 }});">Reusable</p>
+                                            style="color: rgb({{ $color3 }});">Reusable</p>
                                     </dt>
-                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami merayakan momen istimewa dengan
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami
+                                        merayakan momen istimewa dengan
                                         memberikan
                                         cinta pada lingkungan. 4U E-Invitation tidak hanya indah, tetapi juga ramah
                                         lingkungan.
@@ -179,24 +182,24 @@
                     <div class="pt-10 px-2 sm:px-6 lg:px-8 lg:pt-20">
                         <div class="text-center">
                             <h2 class="text-lg leading-6 font-semibold uppercase tracking-wider"
-                            style="color: rgb({{ $color2 }});">Packages</h2>
+                                style="color: rgb({{ $color2 }});">Packages</h2>
                             <p class="mt-2 text-3xl font-extrabold sm:text-4xl lg:text-5xl"
-                            style="color: rgb({{ $color2 }});">Paket yang kami
+                                style="color: rgb({{ $color2 }});">Paket yang kami
                                 sediakan</p>
                             <p class="mt-3 max-w-4xl mx-auto text-xl sm:mt-5 sm:text-2xl"
-                            style="color: rgb({{ $color1 }});">Selamat datang di
+                                style="color: rgb({{ $color1 }});">Selamat datang di
                                 layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan bangga
                                 menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
                                 paling sesuai dengan gaya dan anggaran Anda.</p>
                         </div>
 
                         @if (Auth::check() && Auth::user()->role == 'admin')
-                        <div class="flex items-center justify-center m-5">
-                            <a href="{{ url('package') }}"
-                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Lihat
-                                Pembelian</a>
-                        </div>
-                    @endif
+                            <div class="flex items-center justify-center m-5">
+                                <a href="{{ url('package') }}"
+                                    class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Lihat
+                                    Pembelian</a>
+                            </div>
+                        @endif
                     </div>
 
                     {{-- BG putih paket --}}
@@ -995,7 +998,7 @@
                 </div>
             </div>
             {{-- CONTACT FORM --}}
-            <div>
+            {{-- <div>
                 <br>
                 <div class="flex flex-col min-w-0 max-w-2xl mx-auto break-words rounded-3xl"
                     style="background: linear-gradient(to right, rgb({{ $color4 }}), rgb({{ $color2 }}));"
@@ -1048,7 +1051,7 @@
                     </div>
                     <br>
                 </div>
-            </div>
+            </div> --}}
             <br>
         </div>
 
@@ -1058,18 +1061,21 @@
             <footer class="bg-gray-800">
                 <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
                     <div class="flex justify-center space-x-6 md:order-2">
-                        <a href="https://www.tiktok.com/@gathfanfs?_t=8huB3n8bnRy&_r=1" class="text-gray-400 hover:text-gray-500">
+                        <a href="https://www.tiktok.com/@gathfanfs?_t=8huB3n8bnRy&_r=1"
+                            class="text-gray-400 hover:text-gray-500">
                             <span class="sr-only">Tiktok</span>
-                                <img class="h-8 w-8"
-                                src="{{ asset('img/logoTiktok.png') }}" alt="Tiktok">
+                            <img class="h-8 w-8" src="{{ asset('img/logoTiktok.png') }}" alt="Tiktok">
                         </a>
 
                         <a href="https://www.instagram.com/foryou.corp/" class="text-gray-400 hover:text-gray-500">
                             <span class="sr-only">Instagram</span>
-                                <img class="h-8 w-8"
-                                src="{{ asset('img/logoIg.png') }}" alt="Tiktok">
+                            <img class="h-8 w-8" src="{{ asset('img/logoIg.png') }}" alt="Tiktok">
                         </a>
 
+                        <a href="https://www.instagram.com/foryou.corp/" class="text-gray-400 hover:text-gray-500">
+                            <span class="sr-only">Instagram</span>
+                            <img class="h-8 w-8" src="{{ asset('img/logoWA.png') }}" alt="Tiktok">
+                        </a>
                     </div>
                     <div class="mt-8 md:mt-0 md:order-1">
                         <p class="text-center text-base text-gray-400">&copy; 2023 4U Inc. All rights reserved.</p>
@@ -1079,9 +1085,6 @@
         </div>
         </div>
     </main>
-
-
-
 
     <script>
         // gsap untuk animations
