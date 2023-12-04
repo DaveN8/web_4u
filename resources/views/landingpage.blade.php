@@ -15,6 +15,7 @@
         // command utk pakai rgb color
         // style="color: rgb({{ $color1 }});
         // style="background-color: rgb({{ $color6 }});"
+        // style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));"
 
     @endphp
 
