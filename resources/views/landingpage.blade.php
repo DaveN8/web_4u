@@ -808,8 +808,8 @@
                                     </div>
                                 </div>
                                 {{-- Produk 2 --}}
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                <div class="flex flex-shrink-0 relative w-full sm:w-auto ">
+                                    <img src="{{ asset('img/produk2.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -825,7 +825,7 @@
                                 </div>
                                 {{-- Produk 3 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk3.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -841,7 +841,7 @@
                                 </div>
                                 {{-- Produk 4 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk4.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -857,7 +857,7 @@
                                 </div>
                                 {{-- Produk 5 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk5.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -873,7 +873,7 @@
                                 </div>
                                 {{-- Produk 6 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk6.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -889,7 +889,7 @@
                                 </div>
                                 {{-- Produk 7 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk7.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -905,7 +905,7 @@
                                 </div>
                                 {{-- Produk 8 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produk8.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -921,7 +921,7 @@
                                 </div>
                                 {{-- Produk 9 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produkultah1.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -937,7 +937,7 @@
                                 </div>
                                 {{-- Produk 10 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produkultah2.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -953,7 +953,7 @@
                                 </div>
                                 {{-- Produk 11 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produkultah3.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
@@ -969,7 +969,7 @@
                                 </div>
                                 {{-- Produk 12 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk1.png') }}" alt=""
+                                    <img src="{{ asset('img/produkultah4.png') }}" alt=""
                                         class="object-cover object-center w-full" />
                                     <div class="absolute w-full h-full p-6">
                                         <h2
