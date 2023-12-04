@@ -34,7 +34,8 @@
                             style="color: rgb({{ $color6 }});">Your Name</label>
                         <input type="text" id="name" name="name"
                             style="background-color: rgb({{ $color6 }});"
-                            class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light">
+                            class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                            placeholder="your name here...">
                     </div>
                     <div class="mb-5">
                         <label for="email" class="block mb-2 text-sm font-medium"
@@ -42,7 +43,7 @@
                         <input type="email" id="email" name="email"
                             style="background-color: rgb({{ $color6 }});"
                             class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                            placeholder="name@flowbite.com" required>
+                            placeholder="name@email.com" required>
                     </div>
                     <div class="mb-5">
                         <label for="password" class="block mb-2 text-sm font-medium"
@@ -50,7 +51,7 @@
                         <input type="password" id="password" name="password"
                             style="background-color: rgb({{ $color6 }});"
                             class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                            required>
+                            placeholder="password here..." required>
                     </div>
 
                     <button
