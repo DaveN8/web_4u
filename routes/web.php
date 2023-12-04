@@ -46,6 +46,10 @@ Route::post('/productsPage', [ProductController::class, 'store'])->name('storePr
 
 
 //Package
-Route::get('/package', [PackageController::class, 'index'])->name('hasilPackage');
+Route::get('/package', [PackageController::class, 'index'])->name('package');
 Route::get('/formPackage', [PackageController::class, 'create'])->name('formPackage');
 Route::post('/dataPackage', [PackageController::class, 'store'])->name('storePackage');
+
+Route::get('/pembelianPage', function(){
+    return view('pembelianPage');
+});

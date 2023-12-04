@@ -189,6 +189,14 @@
                                 menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
                                 paling sesuai dengan gaya dan anggaran Anda.</p>
                         </div>
+
+                        @if (Auth::check() && Auth::user()->role == 'admin')
+                        <div class="flex items-center justify-center m-5">
+                            <a href="{{ url('package') }}"
+                                class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800">Lihat
+                                Pembelian</a>
+                        </div>
+                    @endif
                     </div>
 
                     {{-- BG putih paket --}}
@@ -346,7 +354,7 @@
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="https://formfacade.com/sm/HMYxoxFEr"
+                                                            <a href="{{ url('formPackage') }}"
                                                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                                                                 aria-describedby="tier-hobby"> Choose Packages </a>
                                                         </div>
@@ -739,7 +747,7 @@
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="https://formfacade.com/sm/HMYxoxFEr"
+                                                            <a href="{{ url('formPackage') }}"
                                                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                                                                 aria-describedby="tier-scale"> Choose Packages </a>
                                                         </div>

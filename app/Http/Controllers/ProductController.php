@@ -39,4 +39,10 @@ class ProductController extends Controller
         return redirect(route('productsPage'));
  
     }
+
+    public function update($id){
+        $product = Products::findOrfail($id);
+
+        
+    }
 }

@@ -1,5 +1,6 @@
 @extends('layouts.base')
 @section('main_content')
+  
     <main class="bg-white">
         <div class="p-10  flex items-center justify-center">
             <div
@@ -38,13 +39,19 @@
                     </div>
 
                     <div class="mb-5">
+                        <label for="waktuAcara" class="block mb-2 text-sm font-medium text-gray-900 ">Time Event</label>
+                        <input type="time" name="waktuAcara" id="waktuAcara"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                    </div>
+
+                    <div class="mb-5">
                         <label for="default" class="block mb-2 text-sm font-medium text-gray-900 ">Select Packages</label>
                         <select id="default" name="jenisPaket"
                             class="bg-gray-50 border border-gray-300 text-gray-900 mb-6 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected>Choose a Package</option>
-                            <option value="paket 1">Package 1</option>
-                            <option value="paket 2">Package 2</option>
-                            <option value="paket 3">Package 3</option>
+                            <option value="basic">basic</option>
+                            <option value="elite">elite</option>
+                            <option value="ultra">ultra</option>
                         </select>
                     </div>
 
@@ -54,6 +61,16 @@
                         <textarea id="description" rows="8" name="deskripsiAcara"
                             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500"
                             placeholder="Your description here"></textarea>
+                    </div>
+
+                    <div class="mb-5">
+
+                        <label class="block mb-2 text-sm font-medium text-gray-900 " for="foto_product">Upload
+                            Bukti Transfer</label>
+                        <input name="buktiTransfer"
+                            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none "
+                            id="foto_product" type="file">
+
                     </div>
 
 

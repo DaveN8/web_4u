@@ -15,12 +15,27 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
     @vite(['resources/css/app.css','resources/js/app.js'])
+
+    @php
+    $color1 = '248, 240, 229'; // light cream
+    $color2 = '234, 219, 200'; // mid cream
+    $color3 = '218, 192, 163'; // dark cream
+    $color4 = '205, 170, 131'; // darker cream
+    $color5 = '189, 158, 122'; // very dark cream
+    $color6 = '15, 44, 89'; // navy
+    $color7 = '255, 255, 255'; // white
+    $color8 = '100, 100, 100'; // gray
+
+    // command utk pakai rgb color
+    // style="background-color: rgb({{ $color6 }});"
+
+@endphp
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased" >
     @include('layouts.navbar')
 
-    <div class="min-h-screen bg-gray-100">
+    <div class="min-h-screen ">
 
         <div>
             @yield('main_content')

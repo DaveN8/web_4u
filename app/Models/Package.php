@@ -13,7 +13,9 @@ class Package extends Model
         'fullname',
         'addressAcara',
         'dateAcara',
+        'waktuAcara',
         'jenisPaket',
         'deskripsiAcara',
+        'buktiTransfer'
     ];
 }
