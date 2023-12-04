@@ -27,6 +27,12 @@
                         <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
                     </div>
                 </div>
+
+                {{-- Background logo gradasi --}}
+                {{-- <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-full p-2 md:p-3"
+                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
+                    <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
+                </div> --}}
                 
 
                 <form method="POST" action="{{ route('login.post') }}" class="p-12 md:p-24">

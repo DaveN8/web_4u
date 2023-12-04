@@ -22,9 +22,10 @@
         <div class="h-screen overflow-hidden flex items-center justify-center"
             style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color0 }}));">
             <div class="lg:w-6/12 md:7/12 w-8/12 shadow-3xl rounded-xl" style="background-color: rgb({{ $color1 }});">
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-full p-2 md:p-3"
-                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
-                    <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
+                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <div class="shadow-2xl rounded-full p-2 md:p-3">
+                        <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
+                    </div>
                 </div>
 
                 <form method="POST" action="{{ route('register.post') }}" class="p-12 md:p-24">
