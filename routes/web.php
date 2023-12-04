@@ -38,7 +38,7 @@ Route::post('/loginPage', [UserController::class, 'loginPost'])->name('login.pos
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 //Product
-Route::resource('product', ProductController::class)->middleware('admin');
+Route::resource('product', ProductController::class)->middleware('roleAdmin');
 Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
 Route::get('/createProducts', [ProductController::class, 'create'])->name('createProducts');
 Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');

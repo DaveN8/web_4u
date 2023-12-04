@@ -68,7 +68,7 @@ class ProductController extends Controller
         $product = Products::findOrFail($id);
 
         if ($request->file('foto_product')) {
-            unlink('storage/' . $product->coverphoto);
+            unlink('storage/' . $product->foto_product);
             $product->update([
                 'nama_product' => $request->nama_product,
                 'foto_product' => $request->file('foto_product')->store('img', 'public')

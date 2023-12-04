@@ -6,7 +6,7 @@
                 class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                 <form method="POST" action="{{route('product.update',$product->id)}}"  enctype="multipart/form-data">
                     @csrf
-                    <input type="hidden" name="_methode" value="PATCH">
+                    @method('PATCH')
                     <div class="mb-5">
                         <label  for="nama_product" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama Product</label>
                         <input name="nama_product" type="text" id="nama_product" value="{{ $product->nama_product }}"
