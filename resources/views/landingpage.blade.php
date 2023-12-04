@@ -191,7 +191,7 @@
                                             <div class="flex-1 flex flex-col">
                                                 {{-- PAKET 1 --}}
                                                 <div class="px-6 py-10"
-                                                    style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900">
                                                             <span class="text-green-500">✨</span> Basic
@@ -209,7 +209,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-1 flex flex-col justify-between border-t-2 p-6 sm:p-10 lg:p-6 xl:p-10"
-                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color1 }}), rgb({{ $color0 }}));">
                                                     <ul role="list" class="space-y-4">
                                                         {{-- fitur 1 --}}
                                                         <li class="flex items-start">
@@ -348,7 +348,7 @@
                                             </div>
                                             {{-- PAKET 2 --}}
                                             <div class="rounded-t-lg px-6 pt-12 pb-10"
-                                                style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
+                                                style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                 <div>
                                                     <h3 class="text-center text-3xl font-semibold text-gray-900 sm:-mx-6">
                                                         <span class="text-indigo-600">🌟</span> Ultra
@@ -366,7 +366,7 @@
                                                 </div>
                                             </div>
                                             <div class="border-t-2 border-gray-100 rounded-b-lg pt-10 pb-8 px-6 sm:px-10 sm:py-10"
-                                                style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
+                                                style="background: linear-gradient(to bottom, rgb({{ $color1 }}), rgb({{ $color0 }}));">
                                                 <ul role="list" class="space-y-4">
                                                     {{-- paket 1 --}}
                                                     <li class="flex items-start">
@@ -552,7 +552,7 @@
                                             <div class="flex-1 flex flex-col">
                                                 {{-- PAKET 3 --}}
                                                 <div class="px-6 py-10"
-                                                    style="background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));">
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900">
                                                             <span class="text-orange-500">✨</span> Elite
@@ -570,7 +570,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-1 flex flex-col justify-between border-t-2 p-6 sm:p-10 lg:p-6 xl:p-10"
-                                                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color0 }}));">
+                                                    style="background: linear-gradient(to bottom, rgb({{ $color1 }}), rgb({{ $color0 }}));">
                                                     <ul role="list" class="space-y-4">
                                                         {{-- fitur 1 --}}
                                                         <li class="flex items-start">
@@ -1069,7 +1069,7 @@
 
 
     <script>
-        // Use gsap for animations
+        // gsap untuk animations
         gsap.from("#affordable", {
             opacity: 0,
             y: 50,
@@ -1124,7 +1124,7 @@
                 // target perpindahan
                 const targetElement = document.getElementById("introduction");
 
-                // Use smooth scroll behavior to scroll to the target element
+                // Smooth scroll saat ke bagian #introduction
                 targetElement.scrollIntoView({
                     behavior: "smooth"
                 });
@@ -1151,6 +1151,9 @@
             });
         });
     </script>
+
+
+
 @endsection
 
 
