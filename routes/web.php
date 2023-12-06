@@ -28,6 +28,9 @@ Route::get('/', function () {
 // Route::get('/loginPage', function(){
 //     return view('loginPage');
 // });
+Route::get('/contoh1', function () {
+    return view('layouts/Produk/templateBday1');
+});
 
 Route::get('/signinPage', [UserController::class, 'register'])->name('register');
 Route::post('/signinPage', [UserController::class, 'registerPost'])->name('register.post');
@@ -51,6 +54,6 @@ Route::get('/package', [PackageController::class, 'index'])->name('package');
 Route::get('/formPackage', [PackageController::class, 'create'])->name('formPackage');
 Route::post('/dataPackage', [PackageController::class, 'store'])->name('storePackage');
 
-Route::get('/pembelianPage', function(){
+Route::get('/pembelianPage', function () {
     return view('pembelianPage');
 });

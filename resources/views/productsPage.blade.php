@@ -41,17 +41,17 @@
                                     {{ $item['nama_product'] }}
                                 </h5>
                             </div>
-                            <a href="#">
+                            <a href="">
                                 <img class="rounded-t-lg" src="{{ asset('storage/' . $item['foto_product']) }}"
                                     alt="" />
                             </a>
                             <div class="">
                                 <div class="flex items-center justify-center ">
-                                    <a href="#"
+                                    <a href="{{ url('formPackage') }}"
                                         class="inline-flex items-center px-3 py-2 text-sm mx-5 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                         Pesan Sekarang
                                     </a>
-                                    <a href="#"
+                                    <a href="contoh1"
                                         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                         Lihat Tampilan
                                     </a>
