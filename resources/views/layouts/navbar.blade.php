@@ -58,6 +58,9 @@
                         <a href="{{ url('productsPage') }}"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
+                        <a href="{{ url('adminDashboardPage') }}"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+
                         {{-- <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our
                             Team</a> --}}
