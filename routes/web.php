@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('landingPage');
 })->name('landingPage');
 
+Route::get('/admin', function () {
+    return view('adminDashboard');
+});
+
 // Route::get('/formPackages', function (){
 //     return view('formPackages');
 // });
