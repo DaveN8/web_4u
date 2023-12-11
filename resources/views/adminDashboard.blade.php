@@ -331,7 +331,7 @@
                                                         <div class="flex items-center">
                                                             <div class="flex-shrink-0 w-10 h-10">
                                                                 <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                src="{{ asset('img/logo4U.jpg') }}"
                                                                     alt="">
                                                             </div>
 
@@ -371,7 +371,7 @@
                                                         <div class="flex items-center">
                                                             <div class="flex-shrink-0 w-10 h-10">
                                                                 <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                src="{{ asset('img/logo4U.jpg') }}"
                                                                     alt="">
                                                             </div>
 
@@ -411,7 +411,7 @@
                                                         <div class="flex items-center">
                                                             <div class="flex-shrink-0 w-10 h-10">
                                                                 <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                src="{{ asset('img/logo4U.jpg') }}"
                                                                     alt="">
                                                             </div>
 
@@ -451,7 +451,7 @@
                                                         <div class="flex items-center">
                                                             <div class="flex-shrink-0 w-10 h-10">
                                                                 <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                src="{{ asset('img/logo4U.jpg') }}"
                                                                     alt="">
                                                             </div>
 
@@ -491,7 +491,7 @@
                                                         <div class="flex items-center">
                                                             <div class="flex-shrink-0 w-10 h-10">
                                                                 <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
+                                                                src="{{ asset('img/logo4U.jpg') }}"
                                                                     alt="">
                                                             </div>
 
