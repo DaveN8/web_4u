@@ -337,10 +337,10 @@
 
                                                             <div class="ml-4">
                                                                 <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
+                                                                    Dave
                                                                 </div>
                                                                 <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
+                                                                    Dave@example.com</div>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -377,10 +377,10 @@
 
                                                             <div class="ml-4">
                                                                 <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
+                                                                    Fadhil
                                                                 </div>
                                                                 <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
+                                                                    Fadhil@example.com</div>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -417,10 +417,10 @@
 
                                                             <div class="ml-4">
                                                                 <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
+                                                                    Jevon
                                                                 </div>
                                                                 <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
+                                                                    Jevon@example.com</div>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -457,10 +457,10 @@
 
                                                             <div class="ml-4">
                                                                 <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
+                                                                    Yusri
                                                                 </div>
                                                                 <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
+                                                                    Yusri@example.com</div>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -497,130 +497,10 @@
 
                                                             <div class="ml-4">
                                                                 <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
+                                                                    Fasha
                                                                 </div>
                                                                 <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="text-sm leading-5 text-gray-900">Software Engineer
-                                                        </div>
-                                                        <div class="text-sm leading-5 text-gray-500">Web dev</div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <span
-                                                            class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-                                                    </td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                                        Owner</td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-                                                        <a href="#"
-                                                            class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="flex items-center">
-                                                            <div class="flex-shrink-0 w-10 h-10">
-                                                                <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                                                                    alt="">
-                                                            </div>
-
-                                                            <div class="ml-4">
-                                                                <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
-                                                                </div>
-                                                                <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="text-sm leading-5 text-gray-900">Software Engineer
-                                                        </div>
-                                                        <div class="text-sm leading-5 text-gray-500">Web dev</div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <span
-                                                            class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-                                                    </td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                                        Owner</td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-                                                        <a href="#"
-                                                            class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="flex items-center">
-                                                            <div class="flex-shrink-0 w-10 h-10">
-                                                                <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                                                                    alt="">
-                                                            </div>
-
-                                                            <div class="ml-4">
-                                                                <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
-                                                                </div>
-                                                                <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="text-sm leading-5 text-gray-900">Software Engineer
-                                                        </div>
-                                                        <div class="text-sm leading-5 text-gray-500">Web dev</div>
-                                                    </td>
-
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <span
-                                                            class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full">Active</span>
-                                                    </td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm leading-5 text-gray-500 whitespace-no-wrap border-b border-gray-200">
-                                                        Owner</td>
-
-                                                    <td
-                                                        class="px-6 py-4 text-sm font-medium leading-5 text-right whitespace-no-wrap border-b border-gray-200">
-                                                        <a href="#"
-                                                            class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                                        <div class="flex items-center">
-                                                            <div class="flex-shrink-0 w-10 h-10">
-                                                                <img class="w-10 h-10 rounded-full"
-                                                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                                                                    alt="">
-                                                            </div>
-
-                                                            <div class="ml-4">
-                                                                <div class="text-sm font-medium leading-5 text-gray-900">
-                                                                    John Doe
-                                                                </div>
-                                                                <div class="text-sm leading-5 text-gray-500">
-                                                                    john@example.com</div>
+                                                                    Fasha@example.com</div>
                                                             </div>
                                                         </div>
                                                     </td>
