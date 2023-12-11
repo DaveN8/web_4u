@@ -19,6 +19,8 @@
 
     @endphp
     <main>
-        
+        <div>
+            
+        </div>
     </main>
 @endsection
