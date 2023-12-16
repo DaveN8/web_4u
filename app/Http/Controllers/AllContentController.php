@@ -2,30 +2,45 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Package;
+use App\Models\Products;
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
-class UserController extends Controller
+class AllContentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index()
     {
-        $user = User::all();
-        return view('adminDashboard', compact('user'));
+
+        $user = User::where('role','member')->get();
+        $product = Products::all();
+        $package = Package::all();
+
+        $userCount = User::where('role','member')->count();
+        $productCount = Products::count();
+        $packageCount = Package::count();
+
+        return view('adminDashboard', compact('user','product','package','userCount','productCount','packageCount'));
+
+        // return view('adminDashboard',[
+        //     'user' => User::all(),
+        //     'product' => Products::all(),
+        //     'package' => Package::all(),
+        //     'userCount' => User::where('role','member')->count(),
+        //     'productCount' => Products::count(),
+        //     'pakcageCount' => Package::count()
+        // ]);
     }
-
-
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('signin');
+        //
     }
 
     /**
@@ -33,21 +48,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required',
-        ]);
-
-        $data['name'] = $request->name;
-        $data['email'] = $request->email;
-        $data['password'] = Hash::make($request->password);
-        $user = User::create($data);
-        if (!$user) {
-            return redirect(route('user.create'))->with("error", "register failed");
-        }
-
-        return redirect(route('login.create'))->with("success", "registration success, login to access the web");
+        //
     }
 
     /**

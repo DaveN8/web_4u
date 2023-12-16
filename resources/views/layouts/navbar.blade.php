@@ -55,12 +55,13 @@
                             class=" text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                             aria-current="page">Home</a>
 
-                        <a href="{{ url('productsPage') }}"
+                        <a href="{{ route('product.index') }}"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
-                        <a href="{{ url('admin') }}"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
-
+                        @if (Auth::check() && Auth::user()->role == 'admin')
+                            <a href="{{ url('/admin') }}"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dashboard</a>
+                        @endif
                         {{-- <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our
                             Team</a> --}}
@@ -98,12 +99,12 @@
                         class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                         <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                             <li>
-                                <a href="{{ url('/loginPage') }}"
+                                <a href="{{ route('login.create') }}"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Log
                                     in</a>
                             </li>
                             <li>
-                                <a href="{{ url('/signinPage') }}"
+                                <a href="{{ route('user.create') }}"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
                                     in</a>
                             </li>
@@ -128,7 +129,7 @@
             <a href="{{ url('/') }}"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
-            <a href="{{ url('productsPage') }}"
+            <a href="{{ route('product.index') }}"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
 
         </div>

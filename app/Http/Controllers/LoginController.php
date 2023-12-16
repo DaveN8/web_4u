@@ -2,30 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
 
-class UserController extends Controller
+class LoginController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index()
     {
-        $user = User::all();
-        return view('adminDashboard', compact('user'));
+        //
     }
-
-
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
-        return view('signin');
+        return view('loginPage');
     }
 
     /**
@@ -34,20 +29,20 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required',
             'password' => 'required',
         ]);
 
-        $data['name'] = $request->name;
-        $data['email'] = $request->email;
-        $data['password'] = Hash::make($request->password);
-        $user = User::create($data);
-        if (!$user) {
-            return redirect(route('user.create'))->with("error", "register failed");
-        }
+        $credential = $request->only('email', 'password');
+        if (Auth::attempt($credential)) {
+            if (Auth::check() && Auth::user()->role == 'admin') {
+                return redirect()->intended(route('admin'));
+            } else {
 
-        return redirect(route('login.create'))->with("success", "registration success, login to access the web");
+                return redirect()->intended(route('landingPage'));
+            }
+        }
+        return redirect(route('login'))->with("error", "Login details are not valid");
     }
 
     /**

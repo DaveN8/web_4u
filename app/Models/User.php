@@ -10,6 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
@@ -17,7 +18,19 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    public function getIsAdminAttribute()
+    {
+        return $this->roles->pluck('role')->contains('admin');
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(User::class, 'role');
+    }
+
     protected $fillable = [
+        'id',
         'name',
         'email',
         'password',

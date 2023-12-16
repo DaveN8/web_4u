@@ -21,6 +21,7 @@
 
 
     <main style="background-color: rgb({{ $color1 }});">
+
         <div>
             {{-- Background Gradasi Banner -> About --}}
             <div style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color6 }}));">
@@ -47,7 +48,8 @@
                                     </p>
                                     <div class="h-10"></div>
                                     <p class="max-w-2xl font-serif text-xl md:text-2xl">
-                                        Imagine being able to spend less time and less money to create your own invitation
+                                        Imagine being able to spend less time and less money to create your own
+                                        invitation
                                         card
                                     </p>
                                     <br>
@@ -73,20 +75,27 @@
                             <p class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl"
                                 style="color: rgb({{ $color3 }});">Introducing
                                 4U</p>
-                            <p class="mt-4 max-w-2xl text-xl lg:mx-auto" style="color: rgb({{ $color2 }});">For you
+                            <p class="mt-4 max-w-2xl text-xl lg:mx-auto" style="color: rgb({{ $color2 }});">
+                                For you
                                 adalah bisnis undangan
                                 digital
                                 yang
-                                menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik. Bisnis ini
+                                menawarkan layanan pembuatan undangan digital yang praktis, cepat, dan menarik.
+                                Bisnis ini
                                 memiliki
-                                platform online yang mudah digunakan dengan berbagai pilihan template dan desain yang dapat
-                                disesuaikan dengan kebutuhan dan selera pelanggan. Foryou juga menyediakan fitur interaktif
+                                platform online yang mudah digunakan dengan berbagai pilihan template dan desain
+                                yang dapat
+                                disesuaikan dengan kebutuhan dan selera pelanggan. Foryou juga menyediakan fitur
+                                interaktif
                                 seperti
-                                RSVP online dan tampilan galeri foto, sehingga undangan digital menjadi modern dan ramah
-                                lingkungan. Dengan layanan yang efisien dan berkualitas, Foryou merupakan pilihan yang
+                                RSVP online dan tampilan galeri foto, sehingga undangan digital menjadi modern dan
+                                ramah
+                                lingkungan. Dengan layanan yang efisien dan berkualitas, Foryou merupakan pilihan
+                                yang
                                 sempurna
                                 bagi
-                                mereka yang ingin membuat undangan digital yang elegan dan mudah dibagikan kepada tamu
+                                mereka yang ingin membuat undangan digital yang elegan dan mudah dibagikan kepada
+                                tamu
                                 undangan
                                 mereka.</p>
                         </div>
@@ -109,12 +118,15 @@
                                             style="color: rgb({{ $color3 }});">Affordable
                                         </p>
                                     </dt>
-                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Hadirkan
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">
+                                        Hadirkan
                                         keindahan ke dalam undangan Anda
                                         tanpa
-                                        mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan dengan harga
+                                        mengorbankan kantong Anda. 4U E-Invitation menghadirkan sentuhan elegan
+                                        dengan harga
                                         yang
-                                        terjangkau. Jadilah bagian dari perayaan kami dan nikmati keindahan tanpa batasan.
+                                        terjangkau. Jadilah bagian dari perayaan kami dan nikmati keindahan tanpa
+                                        batasan.
                                     </dd>
                                 </div>
 
@@ -133,13 +145,16 @@
                                         <p class="ml-16 text-lg leading-6 font-medium"
                                             style="color: rgb({{ $color3 }});">Customizable</p>
                                     </dt>
-                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami memahami
+                                    <dd class="mt-2 ml-16 text-base" style="color: rgb({{ $color1 }});">Kami
+                                        memahami
                                         bahwa setiap acara adalah
                                         cerita
-                                        unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai dengan
+                                        unik. Dengan 4U E-Invitation, Anda dapat mengubah undangan Anda sesuai
+                                        dengan
                                         keinginan
                                         Anda.
-                                        Pilih warna, gaya, dan detail lainnya untuk menciptakan undangan yang benar-benar
+                                        Pilih warna, gaya, dan detail lainnya untuk menciptakan undangan yang
+                                        benar-benar
                                         mencerminkan
                                         Anda.</dd>
                                 </div>
@@ -165,7 +180,8 @@
                                         cinta pada lingkungan. 4U E-Invitation tidak hanya indah, tetapi juga ramah
                                         lingkungan.
                                         Pilih
-                                        opsi undangan digital untuk mengurangi jejak karbon dan menciptakan perubahan yang
+                                        opsi undangan digital untuk mengurangi jejak karbon dan menciptakan
+                                        perubahan yang
                                         berkelanjutan.
                                     </dd>
                                 </div>
@@ -188,8 +204,10 @@
                                 sediakan</p>
                             <p class="mt-3 max-w-4xl mx-auto text-xl sm:mt-5 sm:text-2xl"
                                 style="color: rgb({{ $color1 }});">Selamat datang di
-                                layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan bangga
-                                menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan yang
+                                layanan undangan digital kami! Untuk memenuhi kebutuhan unik acara Anda, kami dengan
+                                bangga
+                                menyajikan beberapa paket pilihan. Silakan jelajahi opsi di bawah ini dan temukan
+                                yang
                                 paling sesuai dengan gaya dan anggaran Anda.</p>
                         </div>
 
@@ -232,7 +250,8 @@
                                                         <div class="mt-4 flex items-center justify-center">
                                                             <span
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR. </span>
+                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR.
+                                                                </span>
                                                                 <span class="font-extrabold"> 69.000 </span>
                                                             </span>
                                                             <span class="text-xl font-medium text-gray-500"> /month
@@ -389,7 +408,8 @@
                                                     <div class="mt-4 flex items-center justify-center">
                                                         <span
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
-                                                            <span class="mt-2 mr-2 text-4xl font-medium"> IDR. </span>
+                                                            <span class="mt-2 mr-2 text-4xl font-medium"> IDR.
+                                                            </span>
                                                             <span class="font-extrabold"> 99.000 </span>
                                                         </span>
                                                         <span class="text-2xl font-medium text-gray-500"> /month
@@ -593,7 +613,8 @@
                                                         <div class="mt-4 flex items-center justify-center">
                                                             <span
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
-                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR. </span>
+                                                                <span class="mt-2 mr-2 text-xl font-normal"> IDR.
+                                                                </span>
                                                                 <span class="font-extrabold"> 85.000 </span>
                                                             </span>
                                                             <span class="text-xl font-medium text-gray-500"> /month
@@ -1084,6 +1105,7 @@
             </footer>
         </div>
         </div>
+
     </main>
 
     <script>

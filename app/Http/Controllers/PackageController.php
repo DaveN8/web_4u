@@ -4,32 +4,32 @@ namespace App\Http\Controllers;
 
 use App\Models\Package;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class PackageController extends Controller
 {
-    public function index(){
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
+    {
         $package = Package::all();
-        if (Auth::check() && Auth::user()->role == "admin") {
-            return view('pembelianPage', compact('package'));
-        }else{
-            return view('landingPage', compact('package'));
-        }
-       
+        return view('pembelianPage', compact('package'));
     }
 
-    // public function adminPackage(){
-    //     $package = Package::all();
-    //     return view('pembelianPage', compact('package'));
-    // }
-
-    public function create(){
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
         return view('formPackages');
     }
 
-    public function store(Request $request){
-        // dd($request->all());
-        $this->validate($request,[
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
+    {
+        $this->validate($request, [
             'fullname' => 'required|string|max:155',
             'addressAcara' => 'required|string|max:500',
             'dateAcara' => 'required|date',
@@ -48,13 +48,39 @@ class PackageController extends Controller
             'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         ]);
 
-        // $newProduct = Package::create($data);
 
-       return redirect(route('package'));
-
-        // dd($request);
-
+        return redirect(route('package'));
     }
 
-    
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(string $id)
+    {
+        //
+    }
 }

@@ -1,5 +1,23 @@
-@extends('layouts.base')
-@section('main_content')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <title>4U Invitation</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700" />
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     @php
         $color0 = '249, 243, 235'; //lighter cream
         $color1 = '248, 240, 229'; // light cream
@@ -18,51 +36,67 @@
         // style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));"
 
     @endphp
-    <main>
-        <div class="h-screen overflow-hidden flex items-center justify-center"
-            style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color0 }}));">
-            <div class="lg:w-6/12 md:7/12 w-8/12 shadow-3xl rounded-xl" style="background-color: rgb({{ $color1 }});">
-                <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="shadow-2xl rounded-full p-2 md:p-3">
-                        <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
-                    </div>
+</head>
+
+<body class="font-sans antialiased">
+
+    <div class="h-screen overflow-hidden flex items-center justify-center"
+        style="background: linear-gradient(to bottom, rgb({{ $color6 }}), rgb({{ $color0 }}));">
+        <div class="lg:w-6/12 md:7/12 w-8/12 shadow-3xl rounded-xl" style="background-color: rgb({{ $color1 }});">
+            <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div class="shadow-2xl rounded-full p-2 md:p-3">
+                    <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}"
+                        class="rounded-full object-cover">
                 </div>
-
-                {{-- Background logo gradasi --}}
-                {{-- <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-full p-2 md:p-3"
-                    style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
-                    <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
-                </div> --}}
-                
-
-                <form method="POST" action="{{ route('login.post') }}" class="p-12 md:p-24">
-                    @csrf
-                    <div class="mb-5">
-                        <label for="email" class="block mb-2 text-sm font-medium"
-                        style="color: rgb({{ $color6 }});">Your
-                            email</label>
-                        <input type="email" id="email" name="email"
-                        style="background-color: rgb({{ $color6 }});"
-                            class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                            placeholder="name@email.com" required>
-                    </div>
-                    <div class="mb-5">
-                        <label for="password" class="block mb-2 text-sm font-medium
-                        style="color: rgb({{ $color6 }});">Your
-                            password</label>
-                        <input type="password" id="password" name="password"
-                        style="background-color: rgb({{ $color6 }});"
-                            class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                            placeholder="password here..." required>
-                    </div>
-                    <br>
-                    <button
-                        style="color: rgb({{ $color6 }}); background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));"
-                        class="font-medium p-2 md:p-4 uppercase w-full rounded transition transform hover:scale-95">Login</button>
-                </form>
             </div>
-        </div>
-    </main>
 
-    
-@endsection
+            {{-- Background logo gradasi --}}
+            {{-- <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 shadow-2xl rounded-full p-2 md:p-3"
+            style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
+            <img height="130" width="150" src="{{ asset('img/logo4U.jpg') }}" class="rounded-full object-cover">
+        </div> --}}
+
+
+            <form method="POST" action="{{ route('login.store') }}" class="p-12 md:p-24">
+                @csrf
+                @method('POST')
+                <div class="mb-5">
+                    <label for="email" class="block mb-2 text-sm font-medium"
+                        style="color: rgb({{ $color6 }});">Your
+                        email</label>
+                    <input type="email" id="email" name="email"
+                        style="background-color: rgb({{ $color6 }});"
+                        class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        placeholder="name@email.com" required>
+                </div>
+                <div class="mb-5">
+                    <label for="password" class="block mb-2 text-sm font-medium
+                style="color:
+                        rgb({{ $color6 }});">Your
+                        password</label>
+                    <input type="password" id="password" name="password"
+                        style="background-color: rgb({{ $color6 }});"
+                        class="text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                        placeholder="password here..." required>
+                </div>
+                <br>
+                <button
+                    style="color: rgb({{ $color6 }}); background: linear-gradient(to bottom, rgb({{ $color3 }}), rgb({{ $color2 }}));"
+                    class="font-medium p-2 md:p-4 uppercase w-full rounded transition transform hover:scale-95">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+
+</body>
+
+</html>

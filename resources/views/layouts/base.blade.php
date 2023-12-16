@@ -35,13 +35,34 @@
 </head>
 
 <body class="font-sans antialiased">
+    {{-- 
     @include('layouts.navbar')
-
     <div>
         @yield('main_content')
-    </div>
+    </div> --}}
 
-    {{-- @include('components.footer') --}}
+    @if (Auth::check() && Auth::user()->role == 'admin')
+        @include('layouts.adminNavbar')
+
+        <div>
+            @yield('main_content')
+        </div>
+    @elseif(Auth::check() && Auth::user()->role == 'member')
+        @include('layouts.navbar')
+
+        <div>
+            @yield('main_content')
+        </div>
+    @else
+        @include('layouts.navbar')
+        <div>
+            @yield('main_content')
+        </div>
+    @endif
+
+
+
+
 
 
     <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>

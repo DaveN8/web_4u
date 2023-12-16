@@ -40,7 +40,7 @@ class ProductController extends Controller
         ]);
 
 
-        return redirect(route('productsPage'));
+        return redirect(route('product.index'));
     }
 
     /**
