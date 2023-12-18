@@ -191,7 +191,6 @@
                 </div>
             </div>
 
-
             {{-- Price Packages --}}
             <div x-data="{ flyIn: false }" x-init="window.addEventListener('scroll', () => { flyIn = (window.scrollY > 810); })">
                 <div class=" mt-10" style="background-color: rgb({{ $color6 }});">
@@ -1226,3 +1225,5 @@
                 </div>
             </div>
         </div> --}}
+
+        
