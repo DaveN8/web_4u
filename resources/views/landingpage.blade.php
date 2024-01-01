@@ -823,42 +823,38 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 1</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 2 --}}
-                                <div class="flex flex-shrink-0 relative w-full sm:w-auto ">
-                                    <img src="{{ asset('img/produk2.png') }}" alt=""
-                                        class="object-cover object-center w-full" />
+                                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                                    <img src="{{ asset('img/produk2.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 2</h3>
+                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                Produk
+                                            </h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                                 {{-- Produk 3 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk3.png') }}" alt=""
-                                        class="object-cover object-center w-full" />
+                                    <img src="{{ asset('img/produk3.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 3</h3>
+                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                Produk
+                                            </h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                                 {{-- Produk 4 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produk4.png') }}" alt=""
@@ -871,42 +867,38 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 4</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 5 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk5.png') }}" alt=""
-                                        class="object-cover object-center w-full" />
+                                    <img src="{{ asset('img/produk5.png') }}" alt="" class="object-cover object-center w-full" style="width: 98%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 5</h3>
+                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                Produk
+                                            </h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                                 {{-- Produk 6 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk6.png') }}" alt=""
-                                        class="object-cover object-center w-full" />
+                                    <img src="{{ asset('img/produk6.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 6</h3>
+                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                Produk
+                                            </h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                                 {{-- Produk 7 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produk7.png') }}" alt=""
@@ -919,26 +911,24 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 7</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
                                 {{-- Produk 8 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk8.png') }}" alt=""
-                                        class="object-cover object-center w-full" />
+                                    <img src="{{ asset('img/produk8.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2
-                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3
-                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 8</h3>
+                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                                Produk
+                                            </h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>  
                                 {{-- Produk 9 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produkultah1.png') }}" alt=""
@@ -951,7 +941,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 9</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -967,7 +957,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 10</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -983,7 +973,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 11</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -999,7 +989,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk 12</h3>
+                                                Produk</h3>
                                         </div>
                                     </div>
                                 </div>
