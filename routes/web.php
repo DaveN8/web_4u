@@ -21,8 +21,8 @@ use App\Models\Products;
 */
 
 Route::get('/', function () {
-    return view('landingPage');
-})->name('landingPage');
+    return view('landingpage');
+})->name('landingpage');
 
 
 // Route::get('/formPackages', function (){
