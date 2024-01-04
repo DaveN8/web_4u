@@ -42,7 +42,8 @@ class LoginController extends Controller
                 return redirect()->intended(route('landingPage'));
             }
         }
-        return redirect(route('login'))->with("error", "Login details are not valid");
+        // return redirect(route('login'))->with("error", "Login details are not valid");
+        return redirect('/login/create')->with("error", "Login details are not valid");
     }
 
     /**

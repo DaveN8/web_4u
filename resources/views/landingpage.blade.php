@@ -75,7 +75,7 @@
                             <p class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl"
                                 style="color: rgb({{ $color3 }});">Introducing
                                 4U</p>
-                            <p class="mt-4 max-w-2xl text-xl lg:mx-auto" style="color: rgb({{ $color2 }});">
+                            <p class="mt-4 max-w-2xl text-xl mx-auto" style="color: rgb({{ $color2 }});">
                                 For you
                                 adalah bisnis undangan
                                 digital
