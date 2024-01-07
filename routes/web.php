@@ -36,6 +36,9 @@ Route::get('/contoh1', function () {
     return view('layouts/Produk/templateBday1');
 });
 
+Route::get('/contoh2', function () {
+    return view('layouts/Produk/templateBday2');
+});
 // Route::get('/signinPage', [UserController::class, 'register'])->name('register');
 // Route::post('/signinPage', [UserController::class, 'registerPost'])->name('register.post');
 

@@ -39,7 +39,7 @@ class LoginController extends Controller
                 return redirect()->intended(route('admin'));
             } else {
 
-                return redirect()->intended(route('landingPage'));
+                return redirect()->intended(route('landingpage'));
             }
         }
         // return redirect(route('login'))->with("error", "Login details are not valid");
