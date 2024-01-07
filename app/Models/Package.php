@@ -12,9 +12,12 @@ class Package extends Model
     protected $fillable = [
         'nameMale',
         'nameFemale',
+        'nameMale',
+        'nameFemale',
         'addressAcara',
         'dateAcara',
         'waktuAcara',
+        'noTelp',
         'noTelp',
         'deskripsiAcara',
         'linkGdrive',
