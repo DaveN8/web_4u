@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\ProductUser;
 use App\Http\Requests\StoreProductUserRequest;
 use App\Http\Requests\UpdateProductUserRequest;
+use App\Models\Desains;
+use App\Models\Package;
+use App\Models\User;
 
 class ProductUserController extends Controller
 {
@@ -13,7 +16,13 @@ class ProductUserController extends Controller
      */
     public function index()
     {
-        //
+        $prouser = ProductUser::all();
+        return view('productuserView',[
+            'desain' => Desains::all(),
+            'user' => User::all(),
+            'prouser' => ProductUser::all(),
+            'package' => Package::all(),
+        ]);
     }
 
     /**
@@ -21,7 +30,7 @@ class ProductUserController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**

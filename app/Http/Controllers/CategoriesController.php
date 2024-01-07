@@ -13,9 +13,9 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $data = Categories::all();
+        $categories = Categories::all();
         
-        return view('landingPage',compact('data'));
+        return view('landingPage',compact('categories'));
         
     }
 

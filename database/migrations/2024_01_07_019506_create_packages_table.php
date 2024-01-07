@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('noTelp');
             $table->string('deskripsiAcara');
             $table->string('linkGdrive');
-            $table->foreignId('id_productUser')->constrained(table:'product_users')->onUpdate('cascade')->onDelete('cascade');
+           
             $table->timestamps();
         });
     }

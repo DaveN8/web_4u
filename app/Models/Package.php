@@ -18,12 +18,12 @@ class Package extends Model
         'noTelp',
         'deskripsiAcara',
         'linkGdrive',
-        'id_productUser',
+        
     ];
 
     // Di dalam model yang memiliki relasi
-    public function productUser()
-    {
-        return $this->belongsTo(ProductUser::class, 'id_productUser');
-    }
+    // public function productUser()
+    // {
+    //     return $this->belongsTo(ProductUser::class, 'id_productUser');
+    // }
 }

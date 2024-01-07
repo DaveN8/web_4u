@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Transactions;
 use App\Http\Requests\StoreTransactionsRequest;
 use App\Http\Requests\UpdateTransactionsRequest;
+use App\Models\Categories;
+use App\Models\User;
 
 class TransactionsController extends Controller
 {
@@ -14,7 +16,10 @@ class TransactionsController extends Controller
     public function index()
     {
         $transactions = Transactions::all();
-        return view('transactionView', 'transaction');
+        return view('transactionView', [
+            'transactions' => Transactions::all(),
+            'categories' => Categories::all(),
+        ]);
     }
 
     /**
@@ -22,7 +27,10 @@ class TransactionsController extends Controller
      */
     public function create()
     {
-        
+        return view('purchasingForm', [
+            'categories' => Categories::all(),
+            'users' => User::all(), 
+        ]);
     }
 
     /**
@@ -30,14 +38,22 @@ class TransactionsController extends Controller
      */
     public function store(StoreTransactionsRequest $request)
     {
+        // dd($request);
         $this->validate($request, [
             'buktiTransfer'=> 'required',
-        ]);
-        Transactions::create([
-            'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
+            'id_users' => 'required',
+            'id_categories' => 'required',
         ]);
 
-        return redirect(route('package.create'));
+       
+        Transactions::create([
+            'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
+            'id_users' => $request->id_users,
+            'id_categories' => $request->id_categories,
+        ]);
+
+        
+        return redirect(route('transaction.index'));
     }
 
     /**

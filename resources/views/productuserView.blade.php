@@ -1,6 +1,7 @@
 @extends('layouts.base')
 @section('main_content')
     <main>
+      
         <div class="text-2xl text-bold text-center my-10">
             <p>Your Purchase</p>
         </div>

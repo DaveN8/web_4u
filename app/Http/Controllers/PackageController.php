@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Desains;
 use App\Models\Package;
+use App\Models\ProductUser;
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -13,7 +15,11 @@ class PackageController extends Controller
     public function index()
     {
         $package = Package::all();
-        return view('pembelianPage', compact('package'));
+        return view('pembelianPage',[
+            'package' => Package::all(),
+            'productUser' => ProductUser::all(),
+            'desain' => Desains::all(),
+        ]);
     }
 
     /**
@@ -21,7 +27,9 @@ class PackageController extends Controller
      */
     public function create()
     {
-        return view('formPackages');
+        return view('formPackages', [
+            'productUser' => ProductUser::all(),
+        ]);
     }
 
     /**
@@ -38,6 +46,7 @@ class PackageController extends Controller
             'noTelp' => 'required',
             'deskripsiAcara' => 'required',
             'linkGdrive' => 'required',
+           
         ]);
         Package::create([
             'nameMale' => $request->nameMale,
@@ -48,11 +57,12 @@ class PackageController extends Controller
             'noTelp' => $request->noTelp,
             'deskripsiAcara' => $request->deskripsiAcara,
             'linkGdrive' => $request->linkGdrive,
+            
         ]);
 
-        dd($request);
+        
 
-        return redirect(route('transaction.index'));
+        return redirect(route('prouser.index'));
     }
 
     /**

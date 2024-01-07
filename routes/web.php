@@ -7,6 +7,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PackageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductUserController;
+use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\UserController;
 use App\Models\Categories;
 use App\Models\Package;
@@ -52,13 +54,13 @@ Route::get('/contoh2', function () {
 // Route::get('/loginPage', [UserController::class, 'login'])->name('login');
 // Route::post('/loginPage', [UserController::class, 'loginPost'])->name('login.post');
 
-Route::get('/productuser', function () {
-    return view('productuserView');
-});
+// Route::get('/productuser', function () {
+//     return view('productuserView');
+// });
 
-Route::get('/purchasing', function () {
-    return view('productuserView');
-});
+// Route::get('/purchasing', function () {
+//     return view('productuserView');
+// });
 
 Route::get('/profile', function(){
     return view('profile');
@@ -70,7 +72,10 @@ Route::resource('login', LoginController::class);
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 //Transaction
-Route::resource('transaction', Transactions::class);
+Route::resource('transaction', TransactionsController::class);
+
+//ProductUser
+Route::resource('prouser', ProductUserController::class);
 
 //categories
 Route::resource('categories', CategoriesController::class);

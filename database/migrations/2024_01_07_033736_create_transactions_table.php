@@ -14,8 +14,8 @@ return new class extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_users')->constrained(table:'users')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('id_categories')->constrained(table:'categories')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('id_users')->constrained(table:'users');
+            $table->foreignId('id_categories')->constrained(table:'categories');
             $table->string('buktiTransfer');
             $table->enum('statusTransaction',['approved','waiting','declined'])->default('waiting');
             $table->timestamps();

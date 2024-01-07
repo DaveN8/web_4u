@@ -17,9 +17,10 @@ return new class extends Migration
     {
         Schema::create('product_users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_desains')->constrained(table:'desains')->onUpdate('cascade')->onDelete('cascade');
-            $table->foreignId('id_user')->constrained(table:'users')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('id_desains')->constrained(table:'desains');
+            $table->foreignId('id_user')->constrained(table:'users');
             $table->enum('statusProductUsers', ['ongoing', 'done'])->default('ongoing');
+            $table->foreignId('id_package')->constrained(table:'packages');
             $table->timestamps();
         });
     }
