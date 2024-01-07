@@ -30,26 +30,29 @@ class PackageController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'fullname' => 'required|string|max:155',
-            'addressAcara' => 'required|string|max:500',
-            'dateAcara' => 'required|date',
+            'nameMale' => 'required',
+            'nameFemale' => 'required',
+            'addressAcara' => 'required',
+            'dateAcara' => 'required',
             'waktuAcara' => 'required',
-            'jenisPaket' => 'required',
-            'deskripsiAcara' => 'required|string|max:500',
-            'buktiTransfer' => 'required|image|mimes:jpg,png,jpeg|max:2048',
+            'noTelp' => 'required',
+            'deskripsiAcara' => 'required',
+            'linkGdrive' => 'required',
         ]);
         Package::create([
-            'fullname' => $request->fullname,
+            'nameMale' => $request->nameMale,
+            'nameFemale' =>$request->nameFemale,
             'addressAcara' => $request->addressAcara,
-            'dateAcara' => $request->dateAcara,
-            'waktuAcara' => $request->waktuAcara,
-            'jenisPaket' => $request->jenisPaket,
+            'dateAcara' =>  $request->dateAcara,
+            'waktuAcara' =>  $request->waktuAcara,
+            'noTelp' => $request->noTelp,
             'deskripsiAcara' => $request->deskripsiAcara,
-            'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
+            'linkGdrive' => $request->linkGdrive,
         ]);
 
+        dd($request);
 
-        return redirect(route('package'));
+        return redirect(route('transaction.index'));
     }
 
     /**

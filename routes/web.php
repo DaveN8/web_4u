@@ -1,13 +1,17 @@
 <?php
 
 use App\Http\Controllers\AllContentController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\DesainsController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PackageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Models\Categories;
 use App\Models\Package;
 use App\Models\Products;
+use App\Models\Transactions;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,6 +43,9 @@ Route::get('/contoh1', function () {
 Route::get('/contoh2', function () {
     return view('layouts/Produk/templateBday2');
 });
+
+
+
 // Route::get('/signinPage', [UserController::class, 'register'])->name('register');
 // Route::post('/signinPage', [UserController::class, 'registerPost'])->name('register.post');
 
@@ -62,9 +69,15 @@ Route::resource('login', LoginController::class);
 
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
-//Product
-Route::resource('product', ProductController::class);
-Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
+//Transaction
+Route::resource('transaction', Transactions::class);
+
+//categories
+Route::resource('categories', CategoriesController::class);
+
+//Desains
+Route::resource('desain', DesainsController::class);
+// Route::get('/productsPage', [ProductController::class, 'index'])->name('productsPage');
 // Route::get('/createProducts', [ProductController::class, 'create'])->name('createProducts');
 // Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');
 // Route::get('/productsPage/{productsPage}/edit', [ProductController::class, 'edit'])->name('editProducts');

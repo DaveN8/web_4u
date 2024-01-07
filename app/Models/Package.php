@@ -10,12 +10,20 @@ class Package extends Model
     use HasFactory;
 
     protected $fillable = [
-        'fullname',
+        'nameMale',
+        'nameFemale',
         'addressAcara',
         'dateAcara',
         'waktuAcara',
-        'jenisPaket',
+        'noTelp',
         'deskripsiAcara',
-        'buktiTransfer'
+        'linkGdrive',
+        'id_productUser',
     ];
+
+    // Di dalam model yang memiliki relasi
+    public function productUser()
+    {
+        return $this->belongsTo(ProductUser::class, 'id_productUser');
+    }
 }

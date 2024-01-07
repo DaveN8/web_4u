@@ -55,7 +55,7 @@
                             class=" text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                             aria-current="page">Home</a>
 
-                        <a href="{{ route('product.index') }}"
+                        <a href="{{ route('desain.index') }}"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
                         @if (Auth::check() && Auth::user()->role == 'admin')
@@ -106,14 +106,19 @@
                             <li>
                                 <a href="{{ route('user.create') }}"
                                     class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                    in</a>
+                                    up</a>
                             </li>
                         </ul>
-                        <div class="py-1">
-                            <a href="{{ route('logout') }}"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
-                                out</a>
-                        </div>
+                        @if (Auth::check() && Auth::user()->role == 'member')
+                            <div class="py-1">
+                                <a href="{{ route('logout') }}"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        @else
+                            
+                        @endif
+
                     </div>
 
                 </div>
@@ -129,7 +134,7 @@
             <a href="{{ url('/') }}"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
 
-            <a href="{{ route('product.index') }}"
+            <a href="{{ route('desain.index') }}"
                 class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Gallery</a>
 
         </div>

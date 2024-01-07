@@ -16,6 +16,7 @@
         // style="color: rgb({{ $color1 }});"
         // style="background-color: rgb({{ $color6 }});"
         // style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));"
+        // @dd($categories)
 
     @endphp
 
@@ -233,17 +234,22 @@
                             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                                 <div class="relative lg:grid lg:grid-cols-7">
                                     {{-- Start Paket --}}
+                                    {{-- @foreach ($data as $cat) --}}
                                     <div
                                         class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 hover:scale-105">
                                         <div
                                             class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                             <div class="flex-1 flex flex-col">
+
+
+
                                                 {{-- PAKET 1 --}}
                                                 <div class="px-6 py-10"
                                                     style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                     <div>
                                                         <h3 class="text-center text-2xl font-medium text-gray-900">
-                                                            <span class="text-green-500">✨</span> Basic
+                                                            <span class="text-green-500">✨</span>
+                                                            Basic
                                                             <!-- Add a star icon for emphasis -->
                                                         </h3>
                                                         <div class="mt-4 flex items-center justify-center">
@@ -251,7 +257,8 @@
                                                                 class="px-3 flex items-start text-6xl tracking-tight text-gray-900">
                                                                 <span class="mt-2 mr-2 text-xl font-normal"> IDR.
                                                                 </span>
-                                                                <span class="font-extrabold"> 69.000 </span>
+                                                                <span class="font-extrabold">69.000
+                                                                </span>
                                                             </span>
                                                             <span class="text-xl font-medium text-gray-500"> /month
                                                             </span>
@@ -277,7 +284,6 @@
                                                                 Masa Aktif 3 Bulan
                                                             </p>
                                                         </li>
-                                                        {{-- fitur 2 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -293,7 +299,6 @@
                                                                 Bahasa Indonesia / Inggris
                                                             </p>
                                                         </li>
-                                                        {{-- fitur 3 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -306,9 +311,9 @@
                                                                 </svg>
                                                             </div>
                                                             <p class="ml-3 text-base font-medium text-gray-500">
-                                                                Jumlah Tamu Tidak Terbatas</p>
+                                                                Jumlah Tamu Tidak Terbatas
+                                                            </p>
                                                         </li>
-                                                        {{-- fitur 4 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -324,7 +329,6 @@
                                                                 Cover Undangan Pembuka
                                                             </p>
                                                         </li>
-                                                        {{-- fitur 5 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -340,7 +344,6 @@
                                                                 Detail Info Acara
                                                             </p>
                                                         </li>
-                                                        {{-- fitur 6 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -356,7 +359,6 @@
                                                                 Profil Pembuat Undangan
                                                             </p>
                                                         </li>
-                                                        {{-- fitur 7 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
@@ -372,10 +374,13 @@
                                                                 Navigasi Lokasi
                                                             </p>
                                                         </li>
+
+                                                        {{-- fitur 2 --}}
+
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="{{ url('formPackage') }}"
+                                                            <a href="{{ route('package.create') }}"
                                                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                                                                 aria-describedby="tier-hobby"> Choose Packages </a>
                                                         </div>
@@ -384,6 +389,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div
                                         class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 hover:scale-105">
                                         <div class="relative z-10 rounded-lg shadow-xl">
@@ -588,7 +594,7 @@
                                                 </ul>
                                                 <div class="mt-10">
                                                     <div class="rounded-lg shadow-md">
-                                                        <a href="{{ url('formPackage') }}"
+                                                        <a href="{{route('package.create')}}"
                                                             class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
                                                             aria-describedby="tier-growth"> Choose Packages </a>
                                                     </div>
@@ -770,7 +776,7 @@
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="{{ url('formPackage') }}"
+                                                            <a href="{{ route('package.create') }}"
                                                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                                                                 aria-describedby="tier-scale"> Choose Packages </a>
                                                         </div>
@@ -829,32 +835,38 @@
                                 </div>
                                 {{-- Produk 2 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk2.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
+                                    <img src="{{ asset('img/produk2.png') }}" alt=""
+                                        class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2
+                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                            <h3
+                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
                                                 Produk
                                             </h3>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                                 {{-- Produk 3 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk3.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
+                                    <img src="{{ asset('img/produk3.png') }}" alt=""
+                                        class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2
+                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                            <h3
+                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
                                                 Produk
                                             </h3>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                                 {{-- Produk 4 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produk4.png') }}" alt=""
@@ -873,32 +885,38 @@
                                 </div>
                                 {{-- Produk 5 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk5.png') }}" alt="" class="object-cover object-center w-full" style="width: 98%;" />
+                                    <img src="{{ asset('img/produk5.png') }}" alt=""
+                                        class="object-cover object-center w-full" style="width: 98%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2
+                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                            <h3
+                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
                                                 Produk
                                             </h3>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                                 {{-- Produk 6 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk6.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
+                                    <img src="{{ asset('img/produk6.png') }}" alt=""
+                                        class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2
+                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                            <h3
+                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
                                                 Produk
                                             </h3>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                                 {{-- Produk 7 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produk7.png') }}" alt=""
@@ -917,18 +935,21 @@
                                 </div>
                                 {{-- Produk 8 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                                    <img src="{{ asset('img/produk8.png') }}" alt="" class="object-cover object-center w-full" style="width: 95%;" />
+                                    <img src="{{ asset('img/produk8.png') }}" alt=""
+                                        class="object-cover object-center w-full" style="width: 95%;" />
                                     <div class="absolute w-full h-full p-6">
-                                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
+                                        <h2
+                                            class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900">
                                             {{-- nama produk --}}
                                         </h2>
                                         <div class="flex h-full items-end pb-6">
-                                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                            <h3
+                                                class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
                                                 Produk
                                             </h3>
                                         </div>
                                     </div>
-                                </div>  
+                                </div>
                                 {{-- Produk 9 --}}
                                 <div class="flex flex-shrink-0 relative w-full sm:w-auto">
                                     <img src="{{ asset('img/produkultah1.png') }}" alt=""
@@ -1215,5 +1236,3 @@
                 </div>
             </div>
         </div> --}}
-
-        
