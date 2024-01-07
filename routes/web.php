@@ -52,6 +52,14 @@ Route::get('/contoh2', function () {
 // Route::get('/loginPage', [UserController::class, 'login'])->name('login');
 // Route::post('/loginPage', [UserController::class, 'loginPost'])->name('login.post');
 
+Route::get('/productuser', function () {
+    return view('productuserView');
+});
+
+Route::get('/purchasing', function () {
+    return view('productuserView');
+});
+
 Route::get('/profile', function(){
     return view('profile');
 });
