@@ -11,10 +11,8 @@ use App\Http\Controllers\ProductUserController;
 use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\UserController;
 use App\Models\Categories;
-use App\Models\Categories;
 use App\Models\Package;
 use App\Models\Products;
-use App\Models\Transactions;
 use App\Models\Transactions;
 
 /*
