@@ -5,7 +5,7 @@
             <p>Your Purchase</p>
         </div>
 
-        <form method="POST" action="{{route('transaction.store') }}" enctype="multipart/form-data" class="max-w-md mx-auto">
+        <form method="POST" action="{{ route('transaction.store') }}" enctype="multipart/form-data" class="max-w-md mx-auto">
             @csrf
             <div class="max-w-md mx-auto mt-5 bg-white shadow-md p-5">
                 <h1 class="text-6xl">Perhatian!!</h1>
@@ -84,7 +84,7 @@
                 </div>
 
             </div>
-            <form class="max-w-md mx-auto mt-5 bg-white shadow-md p-5">
+            <div class="max-w-md mx-auto mt-5 bg-white shadow-md p-5">
                 <div class="relative z-0 w-full mb-5 group">
                     <input type="text" name="username" id="username"
                         class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
@@ -106,7 +106,11 @@
                 </div>
                 <div class="relative z-0 w-full mb-5 group">
                     <p>Berikut adalah total yang perlu anda bayar</p>
-                    <p class="text-3xl font-semibold">Rp 99.000,00</p>
+                    @foreach ($categories as $cat)
+                        @if ($cat['id'] == $id_categories)
+                            <p class="text-3xl font-semibold">{{ $cat['harga'] }}</p>
+                        @endif
+                    @endforeach
                     <br>
                     <p>Silahkan transfer ke nomor rekening berikut</p>
                     <p class="font-bold text-xl">BCA 7625123992 a/n Fadhil Muhammad Rizki Bahri</p>
@@ -117,18 +121,17 @@
                         file</label>
                     <input
                         class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50"
-                        aria-describedby="file_input_help" id="file_input" type="file" name="buktiTransfer">
+                        aria-describedby="file_input_help" id="file_input" type="file" name="buktiTransfer" required>
                     <p class="mt-1 text-sm text-gray-500 id="file_input_help">SVG, PNG, JPG or GIF (MAX. 800x400px).</p>
 
                 </div>
 
-                <input type="hidden" name="id_users" value="{{ Auth::user()->id }}">
-                <input type="hidden" name="id_categories" value="{{ Auth::user()->id }}">
+                <input type="hidden" name="id_users" value="{{ $id_users }}">
+                <input type="hidden" name="id_categories" value="{{ $id_categories }}">
 
                 <button type="submit"
                     class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-            </form>
-            <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+            </div>
         </form>
 
     </main>

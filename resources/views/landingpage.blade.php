@@ -235,15 +235,12 @@
                                 <div class="relative lg:grid lg:grid-cols-7">
                                     {{-- Start Paket --}}
                                     {{-- @foreach ($data as $cat) --}}
+                                    {{-- PAKET 1 --}}
                                     <div
                                         class="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3 hover:scale-105">
                                         <div
                                             class="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
                                             <div class="flex-1 flex flex-col">
-
-
-
-                                                {{-- PAKET 1 --}}
                                                 <div class="px-6 py-10"
                                                     style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                     <div>
@@ -374,15 +371,26 @@
                                                                 Navigasi Lokasi
                                                             </p>
                                                         </li>
-
-                                                        {{-- fitur 2 --}}
-
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="{{ route('desain.index') }}"
+                                                            @if (Auth::check() && Auth::user()->role == 'member')
+                                                                <form action="{{ route('transaction.create') }}"
+                                                                    method="GET" enctype="multipart/form-data">
+                                                                    <input type="hidden" name="id_categories"
+                                                                        value="1">
+                                                                    <input type="hidden" name="id_users"
+                                                                        value="{{ Auth::user()->id }}">
+                                                                    <button type="submit"
+                                                                        class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                        aria-describedby="tier-hobby"> Choose Packages
+                                                                    </button>
+                                                                </form>
+                                                            @else
+                                                                <a href="{{ route('login.create') }}"
                                                                 class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
                                                                 aria-describedby="tier-hobby"> Choose Packages </a>
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>
@@ -390,6 +398,7 @@
                                         </div>
                                     </div>
 
+                                    {{-- PAKET 2 --}}
                                     <div
                                         class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 hover:scale-105">
                                         <div class="relative z-10 rounded-lg shadow-xl">
@@ -402,7 +411,7 @@
                                                         Most popular </span>
                                                 </div>
                                             </div>
-                                            {{-- PAKET 2 --}}
+
                                             <div class="rounded-t-lg px-6 pt-12 pb-10"
                                                 style="background: linear-gradient(to bottom, rgb({{ $color2 }}), rgb({{ $color1 }}));">
                                                 <div>
@@ -594,7 +603,7 @@
                                                 </ul>
                                                 <div class="mt-10">
                                                     <div class="rounded-lg shadow-md">
-                                                        <a href="{{route('desain.index')}}"
+                                                        <a href="{{ route('desain.index') }}"
                                                             class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
                                                             aria-describedby="tier-growth"> Choose Packages </a>
                                                     </div>
@@ -602,6 +611,8 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    {{-- PAKET 3 --}}
                                     <div
                                         class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3 hover:scale-105">
                                         <div

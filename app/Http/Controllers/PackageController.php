@@ -15,7 +15,7 @@ class PackageController extends Controller
     public function index()
     {
         $package = Package::all();
-        return view('pembelianPage',[
+        return view('pembelianPage', [
             'package' => Package::all(),
             'productUser' => ProductUser::all(),
             'desain' => Desains::all(),
@@ -25,10 +25,12 @@ class PackageController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
         return view('formPackages', [
             'productUser' => ProductUser::all(),
+            'id_desains' => $request->input('id_desains'),
+            'id_user' => $request->input('id_user'),
         ]);
     }
 
@@ -37,6 +39,10 @@ class PackageController extends Controller
      */
     public function store(Request $request)
     {
+
+        $id_desains = $request->input('id_desains');
+        $id_user = $request->input('id_user');
+
         $this->validate($request, [
             'nameMale' => 'required',
             'nameFemale' => 'required',
@@ -50,23 +56,35 @@ class PackageController extends Controller
             'noTelp' => 'required',
             'deskripsiAcara' => 'required',
             'linkGdrive' => 'required',
-           
         ]);
+
         Package::create([
             'nameMale' => $request->nameMale,
-            'nameFemale' =>$request->nameFemale,
+            'nameFemale' => $request->nameFemale,
             'addressAcara' => $request->addressAcara,
             'dateAcara' =>  $request->dateAcara,
             'waktuAcara' =>  $request->waktuAcara,
             'noTelp' => $request->noTelp,
             'deskripsiAcara' => $request->deskripsiAcara,
             'linkGdrive' => $request->linkGdrive,
-            
         ]);
 
-        
+        $package = Package::create([
+            'nameMale' => $request->nameMale,
+            'nameFemale' => $request->nameFemale,
+            'addressAcara' => $request->addressAcara,
+            'dateAcara' =>  $request->dateAcara,
+            'waktuAcara' =>  $request->waktuAcara,
+            'noTelp' => $request->noTelp,
+            'deskripsiAcara' => $request->deskripsiAcara,
+            'linkGdrive' => $request->linkGdrive,
+        ]);
 
-        return redirect(route('prouser.index'));
+        $id_package = $package->id;
+
+        return redirect()->action('prouser.store', ['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package]);
+
+        // return view;
     }
 
     /**

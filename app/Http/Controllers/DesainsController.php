@@ -13,8 +13,11 @@ class DesainsController extends Controller
      */
     public function index()
     {
-        $desain = Desains::all();
-        return view('productsPage', compact('desain'));
+        // $desain = Desains::all();
+        return view('productsPage', [
+            'desain' => Desains::all(),
+            ''
+        ]);
     }
 
     /**

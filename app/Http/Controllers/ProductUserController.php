@@ -30,7 +30,11 @@ class ProductUserController extends Controller
      */
     public function create()
     {
-        
+        return view('purchasingForm', [
+            // 'categories' => Categories::all(),
+            // 'id_user' => 'id_user',
+            // 'id_desain' => 'id_desain'
+        ]);
     }
 
     /**
@@ -39,6 +43,21 @@ class ProductUserController extends Controller
     public function store(StoreProductUserRequest $request)
     {
         //
+        $this->validate($request, [
+            'id_desains'=> 'required',
+            'id_users' => 'required',
+            'id_package' => 'required',
+        ]);
+
+        
+        ProductUser::create([
+            'id_desains' => $request->id_desains,
+            'id_users' => $request->id_users,
+            'id_package' => $request->id_package,
+        ]);
+
+        
+        return redirect(route('prouser.index'));
     }
 
     /**

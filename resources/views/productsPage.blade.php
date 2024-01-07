@@ -74,7 +74,7 @@
                         <div
                             class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
 
-                            <a href="#">
+                            {{-- <a href="#">
                                 <img src="{{ asset('storage/' . $item['templateProduct']) }}" alt="Product"
                                     class="h-80 w-72 object-cover rounded-t-xl" />
                                 <div class="px-4 py-3 w-72">
@@ -83,7 +83,6 @@
                                         {{ $item['nama_categories'] }}</p>
                                     <p class="text-lg font-semibold text-black  my-3">{{ $item['deskripsi'] }}</p>
 
-                                    <input type="hidden" name="id_productUser" value="{{ Auth::user()->id }}">
                                     <input type="hidden" name="id_desain" value="{{ Auth::user()->id }}">
 
                                     <a href="{{ route('transaction.create') }}" type="button"
@@ -96,7 +95,26 @@
                                         </svg>
                                     </a>
                                 </div>
-                            </a>
+                            </a> --}}
+                            <form action="{{ route('packages.create') }}" method="GET" enctype="multipart/form-data">
+                                <img src="{{ asset('storage/' . $item['templateProduct']) }}" alt="">
+                                <div class="px-4 py-3 w-72">
+                                    <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
+                                    <p class="text-lg font-bold text-black truncate block capitalize">
+                                        {{ $item['nama_categories'] }}</p>
+                                    <p class="text-lg font-semibold text-black  my-3">{{ $item['deskripsi'] }}</p>
+
+                                    <input type="hidden" name="id_user" value="{{ Auth::user()->id }}">
+                                    <input type="hidden" name="id_desains" value="{{ $item['id'] }}">
+                                    {{-- <input type="hidden" name="id_categories" value="{{$id_categories}}"> --}}
+
+                                    <button type="submit"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
+                                        Default
+                                    </button>
+                                </div>
+                            </form>
+
                         </div>
                     @endforeach
 

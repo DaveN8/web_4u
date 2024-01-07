@@ -6,6 +6,7 @@ use App\Models\Transactions;
 use App\Http\Requests\StoreTransactionsRequest;
 use App\Http\Requests\UpdateTransactionsRequest;
 use App\Models\Categories;
+use Illuminate\Http\Request;
 use App\Models\User;
 
 class TransactionsController extends Controller
@@ -25,11 +26,12 @@ class TransactionsController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
         return view('purchasingForm', [
             'categories' => Categories::all(),
-            'users' => User::all(), 
+            'id_users' => $request->input('id_user'),
+            'id_categories' => $request->input('id_categories')
         ]);
     }
 
@@ -38,22 +40,31 @@ class TransactionsController extends Controller
      */
     public function store(StoreTransactionsRequest $request)
     {
-        // dd($request);
+        dd($request);
         $this->validate($request, [
-            'buktiTransfer'=> 'required',
             'id_users' => 'required',
             'id_categories' => 'required',
+            'buktiTransfer'=> 'required',
         ]);
 
-       
         Transactions::create([
-            'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
             'id_users' => $request->id_users,
             'id_categories' => $request->id_categories,
+            'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         ]);
+
+        // $trans = Transactions::create([
+        //     'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
+        //     'id_users' => $request->id_users,
+        //     'id_categories' => $request->id_categories,
+        // ]);
+
+        // $id_transactions = $trans->id;
 
         
         return redirect(route('transaction.index'));
+        // return view('desain.index', compact('id_transactions'));
+        // return redirect()->action('transactions.create', ['id_transactions' => $id_transactions]);
     }
 
     /**
