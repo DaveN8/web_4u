@@ -4,7 +4,7 @@
         <div class="flex items-center justify-center p-10">
             <div
                 class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <form method="POST" action="{{route('product.update',$product->id)}}"  enctype="multipart/form-data">
+                <form method="POST" action="{{route('desains.update',$product->id)}}"  enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
                     <div class="mb-5">

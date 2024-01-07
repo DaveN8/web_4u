@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Desains;
 use App\Models\Package;
 use App\Models\Products;
 use App\Models\User;
@@ -16,11 +17,11 @@ class AllContentController extends Controller
     {
 
         $user = User::where('role','member')->get();
-        $product = Products::all();
+        $product = Desains::all();
         $package = Package::all();
 
         $userCount = User::where('role','member')->count();
-        $productCount = Products::count();
+        $productCount = Desains::count();
         $packageCount = Package::count();
 
         return view('adminDashboard', compact('user','product','package','userCount','productCount','packageCount'));

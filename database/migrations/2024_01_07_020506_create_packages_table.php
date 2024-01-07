@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->id();
-            $table->string('fullname');
+            $table->string('nameMale');
+            $table->string('nameFemale')->nullable();            
             $table->string('addressAcara');
             $table->date('dateAcara');
-            $table->enum('jenisPaket', ['paket 1', 'paket 2', 'paket 3']);
+            $table->time('waktuAcara');
+            $table->string('noTelp');
             $table->string('deskripsiAcara');
+            $table->string('linkGdrive');
+            $table->foreignId('id_productUser')->constrained(table:'product_users')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
