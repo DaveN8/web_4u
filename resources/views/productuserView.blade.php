@@ -63,8 +63,8 @@
     @endsection
 @elseif(Auth::check() && Auth::user()->role == 'member')
     @section('main_content')
-        <div class="text-2xl text-bold text-center mb-20">
-            <p>Your Purchase</p>
+        <div class="text-center mb-20 p-24">
+            <p class="text-2xl font-bold ">Your Purchase</p>
         </div>
         @foreach ($prouser as $pro)
             @if ($pro['id_user'] == Auth::user()->id)

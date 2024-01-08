@@ -14,6 +14,15 @@
         // style="background-color: rgb({{ $color6 }});"
 
     @endphp
+    <div class="text-center py-24 shadow-md">
+        <p class="text-3xl font-bold">
+            Yuk di lihat-lihat
+        </p>
+        <br>
+        <p class="text-xl font-semibold">
+            Desain dan produk yang sudah kami buat
+        </p>
+    </div>
     <div class="flex p-5 ml-20">
         <p class="text-2xl font-bold">
             Designs
