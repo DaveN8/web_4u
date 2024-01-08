@@ -112,13 +112,15 @@
                         Can't wait to see all of you at this event
                     </p>
                     <br>
-                    <br>
+                    <div>
+                        <img class="object-fill mx-auto w-1/3" src="{{ asset('img/line4.png') }}" alt="Split Line">
+                    </div>
                 </div>
             </div>
 
             {{-- Countdown Section --}}
             <div id="countdown"
-                class="font-['Playfair-Display'] font-bold italic mt-5 text-center text-2xl lg:text-5xl relative">
+                class="font-['Playfair-Display'] font-bold italic text-center text-2xl lg:text-5xl relative">
                 <img class="object-fill mx-auto mb-4 w-1/4" src="{{ asset('img/savethedate1.png') }}"
                     alt="Logo Save The Date">
 
@@ -156,8 +158,8 @@
                 style="background-size: cover; background-repeat: no-repeat;">
                 <div class="flex flex-col md:flex-row justify-center">
                     {{-- Gallery Section --}}
-                    <div class="w-full md:w-5/12 pr-0 md:pr-20 mb-5 md:mb-0">
-                        <div class="p-3 rounded-lg" style="background-color: rgb({{ $color1 }});">
+                    <div class="w-full md:w-7/12 pr-0 md:pr-20 mb-5 md:mb-0">
+                        <div class="p-3 rounded-lg">
                             <div class="text-center font-['Open-sans'] font-bold text-2xl lg:text-5xl my-10">
                                 <p>Gallery Photo</p>
                             </div>
@@ -190,25 +192,32 @@
                             <br>
                         </div>
                     </div>
-
+                </div>
+                <div class="flex flex-col md:flex-row justify-center">
                     {{-- Map Section --}}
-                    <div class="w-full md:w-5/12">
-                        <div class="p-2 rounded-lg" style="background-color: rgb({{ $color1 }});">
+                    <div class="w-full md:w-11/12">
+                        <div class="p-2 rounded-lg">
                             <div class="mt-10">
                                 <div class="text-center font-['Open-sans'] font-bold text-2xl lg:text-5xl my-10">
                                     <p>Map</p>
                                 </div>
                             </div>
                             <div class="flex justify-center items-center mx-auto">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.33399644559!2d112.58569658715822!3d-7.964444999999981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788289cb039897%3A0x538584e21e40f333!2sSekolah%20Kristen%20Kalam%20Kudus%20Malang!5e0!3m2!1sen!2sid!4v1704739245361!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.33399644559!2d112.58569658715822!3d-7.964444999999981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788289cb039897%3A0x538584e21e40f333!2sSekolah%20Kristen%20Kalam%20Kudus%20Malang!5e0!3m2!1sen!2sid!4v1704739245361!5m2!1sen!2sid"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                             </div>
                             <br>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+            <div>
+                <img class="object-fill mx-auto mb-4 w-1/3" src="{{ asset('img/line3.png') }}" alt="Split Line">
+            </div>
 
             {{-- Music Background --}}
             <audio id="backgroundMusic" loop autoplay>
