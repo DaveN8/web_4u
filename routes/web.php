@@ -31,6 +31,9 @@ Route::get('/', function () {
     return view('landingpage');
 })->name('landingpage');
 
+Route::get('/produk', function () {
+    return view('produk1');
+});
 
 // Route::get('/formPackages', function (){
 //     return view('formPackages');
