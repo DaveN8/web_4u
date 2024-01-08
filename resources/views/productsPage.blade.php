@@ -56,8 +56,30 @@
                                                     <option value="show">Show</option>
                                                 </select> --}}
 
-                                            <p class="text-sm text-gray-600 cursor-auto ml-2">{{ $item['status'] }}</p>
 
+                                            <p class="block mb-2 text-sm font-medium text-gray-900 ">{{ $item['status'] }}
+                                            </p>
+                                            <form method="POST" action="{{ route('desain.update', $item->id) }}"
+                                                enctype="multipart/form-data">
+                                                @csrf
+                                                @method('PATCH')
+                                                <div class="mb-2">
+                                                    <label for="countries"
+                                                        class="block mb-2 text-sm font-medium text-gray-900 ">Select
+                                                        Option</label>
+                                                    <select id="countries" name="status"
+                                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                        <option selected>Choose Option</option>
+                                                        <option value="hide">hide</option>
+                                                        <option value="show">show</option>
+                                                    </select>
+                                                </div>
+                                                <input type="hidden" name="id_desain" value="{{ $item['id'] }}">
+                                                <button type="submit"
+                                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">Edit</button>
+
+
+                                            </form>
                                         </div>
                                     </a>
                                 </div>
@@ -66,7 +88,7 @@
                     </div>
                 </div>
             </div>
-        @else
+        @elseif(Auth::check() && Auth::user()->role == 'member')
             <div class="container flex flex-wrap justify-between items-center mx-auto my-10">
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-28 gap-y-4 mx-auto my-10">
 
@@ -120,6 +142,8 @@
 
                 </div>
             </div>
+        @else
+            <p>SILAHKAN LOGIN TERLEBIH DAHULU</p>
         @endif
 
     </main>
