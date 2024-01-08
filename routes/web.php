@@ -14,6 +14,7 @@ use App\Models\Categories;
 use App\Models\Desains;
 use App\Models\Package;
 use App\Models\Products;
+use App\Models\ProductUser;
 use App\Models\Transactions;
 
 /*
@@ -35,6 +36,13 @@ Route::get('/produk', function () {
     return view('layouts/Produk/produk1');
 });
 
+Route::get('/gallery', function(){
+    return view('gallery',[
+        'desain' => Desains::all(),
+        'prouser' => ProductUser::all(),
+        'package' => Package::all(),
+    ]);
+});
 // Route::get('/formPackages', function (){
 //     return view('formPackages');
 // });
@@ -71,11 +79,6 @@ Route::get('/contoh2', function () {
 
 Route::get('/profile', function(){
     return view('profile');
-});
-Route::get('/gallery', function(){
-    return view('gallery',[
-        'desain' => Desains::all(),
-    ]);
 });
 
 Route::resource('user', UserController::class);

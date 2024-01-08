@@ -257,8 +257,8 @@
                                                                 <span class="font-extrabold">69.000
                                                                 </span>
                                                             </span>
-                                                            <span class="text-xl font-medium text-gray-500"> /month
-                                                            </span>
+                                                            {{-- <span class="text-xl font-medium text-gray-500"> /month
+                                                            </span> --}}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -398,7 +398,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- PAKET 2 --}}
+                                    {{-- PAKET 3 --}}
                                     <div
                                         class="mt-10 max-w-lg mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-start-3 lg:col-end-6 lg:row-start-1 lg:row-end-4 hover:scale-105">
                                         <div class="relative z-10 rounded-lg shadow-xl">
@@ -424,10 +424,10 @@
                                                             class="px-3 flex items-start text-6xl tracking-tight text-gray-900 sm:text-6xl">
                                                             <span class="mt-2 mr-2 text-4xl font-medium"> IDR.
                                                             </span>
-                                                            <span class="font-extrabold"> 99.000 </span>
+                                                            <span class="font-extrabold"> 109.000 </span>
                                                         </span>
-                                                        <span class="text-2xl font-medium text-gray-500"> /month
-                                                        </span>
+                                                        {{-- <span class="text-2xl font-medium text-gray-500"> /month
+                                                        </span> --}}
                                                     </div>
                                                 </div>
                                             </div>
@@ -541,7 +541,7 @@
                                                             Navigasi Lokasi</p>
                                                     </li>
                                                     {{-- paket 8 --}}
-                                                    <li class="flex items-start">
+                                                    {{-- <li class="flex items-start">
                                                         <div class="flex-shrink-0">
                                                             <!-- Heroicon name: outline/check -->
                                                             <svg class="flex-shrink-0 h-6 w-6 text-green-500"
@@ -554,7 +554,7 @@
                                                         </div>
                                                         <p class="ml-3 text-base font-medium text-gray-500">
                                                             Kolom Komentar / Konfirmasi Kehadiran</p>
-                                                    </li>
+                                                    </li> --}}
                                                     {{-- paket 9 --}}
                                                     <li class="flex items-start">
                                                         <div class="flex-shrink-0">
@@ -607,7 +607,7 @@
                                                             <form action="{{ route('transaction.create') }}"
                                                                 method="GET" enctype="multipart/form-data">
                                                                 <input type="hidden" name="id_categories"
-                                                                    value="2">
+                                                                    value="3">
                                                                 <input type="hidden" name="id_users"
                                                                     value="{{ Auth::user()->id }}">
                                                                 <button type="submit"
@@ -626,7 +626,7 @@
                                         </div>
                                     </div>
 
-                                    {{-- PAKET 3 --}}
+                                    {{-- PAKET 2 --}}
                                     <div
                                         class="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3 hover:scale-105">
                                         <div
@@ -647,8 +647,8 @@
                                                                 </span>
                                                                 <span class="font-extrabold"> 85.000 </span>
                                                             </span>
-                                                            <span class="text-xl font-medium text-gray-500"> /month
-                                                            </span>
+                                                            {{-- <span class="text-xl font-medium text-gray-500"> /month
+                                                            </span> --}}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -767,7 +767,7 @@
                                                             </p>
                                                         </li>
                                                         {{-- fitur 8 --}}
-                                                        <li class="flex items-start">
+                                                        {{-- <li class="flex items-start">
                                                             <div class="flex-shrink-0">
                                                                 <!-- Heroicon name: outline/check -->
                                                                 <svg class="flex-shrink-0 h-6 w-6 text-green-500"
@@ -781,7 +781,7 @@
                                                             <p class="ml-3 text-base font-medium text-gray-500">
                                                                 Kolom Komentar / Konfirmasi Kehadiran
                                                             </p>
-                                                        </li>
+                                                        </li> --}}
                                                         {{-- fitur 9 --}}
                                                         <li class="flex items-start">
                                                             <div class="flex-shrink-0">
@@ -805,7 +805,7 @@
                                                                 <form action="{{ route('transaction.create') }}"
                                                                     method="GET" enctype="multipart/form-data">
                                                                     <input type="hidden" name="id_categories"
-                                                                        value="3">
+                                                                        value="2">
                                                                     <input type="hidden" name="id_users"
                                                                         value="{{ Auth::user()->id }}">
                                                                     <button type="submit"
@@ -868,7 +868,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk</h3> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -884,7 +884,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk
+                                                {{-- Produk --}}
                                             </h3>
                                         </div>
                                     </div>
@@ -901,7 +901,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk
+                                                {{-- Produk --}}
                                             </h3>
                                         </div>
                                     </div>
@@ -918,7 +918,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -934,7 +935,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk
+                                                {{-- Produk --}}
                                             </h3>
                                         </div>
                                     </div>
@@ -951,7 +952,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk
+                                                {{-- Produk --}}
                                             </h3>
                                         </div>
                                     </div>
@@ -968,7 +969,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -984,7 +986,7 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk
+                                                {{-- Produk --}}
                                             </h3>
                                         </div>
                                     </div>
@@ -1001,7 +1003,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1017,7 +1020,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1033,7 +1037,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1049,7 +1054,8 @@
                                         <div class="flex h-full items-end pb-6">
                                             <h3
                                                 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
-                                                Produk</h3>
+                                                {{-- Produk --}}
+                                            </h3>
                                         </div>
                                     </div>
                                 </div>
@@ -1139,12 +1145,12 @@
 
                         <a href="https://www.instagram.com/foryou.corp/" class="text-gray-400 hover:text-gray-500">
                             <span class="sr-only">Instagram</span>
-                            <img class="h-8 w-8" src="{{ asset('img/logoIg.png') }}" alt="Tiktok">
+                            <img class="h-8 w-8" src="{{ asset('img/logoIg.png') }}" alt="Instagram">
                         </a>
 
                         <a href="https://www.instagram.com/foryou.corp/" class="text-gray-400 hover:text-gray-500">
-                            <span class="sr-only">Instagram</span>
-                            <img class="h-8 w-8" src="{{ asset('img/logoWA.png') }}" alt="Tiktok">
+                            <span class="sr-only">Whatsapp</span>
+                            <img class="h-8 w-8" src="{{ asset('img/logoWA.png') }}" alt="Whatsapp">
                         </a>
                     </div>
                     <div class="mt-8 md:mt-0 md:order-1">
@@ -1152,7 +1158,6 @@
                     </div>
                 </div>
             </footer>
-        </div>
         </div>
 
     </main>

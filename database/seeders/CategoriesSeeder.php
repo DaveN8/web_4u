@@ -21,12 +21,12 @@ class CategoriesSeeder extends Seeder
         ]);
         Categories::create([
             'nama_categories' => 'Elite',
-            'harga' => '80.000',
+            'harga' => '85.000',
             'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         ]);
         Categories::create([
             'nama_categories' => 'Ultra',
-            'harga' => '99.000',
+            'harga' => '109.000',
             'deskripsi' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.',
         ]);
     }

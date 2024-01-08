@@ -1,5 +1,5 @@
 @extends('layouts.base')
-@section('main_content')
+@section('admin_content')
     @php
         $color0 = '249, 243, 235'; //lighter cream
         $color1 = '248, 240, 229'; // light cream
