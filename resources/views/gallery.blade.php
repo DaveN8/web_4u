@@ -39,7 +39,7 @@
                         @method('GET')
                         <div class="flex max-h-72 justify-center p-10">
                             <img src="{{ asset('storage/' . $item['templateProduct']) }}"
-                                class="rounded-lg object-scale-down object-contain" alt="">
+                                class="rounded-lg object-scale-down object-contain" alt=""/>
                         </div>
                         <div class="px-4 py-3 w-72">
                             <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
