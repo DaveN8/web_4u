@@ -29,7 +29,7 @@ class PackageController extends Controller
     {
         return view('formPackages', [
             'id_desains' => $request->input('id_desains'),
-            'id_user' => $request->input('id_user'),
+            'id_users' => $request->input('id_users'),
         ]);
     }
 
@@ -40,7 +40,7 @@ class PackageController extends Controller
     {
 
         $id_desains = $request->input('id_desains');
-        $id_user = $request->input('id_user');
+        $id_users = $request->input('id_users');
 
        
         $this->validate($request, [
@@ -58,16 +58,16 @@ class PackageController extends Controller
             'linkGdrive' => 'required',
         ]);
 
-        Package::create([
-            'nameMale' => $request->nameMale,
-            'nameFemale' => $request->nameFemale,
-            'addressAcara' => $request->addressAcara,
-            'dateAcara' =>  $request->dateAcara,
-            'waktuAcara' =>  $request->waktuAcara,
-            'noTelp' => $request->noTelp,
-            'deskripsiAcara' => $request->deskripsiAcara,
-            'linkGdrive' => $request->linkGdrive,
-        ]);
+        // Package::create([
+        //     'nameMale' => $request->nameMale,
+        //     'nameFemale' => $request->nameFemale,
+        //     'addressAcara' => $request->addressAcara,
+        //     'dateAcara' =>  $request->dateAcara,
+        //     'waktuAcara' =>  $request->waktuAcara,
+        //     'noTelp' => $request->noTelp,
+        //     'deskripsiAcara' => $request->deskripsiAcara,
+        //     'linkGdrive' => $request->linkGdrive,
+        // ]);
 
         $package = Package::create([
             'nameMale' => $request->nameMale,
@@ -82,7 +82,7 @@ class PackageController extends Controller
 
         $id_package = $package->id;
         
-        return redirect()->route('prouser.create', ['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package, 'package' => Package::all()]);
+        return redirect()->route('prouser.create', ['id_desains' => $id_desains, 'id_users' => $id_users, 'id_package' => $id_package, 'package' => Package::all()]);
         // return view;
     }
 

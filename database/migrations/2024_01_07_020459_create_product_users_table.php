@@ -19,8 +19,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('id_desains')->constrained(table:'desains');
             $table->foreignId('id_user')->constrained(table:'users');
-            $table->enum('statusProductUsers', ['ongoing', 'done'])->default('ongoing');
             $table->foreignId('id_package')->constrained(table:'packages');
+            $table->enum('statusProductUsers', ['ongoing', 'done'])->default('ongoing');
             $table->timestamps();
         });
     }

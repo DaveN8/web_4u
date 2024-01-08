@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('noTelp');
             $table->string('deskripsiAcara');
             $table->string('linkGdrive');
-           
             $table->timestamps();
         });
     }

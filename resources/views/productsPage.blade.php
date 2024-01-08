@@ -104,7 +104,7 @@
                                         {{ $item['nama_categories'] }}</p>
                                     <p class="text-lg font-semibold text-black  my-3">{{ $item['deskripsi'] }}</p>
 
-                                    <input type="hidden" name="id_user" value="{{ Auth::user()->id }}">
+                                    <input type="hidden" name="id_users" value="{{ Auth::user()->id }}">
                                     <input type="hidden" name="id_desains" value="{{ $item['id'] }}">
                                     {{-- <input type="hidden" name="id_categories" value="{{$id_categories}}"> --}}
 

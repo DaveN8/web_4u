@@ -12,6 +12,7 @@ class ProductUser extends Model
     protected $fillable =[
         'id_desains',
         'id_user',
+        'id_package',
         'statusProductUsers'
     ];
 

@@ -17,8 +17,8 @@ class ProductUserController extends Controller
      */
     public function index()
     {
-        $prouser = ProductUser::all();
-        return view('productuserView',[
+        // $prouser = ProductUser::all();
+        return view('productuserView', [
             'desain' => Desains::all(),
             'user' => User::all(),
             'prouser' => ProductUser::all(),
@@ -31,13 +31,12 @@ class ProductUserController extends Controller
      */
     public function create(Request $request)
     {
-
-      return view('productConfirmView', [
-        'package' => Package::all(),
-        'id_desains' => $request->input('id_desains'), 
-        'id_user' => $request->input('id_user'), 
-        'id_package' => $request->input('id_package'),
-      ]);
+        return view('productConfirmView', [
+            'package' => Package::all(),
+            'id_desains' => $request->input('id_desains'),
+            'id_users' => $request->input('id_users'),
+            'id_package' => $request->input('id_package'),
+        ]);
     }
 
     /**
@@ -45,22 +44,20 @@ class ProductUserController extends Controller
      */
     public function store(StoreProductUserRequest $request)
     {
-       
         $this->validate($request, [
-            'id_desains'=> 'required',
-            'id_users' => 'required',
+            'id_desains' => 'required',
+            'id_user' => 'required',
             'id_package' => 'required',
         ]);
+        // dd($request);
 
-        
         ProductUser::create([
             'id_desains' => $request->id_desains,
-            'id_users' => $request->id_users,
+            'id_user' => $request->id_user,
             'id_package' => $request->id_package,
         ]);
-        dd($request);
-        
-        return view('porductuserView');
+
+        return redirect(route('prouser.index'));
     }
 
     /**

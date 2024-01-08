@@ -4,12 +4,13 @@
         <div class="p-10  flex items-center justify-center">
             <div
                 class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8 dark:bg-lime-50 dark:border-amber-50">
-                {{-- <p>{{ $id_package }}</p> --}}
+                <p>package{{ $id_package }}</p>
+                <p>user{{ $id_users }}</p>
+                <p>desains{{ $id_desains }}</p>
                 @foreach ($package as $pack)
                     @if ($pack['id'] == $id_package)
                         <form method="POST" action="{{ route('prouser.store') }}" enctype="multipart/form-data">
                             @csrf
-                            
                             <h5 class="text-xl font-medium text-gray-900 mb-5">Confirmation</h5>
                             <div class="mb-5">
                                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Full Name (Person
@@ -21,7 +22,8 @@
                             <div class="mb-5">
                                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Full Name
                                     (Person
-                                    2)</label>
+                                    2)
+                                </label>
                                 <input type="name" name="nameFemale" id="name"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                     placeholder="{{ $pack['nameFemale'] }}" disabled>
@@ -55,7 +57,8 @@
                             <div class="mb-5">
                                 <label for="waktuAcara" class="block mb-2 text-sm font-medium text-gray-900 ">Time
                                     Event</label>
-                                <input type="time" name="waktuAcara" id="waktuAcara" placeholder="{{ $pack['waktuAcara'] }}"
+                                <input type="time" name="waktuAcara" id="waktuAcara"
+                                    placeholder="{{ $pack['waktuAcara'] }}"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                     disabled>
                             </div>
@@ -93,14 +96,16 @@
                                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Link Gdrive
                                     (Photos
                                     of event)</label>
-                                <input type="name" name="linkGdrive" id="name" placeholder="{{ $pack['linkGdrive'] }}"
+                                <input type="name" name="linkGdrive" id="name"
+                                    placeholder="{{ $pack['linkGdrive'] }}"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                     disabled>
                             </div>
 
                             <input type="hidden" name="id_desains" value="{{ $id_desains }}">
-                            <input type="hidden" name="id_user" value="{{ $id_user }}">
-                            <input type="hidden" name="id_package" value="{{ $id_package }}">
+                            <input type="hidden" name="id_user" value="{{ $id_users }}">
+                            <input type="hidden" name="id_package" value="{{ $pack['id'] }}">
+
                             <button type="submit"
                                 class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                         </form>
