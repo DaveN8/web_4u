@@ -69,20 +69,15 @@ class DesainsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateDesainsRequest $request, Desains $desains)
+    public function update(UpdateDesainsRequest $request, $id)
     {
-        // $desains = Desains::findOrFail($id);
+        $desain = Desains::findOrFail($id);
 
-        // if ($request->file('foto_product')) {
-        //     unlink('storage/' . $product->foto_product);
-        //     $product->update([
-        //         'nama_product' => $request->nama_product,
-        //         'foto_product' => $request->file('foto_product')->store('img', 'public')
-        //     ]);
-        // };
+        $desain->update([
+            'status' => $request->status,
+        ]);
 
-        
-        return redirect('productsPage');
+        return redirect(route('desain.index'));
     }
 
     /**

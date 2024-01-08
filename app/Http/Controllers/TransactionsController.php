@@ -20,6 +20,7 @@ class TransactionsController extends Controller
         return view('transactionView', [
             'transactions' => Transactions::all(),
             'categories' => Categories::all(),
+            'user' => User::all(),
         ]);
     }
 
@@ -87,9 +88,15 @@ class TransactionsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTransactionsRequest $request, Transactions $transactions)
+    public function update(UpdateTransactionsRequest $request, Transactions $transactions, $id)
     {
-        //
+        $transaction = Transactions::findOrFail($id);
+
+        $transaction->update([
+            'statusTransaction' => $request->statusTransaction,
+        ]);
+
+        return redirect(route('transaction.index'));
     }
 
     /**

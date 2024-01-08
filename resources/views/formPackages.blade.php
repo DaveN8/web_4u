@@ -4,7 +4,7 @@
         <div class="p-10  flex items-center justify-center">
             <div
                 class="w-full max-w-lg p-4 bg-white border border-gray-200 rounded-lg shadow-lg sm:p-6 md:p-8 dark:bg-lime-50 dark:border-amber-50">
-                <p>userid{{$id_users}}</p>
+                {{-- <p>userid{{$id_users}}</p> --}}
                 <form method="POST" action="{{ route('package.store') }}" enctype="multipart/form-data">
                     @csrf
                     @method('POST')

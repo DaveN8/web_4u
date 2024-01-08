@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ProductUser;
 use App\Http\Requests\StoreProductUserRequest;
 use App\Http\Requests\UpdateProductUserRequest;
+use App\Models\Categories;
 use App\Models\Desains;
 use App\Models\Package;
 use App\Models\User;
@@ -79,9 +80,15 @@ class ProductUserController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProductUserRequest $request, ProductUser $productUser)
+    public function update(UpdateProductUserRequest $request, ProductUser $productUser, $id)
     {
-        //
+        $prouser = ProductUser::findOrFail($id);
+
+        $prouser->update([
+            'statusProductUsers' => $request->statusProductUsers,
+        ]);
+
+        return redirect(route('prouser.index'));
     }
 
     /**
