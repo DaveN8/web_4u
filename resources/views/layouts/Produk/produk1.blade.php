@@ -55,14 +55,14 @@
                 {{-- Profile Picture --}}
                 <div class="flex justify-center profile-picture-container">
                     <div class="mt-14 profile-picture">
-                        <img src="{{ asset('img/logo4U.jpg') }}" alt="Foto UlangTahun" class="rounded-full ring w-40 h-40">
+                        <img src="{{ asset('img/foto1.jpg') }}" alt="Foto UlangTahun" class="rounded-full ring w-40 h-40">
                     </div>
                 </div>
 
                 {{-- Nama --}}
                 <div class="text-center font-['Open-sans'] font-bold text-2xl lg:text-5xl mt-10">
                     <p>
-                        Joyceline lovenna Kurniawan
+                        Joyceline Lovenna Kurniawan
                     </p>
                 </div>
 
@@ -163,39 +163,27 @@
                             </div>
                             <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 1"
+                                    <img src="{{ asset('img/foto1.jpg') }}" alt="Gallery Image 1"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 2"
+                                    <img src="{{ asset('img/foto2.jpg') }}" alt="Gallery Image 2"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 3"
+                                    <img src="{{ asset('img/foto3.jpg') }}" alt="Gallery Image 3"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 4"
+                                    <img src="{{ asset('img/foto4.jpg') }}" alt="Gallery Image 4"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 5"
+                                    <img src="{{ asset('img/foto5.jpeg') }}" alt="Gallery Image 5"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                                 <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 6"
-                                        class="object-cover w-full h-full rounded-lg">
-                                </div>
-                                <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 7"
-                                        class="object-cover w-full h-full rounded-lg">
-                                </div>
-                                <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 8"
-                                        class="object-cover w-full h-full rounded-lg">
-                                </div>
-                                <div class="relative">
-                                    <img src="{{ asset('img/logo4U.jpg') }}" alt="Gallery Image 9"
+                                    <img src="{{ asset('img/foto6.jpeg') }}" alt="Gallery Image 6"
                                         class="object-cover w-full h-full rounded-lg">
                                 </div>
                             </div>
@@ -212,11 +200,7 @@
                                 </div>
                             </div>
                             <div class="flex justify-center items-center mx-auto">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6060211291524!2d112.62902131141374!3d-7.2855871926913975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fde455555555%3A0xd7e2611ae591f046!2sUniversitas%20Ciputra%20Surabaya!5e0!3m2!1sen!2sid!4v1701709454918!5m2!1sen!2sid"
-                                    width="100%" height="450" style="border:0;" class="w-full h-96"
-                                    allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15805.33399644559!2d112.58569658715822!3d-7.964444999999981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788289cb039897%3A0x538584e21e40f333!2sSekolah%20Kristen%20Kalam%20Kudus%20Malang!5e0!3m2!1sen!2sid!4v1704739245361!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                             </div>
                             <br>
@@ -228,7 +212,7 @@
 
             {{-- Music Background --}}
             <audio id="backgroundMusic" loop autoplay>
-                <source src="{{ asset('img/beautifulinwhit.mp3') }}" type="audio/mp3">
+                <source src="{{ asset('img/laguultah1.mp3') }}" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
             {{-- Button Mute BG Music --}}
