@@ -30,6 +30,7 @@ class TransactionsController extends Controller
     {
         return view('purchasingForm', [
             'categories' => Categories::all(),
+            'users' => User::all(),
             'id_users' => $request->input('id_users'),
             'id_categories' => $request->input('id_categories')
         ]);
