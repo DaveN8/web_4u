@@ -32,7 +32,7 @@ Route::get('/', function () {
 })->name('landingpage');
 
 Route::get('/produk', function () {
-    return view('produk1');
+    return view('layouts/Produk/produk1');
 });
 
 // Route::get('/formPackages', function (){
