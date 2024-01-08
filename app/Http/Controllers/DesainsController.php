@@ -61,9 +61,10 @@ class DesainsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Desains $desains)
+    public function edit(Desains $desains, $id)
     {
-        //
+        $desain = Desains::findOrFail($id);
+        return view('detailDesain', compact('desain'));
     }
 
     /**

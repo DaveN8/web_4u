@@ -44,9 +44,9 @@
     @if (Auth::check() && Auth::user()->role == 'admin')
         @include('layouts.adminNavbar')
 
-        <div>
+        {{-- <div>
             @yield('main_content')
-        </div>
+        </div> --}}
     @elseif(Auth::check() && Auth::user()->role == 'member')
         @include('layouts.navbar')
 

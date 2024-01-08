@@ -1,9 +1,6 @@
 @extends('layouts.base')
-@section('main_content')
-    <main>
+@section('admin_content')
         @if (Auth::check() && Auth::user()->role == 'admin')
-            <div class="sm:ml-64">
-                <div class="mt-14">
                     <div class="container px-6 py-8 mx-auto">
                         <h3 class="text-3xl font-medium text-gray-700">Dashboard</h3>
 
@@ -164,8 +161,5 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
         @endif
-    </main>
 @endsection
