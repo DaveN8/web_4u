@@ -58,9 +58,13 @@
                         <a href="{{ route('desain.index') }}"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Gallery</a>
 
-
-                        <a href="{{ route('transaction.index') }}"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Transaction</a>
+                        @if (Auth::check() && Auth::user()->role == 'member')
+                            <a href="{{ route('transaction.index') }}"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Transaction</a>
+                            <a href="{{ route('prouser.index') }}"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Your
+                                Product</a>
+                        @endif
 
                         @if (Auth::check() && Auth::user()->role == 'admin')
                             <a href="{{ url('/admin') }}"
