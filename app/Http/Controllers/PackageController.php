@@ -82,7 +82,7 @@ class PackageController extends Controller
 
         $id_package = $package->id;
         
-        return redirect('/productConfirm')->with(['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package])->with(['package' => Package::all()]);
+        return redirect()->route('prouser.create', ['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package, 'package' => Package::all()]);
         // return view;
     }
 
