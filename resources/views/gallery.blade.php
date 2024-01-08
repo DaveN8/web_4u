@@ -67,7 +67,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-28 gap-y-4 mx-auto my-10">
             <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <div class="flex max-h-72 justify-center p-10">
-                    <img src="{{ asset('img/produkjadi1-1.png') }}" class="rounded-lg object-scale-down object-contain"
+                    <img src="{{ asset('img/produkjadi1-1.png') }}" class="rounded-lg object-scale-down"
                         alt="">
                 </div>
                 <div class="px-4 py-3 w-72">
