@@ -90,17 +90,21 @@ Route::resource('desain', DesainsController::class);
 // Route::post('/productsPage', [ProductController::class, 'store'])->name('storeProducts');
 // Route::get('/productsPage/{productsPage}/edit', [ProductController::class, 'edit'])->name('editProducts');
 
+// Route::post('/prouser', 'ProductUserController@store')->name('prouser.store');
 
+Route::get('/productConfirm', function () {
+    return view('productConfirmView');
+});
 
 //Package
 Route::resource('package', PackageController::class);
-Route::get('/package', [PackageController::class, 'index'])->name('package');
-Route::get('/formPackage', [PackageController::class, 'create'])->name('formPackage');
-Route::post('/dataPackage', [PackageController::class, 'store'])->name('storePackage');
+// Route::get('/package', [PackageController::class, 'index'])->name('package');
+// Route::get('/formPackage', [PackageController::class, 'create'])->name('formPackage');
+// Route::post('/dataPackage', [PackageController::class, 'store'])->name('storePackage');
 
-Route::get('/pembelianPage', function () {
-    return view('pembelianPage');
-});
+// Route::get('/pembelianPage', function () {
+//     return view('pembelianPage');
+// });
 
 Route::get('/admin', [AllContentController::class, 'index'])->name('admin');
 

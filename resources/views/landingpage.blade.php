@@ -388,8 +388,8 @@
                                                                 </form>
                                                             @else
                                                                 <a href="{{ route('login.create') }}"
-                                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
-                                                                aria-describedby="tier-hobby"> Choose Packages </a>
+                                                                    class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                    aria-describedby="tier-hobby"> Choose Packages </a>
                                                             @endif
                                                         </div>
                                                     </div>
@@ -603,9 +603,23 @@
                                                 </ul>
                                                 <div class="mt-10">
                                                     <div class="rounded-lg shadow-md">
-                                                        <a href="{{ route('desain.index') }}"
-                                                            class="block w-full text-center rounded-lg border border-transparent bg-indigo-600 px-6 py-4 text-xl leading-6 font-medium text-white hover:bg-indigo-700"
-                                                            aria-describedby="tier-growth"> Choose Packages </a>
+                                                        @if (Auth::check() && Auth::user()->role == 'member')
+                                                            <form action="{{ route('transaction.create') }}"
+                                                                method="GET" enctype="multipart/form-data">
+                                                                <input type="hidden" name="id_categories"
+                                                                    value="2">
+                                                                <input type="hidden" name="id_users"
+                                                                    value="{{ Auth::user()->id }}">
+                                                                <button type="submit"
+                                                                    class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                    aria-describedby="tier-hobby"> Choose Packages
+                                                                </button>
+                                                            </form>
+                                                        @else
+                                                            <a href="{{ route('login.create') }}"
+                                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                aria-describedby="tier-hobby"> Choose Packages </a>
+                                                        @endif
                                                     </div>
                                                 </div>
                                             </div>
@@ -787,9 +801,23 @@
                                                     </ul>
                                                     <div class="mt-8">
                                                         <div class="rounded-lg shadow-md">
-                                                            <a href="{{ route('desain.index') }}"
-                                                                class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
-                                                                aria-describedby="tier-scale"> Choose Packages </a>
+                                                            @if (Auth::check() && Auth::user()->role == 'member')
+                                                                <form action="{{ route('transaction.create') }}"
+                                                                    method="GET" enctype="multipart/form-data">
+                                                                    <input type="hidden" name="id_categories"
+                                                                        value="3">
+                                                                    <input type="hidden" name="id_users"
+                                                                        value="{{ Auth::user()->id }}">
+                                                                    <button type="submit"
+                                                                        class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                        aria-describedby="tier-hobby"> Choose Packages
+                                                                    </button>
+                                                                </form>
+                                                            @else
+                                                                <a href="{{ route('login.create') }}"
+                                                                    class="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base font-medium text-indigo-600 hover:bg-gray-50"
+                                                                    aria-describedby="tier-hobby"> Choose Packages </a>
+                                                            @endif
                                                         </div>
                                                     </div>
                                                 </div>

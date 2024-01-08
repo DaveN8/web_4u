@@ -96,7 +96,7 @@
                                     </a>
                                 </div>
                             </a> --}}
-                            <form action="{{ route('packages.create') }}" method="GET" enctype="multipart/form-data">
+                            <form action="{{ route('package.create') }}" method="GET" enctype="multipart/form-data">
                                 <img src="{{ asset('storage/' . $item['templateProduct']) }}" alt="">
                                 <div class="px-4 py-3 w-72">
                                     <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
@@ -110,7 +110,7 @@
 
                                     <button type="submit"
                                         class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
-                                        Default
+                                        Pilih Desain Ini
                                     </button>
                                 </div>
                             </form>

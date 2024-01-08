@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Desains;
 use App\Http\Requests\StoreDesainsRequest;
 use App\Http\Requests\UpdateDesainsRequest;
+use App\Models\Package;
 
 class DesainsController extends Controller
 {
@@ -16,7 +17,7 @@ class DesainsController extends Controller
         // $desain = Desains::all();
         return view('productsPage', [
             'desain' => Desains::all(),
-            ''
+            'package' => Package::all(),
         ]);
     }
 

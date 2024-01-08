@@ -15,7 +15,7 @@ class PackageController extends Controller
     public function index()
     {
         $package = Package::all();
-        return view('pembelianPage', [
+        return view('productuserView', [
             'package' => Package::all(),
             'productUser' => ProductUser::all(),
             'desain' => Desains::all(),
@@ -28,7 +28,6 @@ class PackageController extends Controller
     public function create(Request $request)
     {
         return view('formPackages', [
-            'productUser' => ProductUser::all(),
             'id_desains' => $request->input('id_desains'),
             'id_user' => $request->input('id_user'),
         ]);
@@ -43,6 +42,7 @@ class PackageController extends Controller
         $id_desains = $request->input('id_desains');
         $id_user = $request->input('id_user');
 
+       
         $this->validate($request, [
             'nameMale' => 'required',
             'nameFemale' => 'required',
@@ -81,9 +81,8 @@ class PackageController extends Controller
         ]);
 
         $id_package = $package->id;
-
-        return redirect()->action('prouser.store', ['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package]);
-
+        
+        return redirect('/productConfirm')->with(['id_desains' => $id_desains, 'id_user' => $id_user, 'id_package' => $id_package])->with(['package' => Package::all()]);
         // return view;
     }
 

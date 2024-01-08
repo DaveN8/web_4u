@@ -30,7 +30,7 @@ class TransactionsController extends Controller
     {
         return view('purchasingForm', [
             'categories' => Categories::all(),
-            'id_users' => $request->input('id_user'),
+            'id_users' => $request->input('id_users'),
             'id_categories' => $request->input('id_categories')
         ]);
     }
@@ -40,19 +40,19 @@ class TransactionsController extends Controller
      */
     public function store(StoreTransactionsRequest $request)
     {
-        dd($request);
+        // dd($request);
         $this->validate($request, [
             'id_users' => 'required',
             'id_categories' => 'required',
             'buktiTransfer'=> 'required',
         ]);
-
+        
         Transactions::create([
             'id_users' => $request->id_users,
             'id_categories' => $request->id_categories,
             'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         ]);
-
+        
         // $trans = Transactions::create([
         //     'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         //     'id_users' => $request->id_users,

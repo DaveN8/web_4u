@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateProductUserRequest;
 use App\Models\Desains;
 use App\Models\Package;
 use App\Models\User;
+use Illuminate\Http\Request;
 
 class ProductUserController extends Controller
 {
@@ -28,13 +29,15 @@ class ProductUserController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        return view('purchasingForm', [
-            // 'categories' => Categories::all(),
-            // 'id_user' => 'id_user',
-            // 'id_desain' => 'id_desain'
-        ]);
+
+      return view('productConfirmView', [
+        'package' => Package::all(),
+        'id_desains' => $request->input('id_desains'), 
+        'id_user' => $request->input('id_user'), 
+        'id_package' => $request->input('id_package'),
+      ]);
     }
 
     /**
@@ -42,7 +45,7 @@ class ProductUserController extends Controller
      */
     public function store(StoreProductUserRequest $request)
     {
-        //
+       
         $this->validate($request, [
             'id_desains'=> 'required',
             'id_users' => 'required',
@@ -55,9 +58,9 @@ class ProductUserController extends Controller
             'id_users' => $request->id_users,
             'id_package' => $request->id_package,
         ]);
-
+        dd($request);
         
-        return redirect(route('prouser.index'));
+        return view('porductuserView');
     }
 
     /**
