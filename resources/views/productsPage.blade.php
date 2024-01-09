@@ -105,7 +105,14 @@
                 @foreach ($desain as $item)
                     <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                         <form action="{{ route('package.create') }}" method="GET" enctype="multipart/form-data">
-                            <img src="{{ asset('storage/' . $item['templateProduct']) }}" alt="">
+                            @csrf
+                            @if ($item['id'] == 1)
+                            <img src="{{ asset('img/desain1.png') }}" alt=""/>
+                            @elseif($item['id'] == 2)
+                            <img src="{{ asset('img/desain2.png') }}" alt=""/>
+                            @elseif($item['id'] == 3)
+                            <img src="{{ asset('img/produkjadi1.png') }}" alt=""/>
+                            @endif
                             <div class="px-4 py-3 w-72">
                                 <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
                                 <p class="text-lg font-bold text-black truncate block capitalize">

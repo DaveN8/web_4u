@@ -35,6 +35,22 @@ Route::get('/', function () {
 Route::get('/produk', function () {
     return view('layouts/Produk/produk1');
 });
+Route::get('/detail1', function () {
+    return view('detailDesain',[
+        'img' => 1,
+    ]);
+});
+Route::get('/detail2', function () {
+    return view('detailDesain',[
+        'img' => 2,
+    ]);
+});
+Route::get('/detail3', function () {
+    return view('detailDesain',[
+        'img' => 3,
+    ]);
+});
+
 
 Route::get('/gallery', function(){
     return view('gallery',[
@@ -43,6 +59,7 @@ Route::get('/gallery', function(){
         'package' => Package::all(),
     ]);
 });
+
 // Route::get('/formPackages', function (){
 //     return view('formPackages');
 // });

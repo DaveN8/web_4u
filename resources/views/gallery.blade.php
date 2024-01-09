@@ -32,29 +32,56 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-28 gap-y-4 mx-auto my-10">
 
 
-            @foreach ($desain as $item)
-                <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
-                    <form action="{{ route('desain.edit', $item->id) }}" method="GET" enctype="multipart/form-data">
-                        @csrf
-                        @method('GET')
-                        <div class="flex max-h-72 justify-center p-10">
-                            <img src="{{ asset('storage/' . $item['templateProduct']) }}"
-                                class="rounded-lg object-scale-down object-contain" alt=""/>
-                        </div>
-                        <div class="px-4 py-3 w-72">
-                            <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
-                            {{-- <p class="text-lg font-bold text-black truncate block capitalize">
-                                {{ $item['nama'] }}</p> --}}
-                            <p class="text-lg font-semibold text-black  my-3">{{ $item['deskripsi'] }}</p>
-                            <button type="submit"
-                                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
-                                Lihat Desain Ini
-                            </button>
-                        </div>
-                    </form>
+            <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <div class="flex max-h-72 justify-center p-10">
+                    <img src="{{ asset('img/desain1.png') }}" class="rounded-lg object-scale-down object-contain"
+                        alt="" />
                 </div>
-            @endforeach
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
+                    {{-- <p class="text-lg font-bold text-black truncate block capitalize">
+                                {{ $item['nama'] }}</p> --}}
+                    <p class="text-lg font-semibold text-black  my-3">Minimalis 1</p>
+                    <a href="{{ url('/detail1') }}" type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
+                        Lihat Desain Ini
+                    </a>
+                </div>
+            </div>
 
+            <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <div class="flex max-h-72 justify-center p-10">
+                    <img src="{{ asset('img/desain2.png') }}" class="rounded-lg object-scale-down object-contain"
+                        alt="" />
+                </div>
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
+                    {{-- <p class="text-lg font-bold text-black truncate block capitalize">
+                                {{ $item['nama'] }}</p> --}}
+                    <p class="text-lg font-semibold text-black  my-3">Minimalis 2</p>
+                    <a href="{{ url('/detail2') }}" type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
+                        Lihat Desain Ini
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
+                <div class="flex max-h-72 justify-center p-10">
+                    <img src="{{ asset('img/produkjadi1.png') }}" class="rounded-lg object-scale-down object-contain"
+                        alt="" />
+                </div>
+                <div class="px-4 py-3 w-72">
+                    <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
+                    {{-- <p class="text-lg font-bold text-black truncate block capitalize">
+                                {{ $item['nama'] }}</p> --}}
+                    <p class="text-lg font-semibold text-black  my-3">Birthday</p>
+                    <a href="{{ url('/detail3') }}" type="submit"
+                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2">
+                        Lihat Desain Ini
+                    </a>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -67,8 +94,7 @@
         <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 grid-rows-auto gap-x-28 gap-y-4 mx-auto my-10">
             <div class="w-72 bg-white border-2 shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
                 <div class="flex max-h-72 justify-center p-10">
-                    <img src="{{ asset('img/produkjadi1-1.png') }}" class="rounded-lg object-scale-down"
-                        alt="">
+                    <img src="{{ asset('img/produkjadi1-1.png') }}" class="rounded-lg object-scale-down" alt="">
                 </div>
                 <div class="px-4 py-3 w-72">
                     <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
