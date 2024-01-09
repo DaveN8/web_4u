@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('id_users')->constrained(table:'users');
             $table->foreignId('id_categories')->constrained(table:'categories');
             $table->string('buktiTransfer')->nullable();
-            $table->enum('statusTransaction',['approved','waiting','declined'])->default('waiting');
+            $table->enum('statusTransaction',['approved','waiting','declined','done'])->default('waiting');
             $table->timestamps();
         });
     }

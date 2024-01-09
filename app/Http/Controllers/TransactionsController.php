@@ -6,6 +6,7 @@ use App\Models\Transactions;
 use App\Http\Requests\StoreTransactionsRequest;
 use App\Http\Requests\UpdateTransactionsRequest;
 use App\Models\Categories;
+use App\Models\ProductUser;
 use Illuminate\Http\Request;
 use App\Models\User;
 
@@ -46,15 +47,15 @@ class TransactionsController extends Controller
         $this->validate($request, [
             'id_users' => 'required',
             'id_categories' => 'required',
-            'buktiTransfer'=> 'required',
+            'buktiTransfer' => 'required',
         ]);
-        
+
         Transactions::create([
             'id_users' => $request->id_users,
             'id_categories' => $request->id_categories,
             'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         ]);
-        
+
         // $trans = Transactions::create([
         //     'buktiTransfer' => $request->file('buktiTransfer')->store('img', 'public'),
         //     'id_users' => $request->id_users,
@@ -63,7 +64,7 @@ class TransactionsController extends Controller
 
         // $id_transactions = $trans->id;
 
-        
+
         return redirect(route('transaction.index'));
         // return view('desain.index', compact('id_transactions'));
         // return redirect()->action('transactions.create', ['id_transactions' => $id_transactions]);
@@ -96,7 +97,11 @@ class TransactionsController extends Controller
             'statusTransaction' => $request->statusTransaction,
         ]);
 
-        return redirect(route('transaction.index'));
+        if ($request->userRole == 'member') {
+            return redirect(route('desain.index'));
+        } else {
+            return redirect(route('transaction.index'));
+        }
     }
 
     /**

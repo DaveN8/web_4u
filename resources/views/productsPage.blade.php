@@ -107,11 +107,20 @@
                         <form action="{{ route('package.create') }}" method="GET" enctype="multipart/form-data">
                             @csrf
                             @if ($item['id'] == 1)
-                            <img src="{{ asset('img/desain1.png') }}" alt=""/>
+                                <div class="flex max-h-72 justify-center p-10">
+                                    <img src="{{ asset('img/desain1.png') }}" alt=""
+                                        class="rounded-lg object-contain" />
+                                </div>
                             @elseif($item['id'] == 2)
-                            <img src="{{ asset('img/desain2.png') }}" alt=""/>
+                                <div class="flex max-h-72 justify-center p-10">
+                                    <img src="{{ asset('img/desain2.png') }}" alt=""
+                                        class="rounded-lg object-contain" />
+                                </div>
                             @elseif($item['id'] == 3)
-                            <img src="{{ asset('img/produkjadi1.png') }}" alt=""/>
+                                <div class="flex max-h-72 justify-center p-10">
+                                    <img src="{{ asset('img/produkjadi1.png') }}" alt=""
+                                        class="rounded-lg object-contain" />
+                                </div>
                             @endif
                             <div class="px-4 py-3 w-72">
                                 <span class="text-gray-400 mr-3 uppercase text-xs">ForYou.Corp</span>
@@ -138,5 +147,5 @@
 @endif
 
 @guest
-    
+
 @endguest
